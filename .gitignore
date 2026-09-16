@@ -1,0 +1,13 @@
+# Cara Core Informática — Loja Central de Downloads
+# Git Ignore
+
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
