@@ -133,6 +133,7 @@
           <div class="spec-line"><i class="fas fa-user"></i> <span>1 Operador · 4 Vendedores · 1 Loja</span></div>
           <div class="spec-line"><i class="fas fa-desktop"></i> <span>UI no navegador em <code>http://localhost:8080/login</code></span></div>
           <div class="spec-line"><i class="fas fa-receipt"></i> <span>Recibo digital por link e PDF, sem valor fiscal</span></div>
+          <div class="spec-line"><i class="fas fa-circle-info"></i> <span>Sem PIX integrado e sem emissão de NF-e/NFC-e</span></div>
         </div>
 
         <div class="card-actions">
@@ -690,7 +691,7 @@
           <div class="bunker-icon"><i class="fas fa-wifi"></i></div>
           <div class="bunker-content">
             <h4>Operação Ininterrupta</h4>
-            <p>Sem internet? Seu caixa continua vendendo e registrando normalmente. A sincronização em nuvem é sob demanda e colaborativa.</p>
+            <p>O PDV Java Free é uma aplicação web local e mantém os dados no computador. Cada produto informa no card se exige acesso à internet; não presumimos sincronização em nuvem.</p>
           </div>
         </div>
 
@@ -725,7 +726,7 @@
         <div class="code-block">sha256sum arquivo.zip</div>
 
         <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem;">
-          Se o hash retornado pelo comando for idêntico ao exibido no card da aplicação, o binário é autêntico e seguro para execução.
+          Se o hash calculado for igual ao SHA256 publicado, o arquivo corresponde ao digest informado. Isso não substitui a conferência da origem nem uma avaliação de segurança.
         </p>
       </div>
     </div>
