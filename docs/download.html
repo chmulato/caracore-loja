@@ -60,10 +60,10 @@
         <i class="fas fa-cube"></i> Repositório Central de Binários & Artefatos Oficiais
       </div>
       <h2 class="hero-title">
-        Aplicações soberanas com <span class="gradient-text">código transparente</span> e offline-first.
+        Produtos Cara Core com <span class="gradient-text">status e versões transparentes</span>.
       </h2>
       <p class="hero-desc">
-        Acesse os produtos e downloads disponíveis. Cada página informa os pacotes liberados, as plataformas compatíveis e o SHA256 publicado em cada release. Aplicações Web e itens de roadmap aparecem identificados.
+        Baixe versões publicadas com SHA256 para conferir. Produtos web e em roadmap aparecem identificados como acesso online ou “em breve”.
       </p>
     </section>
 
@@ -98,6 +98,9 @@
       <span id="results-summary" aria-live="polite">Catálogo de soluções Cara Core</span>
       <span><i class="fas fa-fingerprint text-emerald-400"></i> SHA256 publicado em cada release</span>
     </div>
+    <p class="text-sm text-secondary" style="margin-top: 0.5rem; font-size: 0.78rem;">
+      Como conferir no PowerShell: <code>Get-FileHash -Algorithm SHA256 .\arquivo-baixado</code>
+    </p>
 
     <!-- PRODUCTS CATALOG -->
     <section class="products-grid" id="products-catalog">
@@ -118,7 +121,7 @@
               <span class="version-tag">v3.2.6-free · Canal Free</span>
             </div>
           </div>
-          <span class="status-badge status-free">Disponível Free</span>
+          <span class="status-badge status-free">Estável</span>
         </div>
 
         <p class="card-desc">
@@ -173,21 +176,60 @@
               <i class="fas fa-copy"></i>
             </button>
           </div>
+        </div>
+
+        <div class="card-links-sub">
+          <a href="https://pdv.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do PDV</a>
+          <a href="https://wiki.caracore.com.br/projeto-pdv.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Manual na Wiki</a>
+        </div>
+      </article>
+
+      <!-- PDV JAVA V4 PRÉ-RELEASE -->
+      <article class="product-card"
+               data-title="CaraCore PDV Java v4.0.0-rc4 pré-release"
+               data-category="pdv"
+               data-platforms="windows"
+               data-tags="pdv java qute rc4 preview pre-release teste">
+        <div class="card-top">
+          <div class="product-identity">
+            <div class="product-icon-wrap icon-pdv-java">
+              <i class="fas fa-cash-register"></i>
+            </div>
+            <div class="product-titles">
+              <h3>CaraCore PDV (Java) · v4</h3>
+              <span class="version-tag">v4.0.0-rc4 · Windows x64</span>
+            </div>
+          </div>
+          <span class="status-badge status-pilot">Pré-release</span>
+        </div>
+
+        <p class="card-desc">
+          Pré-release pública da edição Free para avaliação. Não é a versão estável nem está homologada para produção.
+        </p>
+
+        <div class="specs-box">
+          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Preview para teste; a versão estável continua sendo v3.2.6-free.</span></div>
+        </div>
+
+        <div class="card-actions">
+          <a href="https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-rc4/CaraCore-PDV-4.0.0-rc4-qute-portable-windows-x64.zip" class="btn-download-primary" title="Baixar a pré-release do PDV Java para Windows">
+            <i class="fab fa-windows"></i> Baixar pré-release Windows x64 (.ZIP)
+          </a>
+
           <div class="checksum-box">
             <div>
-              <span class="hash-label">Pré-release v4.0.0-rc4 · SHA256 (Windows x64)</span>
+              <span class="hash-label">SHA256 (Windows x64)</span>
               <span class="hash-code">31a0cdeda68dce058079c5d0d3d5652084ba8a8cc073dfce60e021c4b3c1fdf2</span>
             </div>
             <button class="btn-copy-hash" onclick="copyHash('31a0cdeda68dce058079c5d0d3d5652084ba8a8cc073dfce60e021c4b3c1fdf2', this)" title="Copiar SHA256 completo da RC4">
               <i class="fas fa-copy"></i>
             </button>
           </div>
-          <p class="text-sm text-amber-400">Preview para teste; não é a versão estável. <a href="https://pdv.caracore.com.br/download.html#pre-release-v4" class="underline" target="_blank" rel="noopener">Detalhes da RC4 na loja do PDV</a>.</p>
         </div>
 
         <div class="card-links-sub">
           <a href="https://pdv.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do PDV</a>
-          <a href="https://wiki.caracore.com.br/projeto-pdv.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Manual na Wiki</a>
+          <a href="https://wiki.caracore.com.br/projeto-pdv.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -207,29 +249,22 @@
               <span class="version-tag">v0.1.4 · Piloto Windows</span>
             </div>
           </div>
-          <span class="status-badge status-pilot">Piloto Ativo</span>
+          <span class="status-badge status-pilot">Piloto</span>
         </div>
 
         <p class="card-desc">
-          Frente de caixa ultra-leve construído em Rust nativo com Tauri 2 e React. Execução ultrarrápida com banco SQLite embutido.
+          Frente de caixa desktop construída em Rust com Tauri 2 e React, com dados em banco SQLite local.
         </p>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-check"></i> <span><strong>Teto Piloto:</strong> 100 vendas na vida do piloto</span></div>
           <div class="spec-line"><i class="fas fa-lock"></i> <span>Perfis: admin, operador, gestor e auditoria</span></div>
-          <div class="spec-line"><i class="fas fa-microchip"></i> <span>Consumo mínimo de RAM e inicialização instantânea</span></div>
         </div>
 
         <div class="card-actions">
           <a href="https://github.com/chmulato/caracore-rust-pdv-releases/releases/download/v0.1.4/CaraCore-PDV-v0.1.4-windows.zip" class="btn-download-primary" title="Baixar PDV Rust para Windows">
             <i class="fab fa-windows"></i> Baixar Windows (.ZIP)
           </a>
-
-          <div class="btn-alt-downloads">
-            <a href="https://github.com/chmulato/caracore-rust-pdv-releases/releases" class="btn-sub-dl" target="_blank" rel="noopener" title="Instaladores MSI e NSIS">
-              <i class="fas fa-archive"></i> Ver MSI / NSIS
-            </a>
-          </div>
 
           <div class="checksum-box">
             <div>
@@ -244,7 +279,7 @@
 
         <div class="card-links-sub">
           <a href="https://pdv-rust.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do Rust</a>
-          <a href="https://github.com/chmulato/caracore-rust-pdv-releases/releases" class="card-link-item" target="_blank" rel="noopener"><i class="fab fa-github"></i> Releases GitHub</a>
+          <a href="https://wiki.caracore.com.br/projeto-pdv-rust.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -264,7 +299,7 @@
               <span class="version-tag">Produção Ativa · Web SaaS</span>
             </div>
           </div>
-          <span class="status-badge status-saas">Em Produção</span>
+          <span class="status-badge status-saas">Acesso online (SaaS)</span>
         </div>
 
         <p class="card-desc">
@@ -274,24 +309,63 @@
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-cloud"></i> <span><strong>Ambiente:</strong> Web na Nuvem Soberana</span></div>
           <div class="spec-line"><i class="fas fa-info-circle"></i> <span>Gestão operacional (não é rastreador GPS)</span></div>
-          <div class="spec-line"><i class="fas fa-calendar"></i> <span>Roadmap separado: CSO Transportes Desktop previsto para 08/11/2028; não é download desta aplicação Web</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://cso.caracore.com.br/cadastro" class="btn-download-primary" target="_blank" rel="noopener" title="Cadastrar e Acessar CSO Frotas">
-            <i class="fas fa-arrow-up-right-from-square"></i> Criar Conta / Acessar Web
+          <a href="https://cso.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Acessar o CSO Frotas">
+            <i class="fas fa-arrow-up-right-from-square"></i> Acessar CSO Frotas
           </a>
 
           <div class="btn-alt-downloads">
-            <a href="https://cso.caracore.com.br" class="btn-sub-dl" target="_blank" rel="noopener">
-              <i class="fas fa-right-to-bracket"></i> Login na Aplicação
+            <a href="https://cso.caracore.com.br/cadastro" class="btn-sub-dl" target="_blank" rel="noopener">
+              <i class="fas fa-user-plus"></i> Criar conta
             </a>
           </div>
         </div>
 
         <div class="card-links-sub">
           <a href="https://cso-transp.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Vitrine Oficial</a>
-          <a href="https://wiki.caracore.com.br/projeto-cso.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Documentação</a>
+          <a href="https://wiki.caracore.com.br/projeto-cso.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
+        </div>
+      </article>
+
+      <!-- CSO TRANSPORTES -->
+      <article class="product-card"
+               data-title="CaraCore CSO Transportes desktop"
+               data-category="frota"
+               data-platforms="roadmap"
+               data-tags="cso transportes desktop bunker roadmap 2028">
+        <div class="card-top">
+          <div class="product-identity">
+            <div class="product-icon-wrap icon-cso">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="product-titles">
+              <h3>CaraCore CSO Transportes</h3>
+              <span class="version-tag">GA planejado · 08/11/2028</span>
+            </div>
+          </div>
+          <span class="status-badge status-garage">Em breve</span>
+        </div>
+
+        <p class="card-desc">
+          Linha desktop em desenvolvimento para operação de transportes no computador da empresa.
+        </p>
+
+        <div class="specs-box">
+          <div class="spec-line"><i class="fas fa-calendar"></i> <span>Data planejada: <strong>08/11/2028</strong>.</span></div>
+          <div class="spec-line"><i class="fas fa-info-circle"></i> <span>Ainda sem download público. Não é rastreamento GPS.</span></div>
+        </div>
+
+        <div class="card-actions">
+          <a href="https://cso-transp.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Ver informações do CSO Transportes">
+            <i class="fas fa-globe"></i> Ver produto
+          </a>
+        </div>
+
+        <div class="card-links-sub">
+          <a href="https://cso-transp.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja CSO</a>
+          <a href="https://wiki.caracore.com.br/projeto-cso.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -299,7 +373,7 @@
       <article class="product-card" 
                data-title="CaraCore Hub Encomendas Centros de Distribuição" 
                data-category="frota" 
-               data-platforms="windows web" 
+               data-platforms="roadmap"
                data-tags="hub encomendas shopee mercado livre temu logistica cd rastreio pacotes">
         <div class="card-top">
           <div class="product-identity">
@@ -308,10 +382,10 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore Hub</h3>
-              <span class="version-tag">Web 2.1 · GA Windows 06/04/2027</span>
+              <span class="version-tag">GA planejado · 06/04/2027</span>
             </div>
           </div>
-          <span class="status-badge status-pilot">Oficina Ativa</span>
+          <span class="status-badge status-garage">Em breve</span>
         </div>
 
         <p class="card-desc">
@@ -319,20 +393,19 @@
         </p>
 
         <div class="specs-box">
-          <div class="spec-line"><i class="fas fa-check"></i> <span><strong>Operação:</strong> Web 2.1 ativa em produção interna</span></div>
-          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>GA Instalador Windows SQLite: <strong>06/04/2027</strong></span></div>
-          <div class="spec-line"><i class="fas fa-cube"></i> <span>Foco em integridade e controle sem perda de pacotes</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>Disponibilização planejada para <strong>06/04/2027</strong>; ainda sem versão pública.</span></div>
+          <div class="spec-line"><i class="fas fa-cube"></i> <span>Canais: Mercado Livre, Shopee e Temu</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://hub.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Visitar Hub">
-            <i class="fas fa-globe"></i> Conhecer Vitrine do Hub
+          <a href="https://hub.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Ver informações do Hub">
+            <i class="fas fa-globe"></i> Ver produto
           </a>
         </div>
 
         <div class="card-links-sub">
           <a href="https://hub.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do Hub</a>
-          <a href="https://wiki.caracore.com.br/hub/" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Manual de Uso</a>
+          <a href="https://wiki.caracore.com.br/projeto-hub.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -340,7 +413,7 @@
       <article class="product-card" 
                data-title="Ink Agenda Desktop Criptografia" 
                data-category="bunker" 
-               data-platforms="windows" 
+               data-platforms="windows"
                data-tags="ink agenda tarefas notas criptografia offline bunker javafx">
         <div class="card-top">
           <div class="product-identity">
@@ -356,23 +429,47 @@
         </div>
 
         <p class="card-desc">
-          Agenda bunker soberana com persistência 100% local, criptografia forte e sincronização segura.
+          Agenda e gestão financeira local para Windows; os dados ficam no computador.
         </p>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-shield"></i> <span><strong>Privacidade:</strong> Dados armazenados localmente</span></div>
           <div class="spec-line"><i class="fab fa-java"></i> <span>Construído em Java 25 moderno e JavaFX</span></div>
+          <div class="spec-line"><i class="fab fa-windows"></i> <span>Downloads publicados: ZIP e instalador Windows</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://github.com/chmulato/caracore-ink-releases/releases" class="btn-download-primary" target="_blank" rel="noopener" title="Baixar Ink Agenda">
-            <i class="fab fa-windows"></i> Releases & Instalador Windows
+          <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/AgendaInk-2.0.0-windows.zip" class="btn-download-primary" title="Baixar Ink Agenda Windows ZIP">
+            <i class="fab fa-windows"></i> Baixar Windows (.ZIP)
           </a>
+          <div class="btn-alt-downloads">
+            <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.0/AgendaInk-2.0.0-windows-setup.exe" class="btn-sub-dl" title="Baixar instalador Ink Agenda Windows">
+              <i class="fas fa-download"></i> Instalador Windows (.EXE)
+            </a>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Windows ZIP)</span>
+              <span class="hash-code">3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('3f331dcf8d7f70769debc15f32879338677cfe62c30d19182b931ac07f554832', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Windows instalador EXE)</span>
+              <span class="hash-code">7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('7fb35a24a79a05115d021bce6428c938425216a1fcd75a07ff569dd978ff1bba', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
         </div>
 
         <div class="card-links-sub">
           <a href="https://ink.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do Ink</a>
-          <a href="https://github.com/chmulato/caracore-ink-releases" class="card-link-item" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://wiki.caracore.com.br/projeto-ink.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -389,10 +486,10 @@
             </div>
             <div class="product-titles">
               <h3>Minerador ETE 4.0</h3>
-              <span class="version-tag">v1.2.3 · Ouro 4.0</span>
+              <span class="version-tag">v1.2.3</span>
             </div>
           </div>
-          <span class="status-badge status-free">Ouro 4.0</span>
+          <span class="status-badge status-free">Estável</span>
         </div>
 
         <p class="card-desc">
@@ -402,17 +499,65 @@
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-flask"></i> <span><strong>Domínio:</strong> Engenharia Ambiental & Química</span></div>
           <div class="spec-line"><i class="fas fa-cubes"></i> <span>Modelagem matemática e decantação pH</span></div>
+          <div class="spec-line"><i class="fas fa-desktop"></i> <span>Versão publicada para Windows, Linux e macOS</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://github.com/chmulato/caracore-ete-releases/releases" class="btn-download-primary" target="_blank" rel="noopener" title="Baixar Minerador ETE">
-            <i class="fas fa-download"></i> Baixar Pacotes Multiplataforma
+          <a href="https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-windows-x64.exe" class="btn-download-primary" title="Baixar Minerador ETE para Windows">
+            <i class="fab fa-windows"></i> Baixar Windows (.EXE)
           </a>
+          <div class="btn-alt-downloads">
+            <a href="https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-windows-x64.zip" class="btn-sub-dl" title="Baixar pacote ZIP do Minerador ETE">
+              <i class="fas fa-file-archive"></i> Windows (.ZIP)
+            </a>
+            <a href="https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-linux-x86_64.tar.gz" class="btn-sub-dl" title="Baixar Minerador ETE para Linux">
+              <i class="fab fa-linux"></i> Linux (.tar.gz)
+            </a>
+            <a href="https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-macos-universal.dmg" class="btn-sub-dl" title="Baixar Minerador ETE para macOS">
+              <i class="fab fa-apple"></i> macOS (.DMG)
+            </a>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Windows EXE)</span>
+              <span class="hash-code">20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Windows ZIP)</span>
+              <span class="hash-code">00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Linux x86_64)</span>
+              <span class="hash-code">5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (macOS universal)</span>
+              <span class="hash-code">9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
         </div>
 
         <div class="card-links-sub">
           <a href="https://ete.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Vitrine ETE</a>
-          <a href="https://ete.caracore.com.br/artigo_ete_v3.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i> Artigo Técnico</a>
+          <a href="https://wiki.caracore.com.br/projeto-minerador.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -420,7 +565,7 @@
       <article class="product-card" 
                data-title="Reino OIDC OAuth 2.1 Identidade" 
                data-category="bunker" 
-               data-platforms="linux windows" 
+               data-platforms="windows"
                data-tags="oidc oauth autenticacao identidade sso bunker seguranca">
         <div class="card-top">
           <div class="product-identity">
@@ -432,27 +577,36 @@
               <span class="version-tag">v2.0.0-RC1 · OAuth 2.1</span>
             </div>
           </div>
-          <span class="status-badge status-pilot">RC Ativo</span>
+          <span class="status-badge status-pilot">Pré-release</span>
         </div>
 
         <p class="card-desc">
-          Provedor de identidade e autenticação soberana com conformidade total aos padrões OAuth 2.1 e OpenID Connect.
+          Aplicativo educativo sobre OAuth 2.1 e OpenID Connect, distribuído para Windows.
         </p>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-fingerprint"></i> <span><strong>Padrão:</strong> OAuth 2.1 / OIDC moderno</span></div>
-          <div class="spec-line"><i class="fas fa-lock"></i> <span>Autonomia total sem intermediários externos</span></div>
+          <div class="spec-line"><i class="fas fa-lock"></i> <span>Edição de avaliação v2.0.0-RC1</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://oidc.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Acessar Reino OIDC">
-            <i class="fas fa-globe"></i> Conhecer Reino OIDC
+          <a href="https://github.com/chmulato/caracore-oidc-releases/releases/download/v2.0.0-RC1/ReinoOIDC-v2.exe" class="btn-download-primary" title="Baixar Reino OIDC para Windows">
+            <i class="fab fa-windows"></i> Baixar Windows (.EXE)
           </a>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Windows EXE)</span>
+              <span class="hash-code">63782f00dab97cf16655b1dc25f73c7f4048693fb31f095702f8b42bf41cb030</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('63782f00dab97cf16655b1dc25f73c7f4048693fb31f095702f8b42bf41cb030', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
         </div>
 
         <div class="card-links-sub">
           <a href="https://oidc.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja OIDC</a>
-          <a href="https://github.com/chmulato/caracore-oidc-releases" class="card-link-item" target="_blank" rel="noopener"><i class="fab fa-github"></i> Releases</a>
+          <a href="https://wiki.caracore.com.br/projeto-reino.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 
@@ -460,7 +614,7 @@
       <article class="product-card" 
                data-title="Circuito Ferradura Logica Educacao" 
                data-category="engenharia" 
-               data-platforms="windows linux" 
+               data-platforms="windows"
                data-tags="circuito ferradura educacao logica python computacao">
         <div class="card-top">
           <div class="product-identity">
@@ -469,10 +623,10 @@
             </div>
             <div class="product-titles">
               <h3>Circuito Ferradura</h3>
-              <span class="version-tag">Edição Ativa</span>
+              <span class="version-tag">v2.0.0 · pacote Windows</span>
             </div>
           </div>
-          <span class="status-badge status-free">Educacional</span>
+          <span class="status-badge status-free">Estável</span>
         </div>
 
         <p class="card-desc">
@@ -481,54 +635,27 @@
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-book-open"></i> <span><strong>Finalidade:</strong> Formação e Simulação</span></div>
+          <div class="spec-line"><i class="fab fa-windows"></i> <span>Executável Windows publicado na release v2.0.0</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://circuito.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Acessar Circuito Ferradura">
-            <i class="fas fa-arrow-right"></i> Visitar Circuito
+          <a href="https://github.com/chmulato/caracore-circuito-releases/releases/download/v2.0.0/CircuitoFerradura.exe" class="btn-download-primary" title="Baixar Circuito Ferradura para Windows">
+            <i class="fab fa-windows"></i> Baixar Windows (.EXE)
           </a>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 publicado (Windows EXE)</span>
+              <span class="hash-code">2b2b95f66f9154f357a20679598ac5f6311dba9c6230b9634b4c3257e6d6a28f</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('2b2b95f66f9154f357a20679598ac5f6311dba9c6230b9634b4c3257e6d6a28f', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
         </div>
 
         <div class="card-links-sub">
           <a href="https://circuito.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Vitrine Oficial</a>
-        </div>
-      </article>
-
-      <!-- 9. CARA CORE SEED (TRANSPARÊNCIA RADICAL) -->
-      <article class="product-card" 
-               data-title="Cara Core Seed Infraestrutura Interna" 
-               data-category="bunker" 
-               data-platforms="" 
-               data-tags="seed infraestrutura licenciamento telemetria interno">
-        <div class="card-top">
-          <div class="product-identity">
-            <div class="product-icon-wrap icon-generic">
-              <i class="fas fa-seedling"></i>
-            </div>
-            <div class="product-titles">
-              <h3>Cara Core Seed</h3>
-              <span class="version-tag">Uso Interno</span>
-            </div>
-          </div>
-          <span class="status-badge status-garage">Interno</span>
-        </div>
-
-        <p class="card-desc">
-          Ferramenta interna de infraestrutura, licenciamento e orquestração. Não possui oferta ou download público.
-        </p>
-
-        <div class="specs-box">
-          <div class="spec-line"><i class="fas fa-lock"></i> <span><strong>Acesso:</strong> Restrito à engenharia Cara Core</span></div>
-        </div>
-
-        <div class="card-actions">
-          <a href="https://seed.caracore.com.br" class="btn-sub-dl" style="padding: 0.75rem;" target="_blank" rel="noopener">
-            <i class="fas fa-info-circle"></i> Declaração Pública de Uso
-          </a>
-        </div>
-
-        <div class="card-links-sub">
-          <a href="https://seed.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-link"></i> seed.caracore.com.br</a>
+          <a href="https://wiki.caracore.com.br/projeto-python.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
       </article>
 

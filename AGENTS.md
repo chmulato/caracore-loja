@@ -14,7 +14,7 @@
 
 Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Cara Core Informática, sob a filosofia do **Bunker Digital**:
 - **Offline-First & Soberania de Dados:** Distribuição direta de binários com persistência local (SQLite/arquivos).
-- **Transparência Radical:** Cada produto exibe seu status honesto (Disponível Free, Piloto, Web/SaaS, Garagem ou Roadmap), suas limitações objetivas e seus checksums SHA256 oficiais.
+- **Transparência Radical:** O catálogo usa os selos Estável, Pré-release, Piloto, Em breve e Acesso online (SaaS); exibe versões e checksums SHA256 publicados. Ferramentas internas sem oferta pública ficam fora do catálogo.
 - **Branch Principal:** Sempre `master` tanto local quanto remotamente.
 
 ---
@@ -23,16 +23,16 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 
 | Produto | Canal / Versão | Status | Plataformas & Hashes | Loja do Produto |
 |---|---|---|---|---|
-| **PDV Desktop (Java)** | `v3.2.6-free` | Disponível Free (100 vendas/mês, 1 operador, UI navegador localhost:8080/login) | Windows x64 ZIP (`4b15a12d...`)<br>Linux x64 ZIP (`028e5987...`)<br>macOS x64 ZIP (`7e617aebe...`) | https://pdv.caracore.com.br |
-| **PDV (Rust)** | `v0.1.4` | Piloto Ativo (100 vendas na vida do piloto, Tauri 2 + React + SQLite) | Windows ZIP (`7d9cf698...`), NSIS, MSI | https://pdv-rust.caracore.com.br |
-| **CSO Gestão de Frotas** | Web SaaS | Em produção | Acesso direto via navegador (`https://cso.caracore.com.br/`) | https://cso-transp.caracore.com.br |
-| **CSO Transportes** | Desktop Bunker | Garagem (GA 08/11/2028) | Quarkus + JavaFX + SQLite (sem instalador público até 2028) | https://cso-transp.caracore.com.br |
-| **CaraCore Hub** | Web 2.1 | Vitrine Ativa (GA Instalador Windows SQLite: 06/04/2027) | Gestão de encomendas CD Shopee/Mercado Livre/Temu | https://hub.caracore.com.br |
-| **Ink Agenda** | `v2.0.0` | Estável Windows | Java 25 + JavaFX Bunker Offline | https://ink.caracore.com.br |
-| **Minerador ETE 4.0** | `v1.2.3` | Ouro 4.0 | Windows, Linux, macOS | https://ete.caracore.com.br |
-| **Reino OIDC** | `v2.0.0-RC1` | RC Ativo | Provedor OAuth 2.1 / OIDC | https://oidc.caracore.com.br |
-| **Circuito Ferradura** | Educacional | Ativo | Lógica e Educação | https://circuito.caracore.com.br |
-| **Cara Core Seed** | Uso Interno | Sem Download Aberto | Ferramenta interna de infra | https://seed.caracore.com.br |
+| **PDV (Java)** | `v3.2.6-free` estável; `v4.0.0-rc4` pré-release | Estável + Pré-release | Java Free: Windows/Linux/macOS ZIPs; RC4: Windows ZIP | https://pdv.caracore.com.br |
+| **PDV (Rust)** | `v0.1.4` | Piloto | Windows ZIP | https://pdv-rust.caracore.com.br |
+| **CSO Gestão de Frotas** | Web SaaS | Acesso online (SaaS) | Acesso pelo navegador; sem instalador | https://cso-transp.caracore.com.br |
+| **CSO Transportes** | Desktop Bunker | Em breve (GA planejado 08/11/2028) | Sem download público | https://cso-transp.caracore.com.br |
+| **CaraCore Hub** | Disponibilização planejada para 06/04/2027 | Em breve | Sem versão pública | https://hub.caracore.com.br |
+| **Ink Agenda** | `v2.0.0` | Estável | Windows ZIP e instalador; Java 25 + JavaFX | https://ink.caracore.com.br |
+| **Minerador ETE 4.0** | `v1.2.3` | Estável | Windows, Linux, macOS | https://ete.caracore.com.br |
+| **Reino OIDC** | `v2.0.0-RC1` | Pré-release | Windows EXE | https://oidc.caracore.com.br |
+| **Circuito Ferradura** | `v2.0.0` | Estável | Windows EXE | https://circuito.caracore.com.br |
+| **Cara Core Seed** | Uso Interno | Fora do catálogo público | Sem download aberto | https://seed.caracore.com.br |
 
 ---
 

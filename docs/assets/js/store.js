@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (resultsSummaryEl) {
-      resultsSummaryEl.textContent = `Mostrando ${visible} de ${productCards.length} soluções disponíveis`;
+      resultsSummaryEl.textContent = `Mostrando ${visible} de ${productCards.length} itens do catálogo`;
     }
 
     const noResultsEl = document.getElementById('no-results-state');

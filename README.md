@@ -12,17 +12,19 @@ Repositório da **Loja Central e Hub de Downloads do Ecossistema Cara Core Infor
 
 ## 🚀 Objetivo
 
-Centralizar em uma interface moderna, rápida e transparente todos os instaladores, pacotes binários, aplicações web e artefatos oficiais desenvolvidos pela Cara Core Informática, sob a filosofia do **Bunker Digital** (Soberania de Dados, Offline-First e Transparência Radical).
+Manter um catálogo transparente de downloads publicados, acessos online e itens em roadmap da Cara Core Informática. Cada download listado exibe sua versão, estado e SHA256 publicado; produtos sem versão pública não são apresentados como disponíveis para baixar.
 
 ## 📦 Aplicações em Destaque
 
-1. **CaraCore PDV (Java):** Edição Free `v3.2.6-free` (100 vendas/mês no balcão, SQLite local, UI no navegador).
-2. **CaraCore PDV (Rust):** Edição Piloto `v0.1.4` Windows (Tauri 2 + React + SQLite).
-3. **CaraCore CSO Frotas:** Gestão operacional e financeira de frotas (Web SaaS em produção).
-4. **CaraCore Hub:** Gestão de encomendas para pontos de coleta (Mercado Livre, Shopee, Temu) — GA Windows em 06/04/2027.
-5. **Ink Agenda Desktop:** Agenda bunker soberana com criptografia local (`v2.0.0`).
-6. **Minerador ETE 4.0:** Engenharia de efluentes e mineração de dados ambientais (`v1.2.3`).
-7. **Reino OIDC & Circuito Ferradura:** Identidade soberana e educação técnica.
+1. **CaraCore PDV (Java):** `v3.2.6-free` estável, multiplataforma; `v4.0.0-rc4` pré-release para Windows.
+2. **CaraCore PDV (Rust):** `v0.1.4` piloto Windows (ZIP).
+3. **CaraCore CSO Frotas:** Gestão de frotas com acesso online (SaaS); sem download.
+4. **CaraCore CSO Transportes:** Em breve; GA planejado para 08/11/2028; sem download público.
+5. **CaraCore Hub:** Em breve; disponibilização planejada para 06/04/2027; sem versão pública.
+6. **Ink Agenda:** `v2.0.0` estável para Windows (ZIP e instalador).
+7. **Minerador ETE 4.0:** `v1.2.3` estável para Windows, Linux e macOS.
+8. **Reino OIDC:** `v2.0.0-RC1` pré-release para Windows.
+9. **Circuito Ferradura:** `v2.0.0` estável; executável Windows listado com SHA256.
 
 ## 🛠️ Publicação no GitHub Pages
 
@@ -34,4 +36,4 @@ Centralizar em uma interface moderna, rápida e transparente todos os instalador
 
 ## 🔒 Verificação de Integridade
 
-Cada binário publicado inclui seu respectivo hash SHA256 para verificação imediata de autenticidade no terminal (PowerShell ou Bash).
+Os downloads listados exibem os SHA256 publicados nas respectivas releases para conferência no terminal (PowerShell ou Bash).
