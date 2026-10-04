@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Central de Downloads | Cara Core Informática</title>
-  <meta name="description" content="Central oficial de downloads das aplicações do ecossistema Cara Core Informática. Binários auditáveis, offline-first e soberania de dados.">
+  <meta name="description" content="Central oficial de produtos e downloads da Cara Core Informática, com versões, plataformas e SHA256 publicados em cada release.">
   <meta name="author" content="Cara Core Informática">
   <link rel="canonical" href="https://download.caracore.com.br/download.html">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Central de Downloads | Cara Core Informática">
-  <meta property="og:description" content="Baixe os instaladores e binários oficiais do ecossistema: PDV Java Free, PDV Rust, CSO Frotas, Hub, Ink Agenda e Minerador ETE.">
+  <meta property="og:description" content="Acesse os produtos e downloads disponíveis da Cara Core. Aplicações web e itens de roadmap são identificados como tais.">
   <meta property="og:url" content="https://download.caracore.com.br/download.html">
   <meta property="og:type" content="website">
   
@@ -63,7 +63,7 @@
         Aplicações soberanas com <span class="gradient-text">código transparente</span> e offline-first.
       </h2>
       <p class="hero-desc">
-        Baixe diretamente instaladores para Windows, Linux e macOS com checksums SHA256 verificáveis. Seus dados no seu ambiente, sem dependência forçada da nuvem.
+        Acesse os produtos e downloads disponíveis. Cada página informa os pacotes liberados, as plataformas compatíveis e o SHA256 publicado em cada release. Aplicações Web e itens de roadmap aparecem identificados.
       </p>
     </section>
 
@@ -95,8 +95,8 @@
 
     <!-- RESULTS SUMMARY -->
     <div class="results-meta">
-      <span>Mostrando <strong id="visible-count">0</strong> de <strong id="total-count">0</strong> soluções disponíveis</span>
-      <span><i class="fas fa-check-double text-emerald-400"></i> Hashes SHA256 auditados</span>
+      <span id="results-summary" aria-live="polite">Catálogo de soluções Cara Core</span>
+      <span><i class="fas fa-fingerprint text-emerald-400"></i> SHA256 publicado em cada release</span>
     </div>
 
     <!-- PRODUCTS CATALOG -->
@@ -107,7 +107,7 @@
                data-title="CaraCore PDV Java Caixa Balcão" 
                data-category="pdv" 
                data-platforms="windows linux macos" 
-               data-tags="pdv java caixa balcao vendas sqlite free cupom fiscal">
+               data-tags="pdv java caixa balcao vendas sqlite free app web local recibo digital">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-pdv-java">
@@ -122,13 +122,14 @@
         </div>
 
         <p class="card-desc">
-          Frente de caixa desktop offline-first para varejo e balcão. Persistência local em SQLite e operação pelo navegador local.
+          Aplicação web local de frente de caixa para varejo e balcão. Opera pelo navegador, com persistência local em SQLite.
         </p>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-check"></i> <span><strong>Plano Free:</strong> 100 vendas/mês · 100 produtos</span></div>
           <div class="spec-line"><i class="fas fa-user"></i> <span>1 Operador · 4 Vendedores · 1 Loja</span></div>
           <div class="spec-line"><i class="fas fa-desktop"></i> <span>UI no navegador em <code>http://localhost:8080/login</code></span></div>
+          <div class="spec-line"><i class="fas fa-receipt"></i> <span>Recibo digital por link e PDF, sem valor fiscal</span></div>
         </div>
 
         <div class="card-actions">
@@ -148,12 +149,40 @@
           <div class="checksum-box">
             <div>
               <span class="hash-label">SHA256 (Windows)</span>
-              <span class="hash-code">4b15a12dbe9b525bdb31be59aff5c226...</span>
+              <span class="hash-code">4b15a12dbe9b525bdb31be59aff5c226f32cbb40f766eca752744996fda634d9</span>
             </div>
             <button class="btn-copy-hash" onclick="copyHash('4b15a12dbe9b525bdb31be59aff5c226f32cbb40f766eca752744996fda634d9', this)" title="Copiar SHA256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (Linux x64)</span>
+              <span class="hash-code">028e5987d35650fd0b2f5f4b2146033e92707b413c0cc8242d05df27e1a26e72</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('028e5987d35650fd0b2f5f4b2146033e92707b413c0cc8242d05df27e1a26e72', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (macOS x64)</span>
+              <span class="hash-code">7e617aebe895d87ffe0446643751886263f29cbab7422a9e2ac3bcdd0aa5deff</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('7e617aebe895d87ffe0446643751886263f29cbab7422a9e2ac3bcdd0aa5deff', this)" title="Copiar SHA256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">Pré-release v4.0.0-rc4 · SHA256 (Windows x64)</span>
+              <span class="hash-code">31a0cdeda68dce058079c5d0d3d5652084ba8a8cc073dfce60e021c4b3c1fdf2</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('31a0cdeda68dce058079c5d0d3d5652084ba8a8cc073dfce60e021c4b3c1fdf2', this)" title="Copiar SHA256 completo da RC4">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <p class="text-sm text-amber-400">Preview para teste; não é a versão estável. <a href="https://pdv.caracore.com.br/download.html#pre-release-v4" class="underline" target="_blank" rel="noopener">Detalhes da RC4 na loja do PDV</a>.</p>
         </div>
 
         <div class="card-links-sub">
@@ -205,7 +234,7 @@
           <div class="checksum-box">
             <div>
               <span class="hash-label">SHA256 (Windows ZIP)</span>
-              <span class="hash-code">7d9cf69879eef8e12fd4972fcc3aaa5dc...</span>
+              <span class="hash-code">7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37</span>
             </div>
             <button class="btn-copy-hash" onclick="copyHash('7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37', this)" title="Copiar SHA256 completo">
               <i class="fas fa-copy"></i>
@@ -239,13 +268,13 @@
         </div>
 
         <p class="card-desc">
-          Plataforma de gestão operacional, financeira e de conformidade de frotas. Custos por km, controle de manutenções e pneus.
+          Plataforma Web para gestão operacional, financeira e de conformidade de frotas.
         </p>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-cloud"></i> <span><strong>Ambiente:</strong> Web na Nuvem Soberana</span></div>
           <div class="spec-line"><i class="fas fa-info-circle"></i> <span>Gestão operacional (não é rastreador GPS)</span></div>
-          <div class="spec-line"><i class="fas fa-desktop"></i> <span>Transportes Bunker Desktop previsto para 08/11/2028</span></div>
+          <div class="spec-line"><i class="fas fa-calendar"></i> <span>Roadmap separado: CSO Transportes Desktop previsto para 08/11/2028; não é download desta aplicação Web</span></div>
         </div>
 
         <div class="card-actions">

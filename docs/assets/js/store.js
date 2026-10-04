@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const chipButtons = document.querySelectorAll('.chip-btn');
   const osFilterSelect = document.getElementById('os-filter');
   const productCards = document.querySelectorAll('.product-card');
-  const visibleCountEl = document.getElementById('visible-count');
-  const totalCountEl = document.getElementById('total-count');
+  const resultsSummaryEl = document.getElementById('results-summary');
   const themeToggleBtn = document.getElementById('theme-toggle');
   const toastEl = document.getElementById('toast-msg');
   const integrityModal = document.getElementById('integrity-modal');
@@ -20,9 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentCategory = 'all';
   let currentOS = 'all';
   let searchQuery = '';
-
-  // Initial count
-  if (totalCountEl) totalCountEl.textContent = productCards.length;
 
   // Filter function
   function filterCards() {
@@ -52,7 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    if (visibleCountEl) visibleCountEl.textContent = visible;
+    if (resultsSummaryEl) {
+      resultsSummaryEl.textContent = `Mostrando ${visible} de ${productCards.length} soluções disponíveis`;
+    }
 
     const noResultsEl = document.getElementById('no-results-state');
     if (noResultsEl) {
