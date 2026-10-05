@@ -372,10 +372,10 @@
 
       <!-- 4. CARACORE HUB -->
       <article class="product-card" 
-               data-title="CaraCore Hub Encomendas Centros de Distribuição" 
+               data-title="CaraCore Hub Encomendas Centros de Distribuição v2.1.0-rc1" 
                data-category="frota" 
-               data-platforms="roadmap"
-               data-tags="hub encomendas shopee mercado livre temu logistica cd rastreio pacotes">
+               data-platforms="windows"
+               data-tags="hub encomendas shopee mercado livre temu logistica cd pacotes rc1 windows pre-release nsis">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-hub">
@@ -383,28 +383,42 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore Hub</h3>
-              <span class="version-tag">GA planejado · 06/04/2027</span>
+              <span class="version-tag">v2.1.0-rc1 · Windows x64 · sem assinatura</span>
             </div>
           </div>
-          <span class="status-badge status-garage">Em breve</span>
+          <span class="status-badge status-pilot">Pré-release</span>
         </div>
 
         <p class="card-desc">
-          Gestão de fluxo de encomendas e pacotes para centros de triagem e pontos de coleta (Mercado Livre, Shopee e Temu).
+          Candidata Free desktop para avaliação controlada: encomendas, estoque, etiquetas, inventário e retirada em centros de distribuição. Não é o GA planejado para 06/04/2027 e não está homologada para produção.
         </p>
 
         <div class="specs-box">
-          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>Disponibilização planejada para <strong>06/04/2027</strong>; ainda sem versão pública.</span></div>
-          <div class="spec-line"><i class="fas fa-cube"></i> <span>Canais: Mercado Livre, Shopee e Temu</span></div>
+          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Instalador NSIS sem assinatura. Não desative SmartScreen, Defender ou antivírus.</span></div>
+          <div class="spec-line"><i class="fas fa-desktop"></i> <span>Electron, Tomcat embutido e SQLite em modo WAL. PostgreSQL e Redis não são necessários nesta edição.</span></div>
+          <div class="spec-line"><i class="fas fa-cube"></i> <span>Canais: Mercado Livre, Shopee e Temu. As integrações precisam de internet e das credenciais do canal.</span></div>
+          <div class="spec-line"><i class="fab fa-windows"></i> <span>Só Windows x64. Mac e Linux não entram nesta versão.</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>GA do instalador planejado para <strong>06/04/2027</strong>.</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://hub.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Ver informações do Hub">
-            <i class="fas fa-globe"></i> Ver produto
+          <a href="https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1/CaraCore.Hub-2.1.0-rc1-win-x64.exe" class="btn-download-primary" title="Baixar a pré-release do CaraCore Hub para Windows">
+            <i class="fab fa-windows"></i> Baixar pré-release Windows x64 (.EXE)
           </a>
+
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA256 (CaraCore.Hub-2.1.0-rc1-win-x64.exe)</span>
+              <span class="hash-code">f59b959d34c97f5048ebf2cfaadeb42a7e5b7d84597b15db00d790779def29ae</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('f59b959d34c97f5048ebf2cfaadeb42a7e5b7d84597b15db00d790779def29ae', this)" title="Copiar SHA256 completo da RC1">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
         </div>
 
         <div class="card-links-sub">
+          <a href="https://github.com/chmulato/caracore-hub-releases/releases/tag/v2.1.0-rc1" class="card-link-item" target="_blank" rel="noopener"><i class="fab fa-github"></i> Release no GitHub</a>
           <a href="https://hub.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do Hub</a>
           <a href="https://wiki.caracore.com.br/projeto-hub.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>

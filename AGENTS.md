@@ -27,7 +27,7 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 | **PDV (Rust)** | `v0.1.4` | Piloto | Windows ZIP | https://pdv-rust.caracore.com.br |
 | **CSO Gestão de Frotas** | Web SaaS | Acesso online (SaaS) | Acesso pelo navegador; sem instalador | https://cso-transp.caracore.com.br |
 | **CSO Transportes** | Desktop Bunker | Em breve (GA planejado 08/11/2028) | Sem download público | https://cso-transp.caracore.com.br |
-| **CaraCore Hub** | Disponibilização planejada para 06/04/2027 | Em breve | Sem versão pública | https://hub.caracore.com.br |
+| **CaraCore Hub** | `v2.1.0-rc1` pré-release; GA planejado para 06/04/2027 | Pré-release | Windows x64 NSIS sem assinatura; SHA256 publicado | https://hub.caracore.com.br |
 | **Ink Agenda** | `v2.0.0` | Estável | Windows ZIP e instalador; Java 25 + JavaFX | https://ink.caracore.com.br |
 | **Minerador ETE 4.0** | `v1.2.3` | Estável | Windows, Linux, macOS | https://ete.caracore.com.br |
 | **Reino OIDC** | `v2.0.0-RC1` | Pré-release | Windows EXE | https://oidc.caracore.com.br |
