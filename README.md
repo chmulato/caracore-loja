@@ -16,7 +16,7 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 
 ## 📦 Aplicações em Destaque
 
-1. **CaraCore PDV (Java):** `v3.2.6-free` estável, multiplataforma; `v4.0.0-rc4` pré-release para Windows.
+1. **CaraCore PDV (Java):** `v3.2.7-free` estável, multiplataforma; `v4.0.0-rc5` pré-release para Windows.
 2. **CaraCore PDV (Rust):** `v0.1.4` piloto Windows (ZIP).
 3. **CaraCore CSO Frotas:** Gestão de frotas com acesso online (SaaS); sem download.
 4. **CaraCore CSO Transportes:** Em breve; GA planejado para 08/11/2028; sem download público.
