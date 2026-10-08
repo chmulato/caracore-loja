@@ -27,7 +27,7 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 | **PDV (Rust)** | `v0.1.4` | Piloto | Windows ZIP | https://pdv-rust.caracore.com.br |
 | **CSO Gestão de Frotas** | Web SaaS | Acesso online (SaaS) | Acesso pelo navegador; sem instalador | https://cso-transp.caracore.com.br |
 | **CSO Transportes** | Desktop Bunker | Em breve (GA planejado 08/11/2028) | Sem download público | https://cso-transp.caracore.com.br |
-| **CaraCore Hub** | `v2.1.0-rc1.1` pré-release; GA planejado para 06/04/2027 | Pré-release | Windows x64: instalador NSIS e ZIP, sem assinatura; SHA256 publicado | https://hub.caracore.com.br |
+| **CaraCore Hub** | `v2.1.0-rc1.2` pré-release; GA planejado para 06/04/2027 | Pré-release | Windows x64: instalador NSIS e ZIP, sem assinatura; SHA256 publicado | https://hub.caracore.com.br |
 | **Ink Agenda** | `v2.0.1` (07/10/2026; v2.0.0 no histórico) | Estável | Windows ZIP e instalador; Java 25 + JavaFX; SHA256 ZIP `3118eac8…4ff3` · setup `49bdd76a…0a6b`. Desktop com suporte até a 3.0 em PWA (não antes de 2028; sem card de download até o GA) | https://ink.caracore.com.br |
 | **Minerador ETE 4.0** | `v1.2.3` | Estável | Windows, Linux, macOS | https://ete.caracore.com.br |
 | **Reino OIDC** | `v2.0.0` Free (GA) | Estável | Windows EXE · SHA256 `af0a5bd3bf4f8f6586de6e32a29b7ba750985788e8cca768f87ecf74fd59952d` · três Eras e progressão gratuitas para estudo pessoal; módulo pago opcional limitado a decks adicionais de Mineração de Chaves, por R$ 29,90 (pagamento único), sem certificação, consultoria ou suporte técnico | https://oidc.caracore.com.br |

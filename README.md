@@ -20,7 +20,7 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 2. **CaraCore PDV (Rust):** `v0.1.4` piloto Windows (ZIP).
 3. **CaraCore CSO Frotas:** Gestão de frotas com acesso online (SaaS); sem download.
 4. **CaraCore CSO Transportes:** Em breve; GA planejado para 08/11/2028; sem download público.
-5. **CaraCore Hub:** `v2.1.0-rc1.1` pré-release Windows x64, instalador NSIS e ZIP, sem assinatura; GA planejado para 06/04/2027.
+5. **CaraCore Hub:** `v2.1.0-rc1.2` pré-release Windows x64, instalador NSIS e ZIP, sem assinatura; GA planejado para 06/04/2027.
 6. **Ink Agenda:** `v2.0.1` estável para Windows (ZIP e instalador).
 7. **Minerador ETE 4.0:** `v1.2.3` estável para Windows, Linux e macOS.
 8. **Reino OIDC:** `v2.0.0` Free estável (GA) para Windows. As três Eras e a progressão narrativa são gratuitas para estudo pessoal; o módulo pago opcional, R$ 29,90 em pagamento único, inclui apenas decks adicionais de Mineração de Chaves, sem certificação, consultoria ou suporte técnico.
