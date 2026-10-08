@@ -23,8 +23,8 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 5. **CaraCore Hub:** `v2.1.0-rc1.2` pré-release Windows x64, instalador NSIS e ZIP, sem assinatura; GA planejado para 06/04/2027.
 6. **Ink Agenda:** `v2.0.1` estável para Windows (ZIP e instalador).
 7. **Minerador ETE 4.0:** `v1.2.3` estável para Windows, Linux e macOS.
-8. **Reino OIDC:** `v2.0.1-free` para Windows. As três Eras são gratuitas para estudo pessoal, sem chave de ativação e sem certificado digital. A edição paga será entregue depois; o PIX é combinado pelo WhatsApp ou pelo Telegram. Sem certificação, consultoria ou suporte técnico. `v2.0.0` fica no histórico.
-9. **Circuito Ferradura:** `v2.0.0` estável; executável Windows listado com SHA256.
+8. **Reino OIDC:** `v2.0.1-free` para Windows. As três Eras são gratuitas para estudo pessoal, sem chave de ativação e sem certificado digital. A edição paga está em desenvolvimento; a loja não combina PIX nesta etapa. Dúvidas e relatos são bem-vindos, sem SLA. Sem certificação nem consultoria. A página de download oferece só `v2.0.1-free`. `v2.0.0` fica no histórico.
+9. **Circuito Ferradura:** `v2.0.23` na loja e na release. Executável Windows sem assinatura digital; pacotes Windows, macOS e HTML offline. SHA256 do EXE `12df7a9d7d0984f78612b710418d0c76686796e011748001278a399d2ce9e68d`. `v2.0.0` fica no histórico.
 
 ## 🛠️ Publicação no GitHub Pages
 
