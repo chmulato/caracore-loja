@@ -23,7 +23,7 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 5. **CaraCore Hub:** `v2.1.0-rc1.1` pré-release Windows x64, instalador NSIS e ZIP, sem assinatura; GA planejado para 06/04/2027.
 6. **Ink Agenda:** `v2.0.1` estável para Windows (ZIP e instalador).
 7. **Minerador ETE 4.0:** `v1.2.3` estável para Windows, Linux e macOS.
-8. **Reino OIDC:** `v2.0.0-RC1` pré-release para Windows.
+8. **Reino OIDC:** `v2.0.0` Free estável (GA) para Windows. As três Eras e a progressão narrativa são gratuitas para estudo pessoal; o módulo pago opcional, R$ 29,90 em pagamento único, inclui apenas decks adicionais de Mineração de Chaves, sem certificação, consultoria ou suporte técnico.
 9. **Circuito Ferradura:** `v2.0.0` estável; executável Windows listado com SHA256.
 
 ## 🛠️ Publicação no GitHub Pages
