@@ -42,4 +42,4 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 - **Compatibilidade GitHub Pages:** Suporte tanto para publicação na raiz (`/`) quanto em (`/docs`).
 - **CNAME:** `download.caracore.com.br` no arquivo `CNAME` e `docs/CNAME`.
 - **Integridade:** Não inventar versões, integrações PIX no Free Java ou depoimentos fictícios.
-- **Hub:** o cartão vigente é a pré-release Windows `v2.1.0-rc1.2`. A release seguinte entra com outra tag e os SHA-256 dessa tag, no mesmo corte da loja `hub.caracore.com.br` e da matriz.
+- **Hub:** o cartão vigente é a pré-release Windows `v2.1.0-rc1.2`. O banco do produto é SQLite local (WAL). A release seguinte entra com outra tag e os SHA-256 dessa tag, no mesmo corte da loja `hub.caracore.com.br` e da matriz.
