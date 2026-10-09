@@ -23,7 +23,7 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 
 | Produto | Canal / Versão | Status | Plataformas & Hashes | Loja do Produto |
 |---|---|---|---|---|
-| **PDV (Java)** | `v3.2.7-free` estável; download da pré-release `v4.0.0-rc5`; candidato de oficina `v4.0.0-rc6` ainda sem arquivo | Estável + Pré-release | Java Free: Windows/Linux/macOS ZIPs; RC5: Windows ZIP | https://pdv.caracore.com.br |
+| **PDV (Java)** | `v3.2.7-free` estável; pré-release publicada `v4.0.0-rc5`; `v4.0.0-rc6` em preparação, sem arquivo e sem SHA | Estável + Pré-release | Java Free: Windows/Linux/macOS ZIPs; RC5: Windows ZIP | https://pdv.caracore.com.br |
 | **PDV (Rust)** | `v0.1.4` | Piloto | Windows ZIP | https://pdv-rust.caracore.com.br |
 | **CSO Gestão de Frotas** | Web SaaS | Acesso online (SaaS) | Acesso pelo navegador; sem instalador | https://cso-transp.caracore.com.br |
 | **CSO Transportes** | Desktop Bunker | Em breve (GA planejado 08/11/2028) | Sem download público | https://cso-transp.caracore.com.br |
