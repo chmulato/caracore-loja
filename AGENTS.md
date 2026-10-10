@@ -4,7 +4,9 @@
 > **Workspace Raiz Local:** `D:\onedrive\dev\caracore-loja`  
 > **Repositório Remoto:** `https://github.com/chmulato/caracore-loja.git` (branch principal: `master`)  
 > **Subdomínio Oficial:** `https://download.caracore.com.br`  
-> **Página Principal da Loja:** `download.html` (e `docs/download.html`)  
+> **Página executiva:** `docs/index.html` (entrada da central)  
+> **Catálogo técnico:** `download.html` (e `docs/download.html`)  
+> **Mapa e roadmap:** `docs/mapa.html` e `docs/roadmap.html`  
 > **CNPJ:** 23.969.028/0001-37 — Cara Core Informática  
 > **Regra Mestre:** Seguir sempre o `AGENTS.md` global do ecossistema em `D:\onedrive\dev\AGENTS.md`.
 
@@ -38,7 +40,9 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 
 ## 3. Diretrizes Técnicas
 
-- **Página de Entrada:** `download.html` (com espelhamento em `docs/download.html`).
+- **Página de Entrada:** `docs/index.html` apresenta o ecossistema para quem decide. `download.html` permanece o catálogo técnico, com maturidade, caso de uso, versão e SHA256 antes do arquivo.
+- **Mapa:** `docs/mapa.html` organiza a casa por problema de negócio. Cada produto tem acesso e banco próprios.
+- **Roadmap:** `docs/roadmap.html` usa as datas públicas da casa. Sem arquivo para o que ainda não tem release.
 - **Compatibilidade GitHub Pages:** Suporte tanto para publicação na raiz (`/`) quanto em (`/docs`).
 - **CNAME:** `download.caracore.com.br` no arquivo `CNAME` e `docs/CNAME`.
 - **Integridade:** Não inventar versões, integrações PIX no Free Java ou depoimentos fictícios.

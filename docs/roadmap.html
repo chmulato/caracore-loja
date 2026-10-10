@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap | Cara Core</title>
+  <meta name="description" content="Roadmap público da Cara Core: o que já opera, a pré-release do PDV v4, o Hub em 2027, Transportes em 2028 e Helianto em 2029.">
+  <link rel="canonical" href="https://download.caracore.com.br/roadmap.html">
+  <meta property="og:title" content="Roadmap | Cara Core">
+  <meta property="og:description" content="Datas públicas da casa: PDV v4 em 08/11/2026, Hub em 06/04/2027, CSO Transportes em 08/11/2028.">
+  <meta property="og:url" content="https://download.caracore.com.br/roadmap.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/store.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrap">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="brand-info">
+            <h1>Cara Core <span class="badge-tag">Downloads</span></h1>
+            <p>Engenharia B2B & Bunker Digital</p>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-item"><i class="fas fa-briefcase"></i> <span class="nav-text">Negócio</span></a>
+          <a href="download.html" class="nav-item"><i class="fas fa-download"></i> <span class="nav-text">Catálogo</span></a>
+          <a href="mapa.html" class="nav-item"><i class="fas fa-diagram-project"></i> <span class="nav-text">Mapa</span></a>
+          <a href="roadmap.html" class="nav-item active"><i class="fas fa-road"></i> <span class="nav-text">Roadmap</span></a>
+          <a href="https://www.caracore.com.br" class="nav-item"><i class="fas fa-building"></i> <span class="nav-text">Matriz</span></a>
+          <a href="https://wiki.caracore.com.br" class="nav-item"><i class="fas fa-book"></i> <span class="nav-text">Wiki</span></a>
+          <a href="download.html#ajuda-integridade" class="nav-item"><i class="fas fa-fingerprint"></i> <span class="nav-text">SHA256</span></a>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"><i class="fas fa-sun"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="flex: 1;">
+    <section class="page-hero">
+      <p class="sovereignty-kicker">Roadmap público</p>
+      <h2>O que já opera e o que tem data.</h2>
+      <p class="lead">
+        A headline de 08/11/2026 é o PDV v4, condicionada ao roteiro T032.
+        O que está em produção permanece no ar. O que ainda não tem arquivo permanece sem botão de download.
+      </p>
+    </section>
+
+    <section class="section-block">
+      <div class="roadmap-grid">
+        <article class="roadmap-era">
+          <p class="era-label"><i class="maturity-dot dot-estavel"></i> Em operação</p>
+          <h3>Já publicado</h3>
+          <ul>
+            <li>PDV Java Free <a href="download.html#pdv-java">v3.2.7-free</a></li>
+            <li>CSO Frotas no ar desde 06/10/2026</li>
+            <li>Ink Agenda <a href="download.html#ink">v2.0.1</a></li>
+            <li>Reino OIDC <a href="download.html#oidc">v2.0.2-free</a>, estudo pessoal</li>
+            <li>Circuito Ferradura <a href="download.html#circuito">v2.0.24</a></li>
+            <li>Minerador ETE <a href="download.html#ete">v1.2.3</a></li>
+          </ul>
+        </article>
+
+        <article class="roadmap-era">
+          <p class="era-label"><i class="maturity-dot dot-preview"></i> Até 08/11/2026</p>
+          <h3>Frente atual</h3>
+          <ul>
+            <li>PDV Java v4: GA público em 08/11/2026, condicionado ao T032. A pré-release atual é a <a href="download.html#pdv-v4">v4.0.0-rc6</a>.</li>
+            <li>CSO Frotas: freeze em 08/11/2026 do que já está publicado, sem jornada, app offline nem GPS.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-era">
+          <p class="era-label"><i class="maturity-dot dot-piloto"></i> Piloto em aberto</p>
+          <h3>Linha Rust</h3>
+          <ul>
+            <li><a href="download.html#pdv-rust">PDV Rust v0.1.4</a> segue piloto Windows.</li>
+            <li>Convive com o PDV Java. O teto é de 100 vendas na vida do piloto.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-era">
+          <p class="era-label"><i class="maturity-dot dot-preview"></i> 2027</p>
+          <h3>Hub e garagem</h3>
+          <ul>
+            <li>Hub: GA do instalador Windows em <strong>06/04/2027</strong>. A oferta atual é a pré-release <a href="download.html#hub">v2.1.0-rc1.2</a>.</li>
+            <li>RU Soberano: garagem, marco 18/06/2027, sem download nesta central.</li>
+            <li>PIX Split do PDV: trilha de negócio em papel para 2027. O Free publicado segue sem PIX integrado.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-era">
+          <p class="era-label"><i class="maturity-dot dot-plan"></i> 2028</p>
+          <h3>Transportes e Ink</h3>
+          <ul>
+            <li><a href="download.html#cso-transportes">CSO Transportes</a>: desktop, GA planejado para <strong>08/11/2028</strong>.</li>
+            <li>Ink Agenda 3.0 em PWA: não antes de 2028. Até lá o Desktop v2.0.1 permanece a versão publicada.</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-era">
+          <p class="era-label"><i class="maturity-dot dot-plan"></i> 2029</p>
+          <h3>Helianto</h3>
+          <ul>
+            <li>Helianto Condominium: vitrine no ar, GA planejado para <strong>30/12/2029</strong>.</li>
+            <li>Sem arquivo nesta central.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="cta-row">
+        <a class="btn-download-primary" href="download.html" style="width: auto;">Ver o que dá para baixar agora</a>
+        <a class="btn-ghost" href="mapa.html">Voltar ao mapa</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 Cara Core Informática. CNPJ 23.969.028/0001-37.</div>
+        <div>
+          <a href="index.html">Negócio</a> ·
+          <a href="mapa.html">Mapa</a> ·
+          <a href="roadmap.html" style="color: var(--emerald-400);">Roadmap</a> ·
+          <a href="download.html">Catálogo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/store.js"></script>
+</body>
+</html>

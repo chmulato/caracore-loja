@@ -3,7 +3,9 @@
 Repositório da **Loja Central e Hub de Downloads do Ecossistema Cara Core Informática**.
 
 - **URL Oficial:** [https://download.caracore.com.br](https://download.caracore.com.br)
-- **Página Principal:** `download.html` (com `index.html` para redirecionamento canônico)
+- **Página executiva:** `docs/index.html`
+- **Catálogo técnico:** `download.html`
+- **Mapa e roadmap:** `docs/mapa.html` e `docs/roadmap.html`
 - **Repositório Git:** `https://github.com/chmulato/caracore-loja.git`
 - **Branch Principal:** `master` (local e remoto)
 - **CNPJ:** 23.969.028/0001-37 — Cara Core Informática

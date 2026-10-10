@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Central de Downloads | Cara Core Informática</title>
-  <meta name="description" content="Central oficial de produtos e downloads da Cara Core Informática, com versões, plataformas e SHA256 publicados em cada release.">
+  <title>Catálogo técnico | Central de Downloads Cara Core</title>
+  <meta name="description" content="Catálogo técnico da Cara Core: caixa, encomendas, frota e agenda, com maturidade, versão, plataforma e SHA256 de cada arquivo publicado.">
   <meta name="author" content="Cara Core Informática">
   <link rel="canonical" href="https://download.caracore.com.br/download.html">
   
@@ -29,7 +29,7 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav-wrap">
-        <a href="https://www.caracore.com.br" class="brand-logo" title="Ir para o Portal Institucional Cara Core">
+        <a href="index.html" class="brand-logo" title="Página executiva da central">
           <div class="brand-icon">
             <i class="fas fa-shield-halved"></i>
           </div>
@@ -40,9 +40,13 @@
         </a>
 
         <div class="nav-links">
+          <a href="index.html" class="nav-item"><i class="fas fa-briefcase"></i> <span class="nav-text">Negócio</span></a>
+          <a href="download.html" class="nav-item active"><i class="fas fa-download"></i> <span class="nav-text">Catálogo</span></a>
+          <a href="mapa.html" class="nav-item"><i class="fas fa-diagram-project"></i> <span class="nav-text">Mapa</span></a>
+          <a href="roadmap.html" class="nav-item"><i class="fas fa-road"></i> <span class="nav-text">Roadmap</span></a>
           <a href="https://www.caracore.com.br" class="nav-item"><i class="fas fa-building"></i> <span class="nav-text">Matriz</span></a>
-          <a href="https://wiki.caracore.com.br" class="nav-item"><i class="fas fa-book"></i> <span class="nav-text">Wiki do Portal</span></a>
-          <a href="#ajuda-integridade" id="open-integrity-modal" class="nav-item"><i class="fas fa-fingerprint"></i> <span class="nav-text">Verificar SHA256</span></a>
+          <a href="https://wiki.caracore.com.br" class="nav-item"><i class="fas fa-book"></i> <span class="nav-text">Wiki</span></a>
+          <a href="#ajuda-integridade" id="open-integrity-modal" class="nav-item"><i class="fas fa-fingerprint"></i> <span class="nav-text">SHA256</span></a>
           <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema escuro/claro">
             <i class="fas fa-sun"></i>
           </button>
@@ -54,16 +58,30 @@
   <!-- MAIN CONTENT -->
   <main class="container" style="flex: 1;">
     
+    <section class="sovereignty-banner" aria-label="Diferencial da casa">
+      <p class="sovereignty-kicker">Diferencial da casa</p>
+      <h2>Soberania de dados e operação offline-first</h2>
+      <p>
+        Caixa, agenda e os pacotes desktop guardam o banco no computador do cliente.
+        O CSO Frotas é acesso online. Os canais do Hub precisam de internet.
+        Cada produto tem o próprio acesso.
+      </p>
+      <div class="banner-links">
+        <a class="btn-download-primary" href="index.html" style="width: auto;"><i class="fas fa-briefcase"></i> Página executiva</a>
+        <a class="btn-ghost" href="mapa.html"><i class="fas fa-diagram-project"></i> Mapa do ecossistema</a>
+      </div>
+    </section>
+
     <!-- HERO -->
-    <section class="hero-section">
+    <section class="hero-section hero-compact">
       <div class="hero-pill">
-        <i class="fas fa-cube"></i> Repositório Central de Binários & Artefatos Oficiais
+        <i class="fas fa-cube"></i> Catálogo técnico · versão, status e SHA256
       </div>
       <h2 class="hero-title">
-        Produtos Cara Core com <span class="gradient-text">status e versões transparentes</span>.
+        O valor do produto primeiro. <span class="gradient-text">O arquivo depois.</span>
       </h2>
       <p class="hero-desc">
-        Baixe versões publicadas com SHA256 para conferir. Produtos web e em roadmap aparecem identificados como acesso online ou “em breve”.
+        Cada card mostra para quem serve, o papel da tela, os requisitos, a versão e o SHA256 publicado. O download fica no fim do card.
       </p>
     </section>
 
@@ -91,6 +109,14 @@
           <option value="web">Web / SaaS</option>
         </select>
       </div>
+
+      <div class="maturity-row" aria-label="Filtrar por maturidade">
+        <button type="button" class="maturity-btn active" data-maturity="all">Todas as maturidades</button>
+        <button type="button" class="maturity-btn" data-maturity="estavel"><i class="maturity-dot dot-estavel"></i> Produção estável</button>
+        <button type="button" class="maturity-btn" data-maturity="piloto"><i class="maturity-dot dot-piloto"></i> Piloto controlado</button>
+        <button type="button" class="maturity-btn" data-maturity="preview"><i class="maturity-dot dot-preview"></i> Preview tecnológico</button>
+        <button type="button" class="maturity-btn" data-maturity="planejamento"><i class="maturity-dot dot-plan"></i> Planejamento</button>
+      </div>
     </section>
 
     <!-- RESULTS SUMMARY -->
@@ -106,11 +132,12 @@
     <section class="products-grid" id="products-catalog">
 
       <!-- 1. PDV JAVA FREE -->
-      <article class="product-card" 
+      <article class="product-card" id="pdv-java" 
                data-title="CaraCore PDV Java Caixa Balcão" 
                data-category="pdv" 
                data-platforms="windows linux macos" 
-               data-tags="pdv java caixa balcao vendas sqlite free app web local recibo digital">
+               data-maturity="estavel"
+               data-tags="pdv java caixa balcao vendas sqlite free app web local recibo digital varejo offline">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-pdv-java">
@@ -125,8 +152,30 @@
         </div>
 
         <p class="card-desc">
-          Aplicação web local de frente de caixa para varejo e balcão. Opera pelo navegador, com persistência local em SQLite.
+          Frente de caixa para varejo e balcão. A venda acontece no navegador do próprio computador, com o banco SQLite local.
         </p>
+        <ul class="use-case">
+          <li>Balcão e pequeno varejo</li>
+          <li>Operação no computador da loja</li>
+          <li>100 vendas por mês no Free</li>
+          <li>Recibo digital sem valor fiscal</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Frente de caixa</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-line">Busca ou código</div>
+            <div class="schema-total">Total da venda</div>
+            <div class="schema-pills"><span>Dinheiro</span><span>Débito</span><span>Crédito</span></div>
+          </div>
+          <figcaption>Esquema do papel do produto. A tela publicada está na <a href="https://pdv.caracore.com.br" target="_blank" rel="noopener">loja do PDV</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v3.2.7-free</dd></div>
+          <div><dt>Atualização</dt><dd>07/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Linguagem</dt><dd>Java 25</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows, Linux, macOS</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-check"></i> <span><strong>Plano Free:</strong> 100 vendas/mês · 100 produtos</span></div>
@@ -186,11 +235,12 @@
       </article>
 
       <!-- PDV JAVA V4 PRÉ-RELEASE -->
-      <article class="product-card"
+      <article class="product-card" id="pdv-v4"
                data-title="CaraCore PDV Java v4.0.0-rc6 pré-release"
                data-category="pdv"
                data-platforms="windows"
-               data-tags="pdv java qute rc6 preview pre-release teste">
+               data-maturity="preview"
+               data-tags="pdv java qute rc6 preview pre-release teste windows">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-pdv-java">
@@ -205,8 +255,30 @@
         </div>
 
         <p class="card-desc">
-          Pré-release pública da edição Free para avaliação no Windows. Não é a versão estável.
+          Pré-release pública da edição Free para avaliação no Windows. A versão estável para adoção é a v3.2.7-free.
         </p>
+        <ul class="use-case">
+          <li>Avaliação da linha v4</li>
+          <li>Até 100 vendas finalizadas no mês</li>
+          <li>Windows x64 com Edge</li>
+          <li>Banco em ./data no pacote</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Pré-release v4</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-line">Launcher Edge · modo aplicativo</div>
+            <div class="schema-total">Caixa Qute</div>
+            <div class="schema-pills"><span>Windows</span><span>Java 25</span><span>Python 3</span></div>
+          </div>
+          <figcaption>Esquema do pacote. O roteiro público está em <a href="https://pdv.caracore.com.br/homologacao-v4.html#rc6" target="_blank" rel="noopener">homologacao-v4#rc6</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v4.0.0-rc6</dd></div>
+          <div><dt>Atualização</dt><dd>10/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Pré-release</dd></div>
+          <div><dt>Linguagem</dt><dd>Java 25</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Preview para teste; a versão estável é a v3.2.7-free.</span></div>
@@ -235,11 +307,12 @@
       </article>
 
       <!-- 2. PDV RUST -->
-      <article class="product-card" 
+      <article class="product-card" id="pdv-rust" 
                data-title="CaraCore PDV Rust Tauri Piloto" 
                data-category="pdv" 
                data-platforms="windows" 
-               data-tags="pdv rust tauri react sqlite piloto leve rapido balcao">
+               data-maturity="piloto"
+               data-tags="pdv rust tauri react sqlite piloto leve rapido balcao offline desktop">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-pdv-rust">
@@ -254,8 +327,30 @@
         </div>
 
         <p class="card-desc">
-          Frente de caixa desktop construída em Rust com Tauri 2 e React, com dados em banco SQLite local.
+          Frente de caixa desktop para avaliar a linha Rust. Os dados ficam em SQLite no computador. Esta linha convive com o PDV Java.
         </p>
+        <ul class="use-case">
+          <li>Balcão em aplicativo Windows</li>
+          <li>Operação com banco local</li>
+          <li>100 vendas na vida do piloto</li>
+          <li>Perfis admin, operador, gestor e auditoria</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> PDV desktop</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-line">Aplicativo Tauri no Windows</div>
+            <div class="schema-total">SQLite local</div>
+            <div class="schema-pills"><span>admin</span><span>operador</span><span>gestor</span></div>
+          </div>
+          <figcaption>Esquema do papel do produto. Os perfis publicados estão em <a href="https://pdv-rust.caracore.com.br/primeiros-passos.html#perfis" target="_blank" rel="noopener">primeiros passos</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v0.1.4</dd></div>
+          <div><dt>Status</dt><dd>Piloto</dd></div>
+          <div><dt>Linguagem</dt><dd>Rust</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows</dd></div>
+          <div><dt>Teto</dt><dd>100 vendas na vida</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-check"></i> <span><strong>Teto Piloto:</strong> 100 vendas na vida do piloto</span></div>
@@ -285,11 +380,12 @@
       </article>
 
       <!-- 3. CSO GESTÃO DE FROTAS -->
-      <article class="product-card" 
+      <article class="product-card" id="cso-frotas" 
                data-title="CaraCore CSO Gestão de Frotas Transporte" 
                data-category="frota" 
                data-platforms="web" 
-               data-tags="cso frota frotas transportes veiculos manutencao abastecimento custos saas">
+               data-maturity="estavel"
+               data-tags="cso frota frotas transportes veiculos manutencao abastecimento custos saas km documentos pneus">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-cso">
@@ -304,8 +400,30 @@
         </div>
 
         <p class="card-desc">
-          Plataforma Web para gestão operacional, financeira e de conformidade de frotas.
+          Gestão de frota no navegador: abastecimento, documentos, pneus, exame, infrações e custo por km. É um produto web, com acesso online.
         </p>
+        <ul class="use-case">
+          <li>Controle da frota da empresa</li>
+          <li>km/L, documentos e pneus</li>
+          <li>Custo por quilômetro</li>
+          <li>Gestão operacional, sem rastreador</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Gestão de frota</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">Veículos · documentos · pneus</div>
+            <div class="schema-row">Abastecimento · exame · infrações</div>
+            <div class="schema-total">Custo por km</div>
+          </div>
+          <figcaption>Esquema do papel do produto. O acesso é em <a href="https://cso.caracore.com.br" target="_blank" rel="noopener">cso.caracore.com.br</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>FRO 24/24</dd></div>
+          <div><dt>Atualização</dt><dd>06/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Em produção</dd></div>
+          <div><dt>Linguagem</dt><dd>Java 21</dd></div>
+          <div><dt>Plataforma</dt><dd>Navegador</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-cloud"></i> <span><strong>Ambiente:</strong> Web na Nuvem Soberana</span></div>
@@ -331,11 +449,12 @@
       </article>
 
       <!-- CSO TRANSPORTES -->
-      <article class="product-card"
+      <article class="product-card" id="cso-transportes"
                data-title="CaraCore CSO Transportes desktop"
                data-category="frota"
                data-platforms="roadmap"
-               data-tags="cso transportes desktop bunker roadmap 2028">
+               data-maturity="planejamento"
+               data-tags="cso transportes desktop bunker roadmap 2028 planejamento">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-cso">
@@ -350,8 +469,19 @@
         </div>
 
         <p class="card-desc">
-          Linha desktop em desenvolvimento para operação de transportes no computador da empresa.
+          Linha desktop prevista para a operação de transportes no computador da empresa. O GA planejado é 08/11/2028. Ainda sem arquivo público.
         </p>
+        <ul class="use-case">
+          <li>Transportes no computador da empresa</li>
+          <li>GA planejado para 08/11/2028</li>
+          <li>Sem instalador nesta data</li>
+        </ul>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>Sem release</dd></div>
+          <div><dt>Marco</dt><dd>08/11/2028</dd></div>
+          <div><dt>Status</dt><dd>Planejamento</dd></div>
+          <div><dt>Plataforma</dt><dd>Desktop previsto</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-calendar"></i> <span>Data planejada: <strong>08/11/2028</strong>.</span></div>
@@ -371,11 +501,12 @@
       </article>
 
       <!-- 4. CARACORE HUB -->
-      <article class="product-card" 
+      <article class="product-card" id="hub" 
                data-title="CaraCore Hub Encomendas Centros de Distribuição v2.1.0-rc1.2" 
                data-category="frota" 
                data-platforms="windows"
-               data-tags="hub encomendas shopee mercado livre temu logistica cd pacotes rc1.2 windows pre-release nsis zip">
+               data-maturity="preview"
+               data-tags="hub encomendas shopee mercado livre temu logistica cd pacotes rc1.2 windows pre-release nsis zip distribuicao">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-hub">
@@ -390,8 +521,30 @@
         </div>
 
         <p class="card-desc">
-          Candidata Free desktop para avaliação controlada: encomendas, estoque, etiquetas, inventário e retirada em centros de distribuição. Não é o GA planejado para 06/04/2027 e não está homologada para produção.
+          Pré-release Windows para centros de distribuição que operam Mercado Livre, Shopee e Temu. O banco fica no computador. O GA planejado do instalador é 06/04/2027.
         </p>
+        <ul class="use-case">
+          <li>Encomendas de marketplace</li>
+          <li>Estoque, etiqueta e retirada</li>
+          <li>SQLite no computador do cliente</li>
+          <li>Canais com internet e credencial</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Encomendas</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">Mercado Livre · Shopee · Temu</div>
+            <div class="schema-row">Etiqueta · inventário · retirada</div>
+            <div class="schema-total">Banco local</div>
+          </div>
+          <figcaption>Esquema do papel do produto. A vitrine está em <a href="https://hub.caracore.com.br" target="_blank" rel="noopener">hub.caracore.com.br</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v2.1.0-rc1.2</dd></div>
+          <div><dt>Atualização</dt><dd>08/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Pré-release</dd></div>
+          <div><dt>Linguagem</dt><dd>Java 25</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Instalador NSIS ou ZIP da mesma edição, sem assinatura. Não desative SmartScreen, Defender ou antivírus.</span></div>
@@ -439,11 +592,12 @@
       </article>
 
       <!-- 5. INK AGENDA -->
-      <article class="product-card" 
+      <article class="product-card" id="ink" 
                data-title="Ink Agenda Desktop Criptografia" 
                data-category="bunker" 
                data-platforms="windows"
-               data-tags="ink agenda tarefas notas criptografia offline bunker javafx">
+               data-maturity="estavel"
+               data-tags="ink agenda tarefas notas criptografia offline bunker javafx estudio financeiro">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-ink">
@@ -458,8 +612,30 @@
         </div>
 
         <p class="card-desc">
-          Agenda e gestão financeira local para Windows; os dados ficam no computador.
+          Agenda e gestão financeira do estúdio no Windows. Os registros ficam no computador, com backup local protegido por senha.
         </p>
+        <ul class="use-case">
+          <li>Agenda do estúdio</li>
+          <li>Controle financeiro local</li>
+          <li>Dados no próprio Windows</li>
+          <li>Backup .inkbak com senha</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Agenda</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">Compromissos do estúdio</div>
+            <div class="schema-row">Lançamentos financeiros</div>
+            <div class="schema-total">Arquivo local</div>
+          </div>
+          <figcaption>Esquema do papel do produto. A vitrine está em <a href="https://ink.caracore.com.br" target="_blank" rel="noopener">ink.caracore.com.br</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v2.0.1</dd></div>
+          <div><dt>Atualização</dt><dd>07/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Linguagem</dt><dd>Java 25</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-shield"></i> <span><strong>Privacidade:</strong> Dados armazenados localmente</span></div>
@@ -504,11 +680,12 @@
       </article>
 
       <!-- 6. MINERADOR ETE 4.0 -->
-      <article class="product-card" 
+      <article class="product-card" id="ete" 
                data-title="Minerador ETE 4.0 Efluentes Quimica" 
                data-category="engenharia" 
                data-platforms="windows linux macos" 
-               data-tags="ete minerador efluentes quimica tratamento dados ambiental ouro python">
+               data-maturity="estavel"
+               data-tags="ete minerador efluentes quimica tratamento dados ambiental ouro python estacao">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-ete">
@@ -523,8 +700,27 @@
         </div>
 
         <p class="card-desc">
-          Ferramenta avançada para cálculo, dosagem, monitoramento de efluentes e automação de estações de tratamento.
+          Cálculo, dosagem e acompanhamento de efluentes para estação de tratamento. Canal público v1.2.3 para Windows, Linux e macOS.
         </p>
+        <ul class="use-case">
+          <li>Estação de tratamento</li>
+          <li>Dosagem e acompanhamento</li>
+          <li>Engenharia ambiental</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Estação</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">Dosagem e parâmetros</div>
+            <div class="schema-total">Acompanhamento</div>
+          </div>
+          <figcaption>Esquema do papel do produto. A vitrine está em <a href="https://ete.caracore.com.br" target="_blank" rel="noopener">ete.caracore.com.br</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v1.2.3</dd></div>
+          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Linguagem</dt><dd>Python</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows, Linux, macOS</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-flask"></i> <span><strong>Domínio:</strong> Engenharia Ambiental & Química</span></div>
@@ -592,11 +788,12 @@
       </article>
 
       <!-- 7. REINO OIDC -->
-      <article class="product-card" 
+      <article class="product-card" id="oidc" 
                data-title="Reino OIDC OAuth 2.1 Identidade" 
                data-category="bunker" 
                data-platforms="windows"
-               data-tags="oidc oauth autenticacao identidade sso bunker seguranca">
+               data-maturity="estavel"
+               data-tags="oidc oauth autenticacao identidade estudo bunker seguranca eras">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-oidc">
@@ -611,8 +808,29 @@
         </div>
 
         <p class="card-desc">
-          Aplicativo educativo sobre OAuth 2.1 e OpenID Connect. As três Eras são gratuitas para estudo pessoal. Sem certificado digital. A edição paga está em desenvolvimento; a loja não combina PIX nesta etapa.
+          Aplicativo para estudar OAuth 2.1 e OpenID Connect. As três Eras são gratuitas para estudo pessoal. O acesso é o deste aplicativo.
         </p>
+        <ul class="use-case">
+          <li>Estudo de identidade e OAuth</li>
+          <li>Três Eras para uso pessoal</li>
+          <li>Edição Free publicada</li>
+          <li>Edição paga ainda em desenvolvimento</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Estudo OIDC</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">OAuth 2.1 · OpenID Connect</div>
+            <div class="schema-pills"><span>Era 1</span><span>Era 2</span><span>Era 3</span></div>
+          </div>
+          <figcaption>Esquema do papel do produto. A vitrine está em <a href="https://oidc.caracore.com.br" target="_blank" rel="noopener">oidc.caracore.com.br</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v2.0.2-free</dd></div>
+          <div><dt>Atualização</dt><dd>08/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Edição Free</dd></div>
+          <div><dt>Escopo</dt><dd>Estudo pessoal</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-fingerprint"></i> <span><strong>Padrão:</strong> OAuth 2.1 / OIDC moderno</span></div>
@@ -643,11 +861,12 @@
       </article>
 
       <!-- 8. CIRCUITO FERRADURA -->
-      <article class="product-card" 
+      <article class="product-card" id="circuito" 
                data-title="Circuito Ferradura Logica Educacao" 
                data-category="engenharia" 
+               data-maturity="estavel"
                data-platforms="windows"
-               data-tags="circuito ferradura educacao logica python computacao">
+               data-tags="circuito ferradura educacao logica python computacao formacao curso">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-circuito">
@@ -662,8 +881,28 @@
         </div>
 
         <p class="card-desc">
-          Ambiente prático para treinamento e demonstração de lógica formal, estruturas e algoritmos computacionais.
+          Curso prático de lógica, estruturas e algoritmos. O executável desta central é Windows e não tem assinatura digital. macOS e HTML ficam na loja do produto.
         </p>
+        <ul class="use-case">
+          <li>Formação em lógica</li>
+          <li>Demonstração de algoritmos</li>
+          <li>Pacote Windows nesta central</li>
+        </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Formação</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">Lógica · estruturas · algoritmos</div>
+            <div class="schema-pills"><span>Windows</span><span>macOS na loja</span><span>HTML na loja</span></div>
+          </div>
+          <figcaption>Esquema do papel do produto. Os pacotes estão em <a href="https://circuito.caracore.com.br/download.html" target="_blank" rel="noopener">circuito.caracore.com.br</a>.</figcaption>
+        </figure>
+        <dl class="trust-metrics">
+          <div><dt>Versão</dt><dd>v2.0.24</dd></div>
+          <div><dt>Atualização</dt><dd>08/10/2026</dd></div>
+          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Linguagem</dt><dd>Python</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows nesta central</dd></div>
+        </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-book-open"></i> <span><strong>Finalidade:</strong> Formação e Simulação</span></div>
@@ -699,7 +938,7 @@
     <div id="no-results-state" style="display: none; text-align: center; padding: 4rem 1rem;">
       <i class="fas fa-box-open" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
       <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 0.5rem;">Nenhuma aplicação encontrada</h3>
-      <p style="color: var(--text-secondary); font-size: 0.9rem;">Tente ajustar os termos de pesquisa ou remover os filtros de categoria e sistema operacional.</p>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">Tente ajustar a pesquisa ou limpar os filtros de categoria, maturidade e sistema.</p>
     </div>
 
     <!-- BUNKER DIGITAL PHILOSOPHY -->
@@ -822,7 +1061,10 @@
           &copy; 2026 Cara Core Informática. Todos os direitos reservados.
         </div>
         <div>
-          Central Oficial: <a href="https://download.caracore.com.br" style="color: var(--emerald-400);">download.caracore.com.br</a>
+          <a href="index.html">Negócio</a> ·
+          <a href="mapa.html">Mapa</a> ·
+          <a href="roadmap.html">Roadmap</a> ·
+          <a href="download.html" style="color: var(--emerald-400);">Catálogo</a>
         </div>
       </div>
     </div>

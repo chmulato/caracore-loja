@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Elements
   const searchInput = document.getElementById('search-input');
   const chipButtons = document.querySelectorAll('.chip-btn');
+  const maturityButtons = document.querySelectorAll('.maturity-btn');
   const osFilterSelect = document.getElementById('os-filter');
   const productCards = document.querySelectorAll('.product-card');
   const resultsSummaryEl = document.getElementById('results-summary');
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModalBtn = document.getElementById('close-integrity-modal');
 
   let currentCategory = 'all';
+  let currentMaturity = 'all';
   let currentOS = 'all';
   let searchQuery = '';
 
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const desc = card.getAttribute('data-desc')?.toLowerCase() || '';
       const tags = card.getAttribute('data-tags')?.toLowerCase() || '';
       const category = card.getAttribute('data-category') || '';
+      const maturity = card.getAttribute('data-maturity') || '';
       const platforms = card.getAttribute('data-platforms')?.toLowerCase() || '';
 
       const matchesSearch = !searchQuery || 
@@ -37,10 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
         tags.includes(searchQuery);
 
       const matchesCategory = currentCategory === 'all' || category === currentCategory;
+      const matchesMaturity = currentMaturity === 'all' || maturity === currentMaturity;
 
       const matchesOS = currentOS === 'all' || platforms.includes(currentOS.toLowerCase());
 
-      if (matchesSearch && matchesCategory && matchesOS) {
+      if (matchesSearch && matchesCategory && matchesMaturity && matchesOS) {
         card.style.display = 'flex';
         visible++;
       } else {
@@ -75,6 +79,27 @@ document.addEventListener('DOMContentLoaded', () => {
       filterCards();
     });
   });
+
+  maturityButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      maturityButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMaturity = btn.getAttribute('data-maturity') || 'all';
+      filterCards();
+    });
+  });
+
+  const initialMaturity = (location.hash || '').replace('#', '');
+  if (['estavel', 'piloto', 'preview', 'planejamento'].includes(initialMaturity)) {
+    currentMaturity = initialMaturity;
+    maturityButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-maturity') === initialMaturity);
+    });
+  }
+
+  if (location.hash === '#ajuda-integridade' && integrityModal) {
+    integrityModal.classList.add('active');
+  }
 
   // OS select handler
   if (osFilterSelect) {
