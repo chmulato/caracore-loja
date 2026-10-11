@@ -96,8 +96,10 @@
         <div class="category-chips">
           <button class="chip-btn active" data-cat="all"><i class="fas fa-border-all"></i> Todos</button>
           <button class="chip-btn" data-cat="pdv"><i class="fas fa-cash-register"></i> PDV & Caixa</button>
-          <button class="chip-btn" data-cat="frota"><i class="fas fa-truck"></i> Frotas & Hub</button>
+          <button class="chip-btn" data-cat="frota"><i class="fas fa-truck"></i> Frotas</button>
+          <button class="chip-btn" data-cat="encomendas"><i class="fas fa-boxes-packing"></i> Encomendas</button>
           <button class="chip-btn" data-cat="bunker"><i class="fas fa-vault"></i> Bunker & Ferramentas</button>
+          <button class="chip-btn" data-cat="formacao"><i class="fas fa-graduation-cap"></i> Formação</button>
           <button class="chip-btn" data-cat="engenharia"><i class="fas fa-flask"></i> Engenharia & Ciência</button>
         </div>
 
@@ -234,7 +236,7 @@
         </div>
       </article>
 
-      <!-- PDV JAVA V4 PRÉ-RELEASE -->
+      <!-- 2. PDV JAVA V4 PRÉ-RELEASE -->
       <article class="product-card" id="pdv-v4"
                data-title="CaraCore PDV Java v4.0.0-rc6 pré-release"
                data-category="pdv"
@@ -306,7 +308,7 @@
         </div>
       </article>
 
-      <!-- 2. PDV RUST -->
+      <!-- 3. PDV RUST -->
       <article class="product-card" id="pdv-rust" 
                data-title="CaraCore PDV Rust Tauri Piloto" 
                data-category="pdv" 
@@ -379,7 +381,7 @@
         </div>
       </article>
 
-      <!-- 3. CSO GESTÃO DE FROTAS -->
+      <!-- 4. CSO GESTÃO DE FROTAS -->
       <article class="product-card" id="cso-frotas" 
                data-title="CaraCore CSO Gestão de Frotas Transporte" 
                data-category="frota" 
@@ -448,7 +450,7 @@
         </div>
       </article>
 
-      <!-- CSO TRANSPORTES -->
+      <!-- 5. CSO TRANSPORTES -->
       <article class="product-card" id="cso-transportes"
                data-title="CaraCore CSO Transportes desktop"
                data-category="frota"
@@ -500,10 +502,10 @@
         </div>
       </article>
 
-      <!-- 4. CARACORE HUB -->
+      <!-- 6. CARACORE HUB -->
       <article class="product-card" id="hub" 
                data-title="CaraCore Hub Encomendas Centros de Distribuição v2.1.0-rc1.2" 
-               data-category="frota" 
+               data-category="encomendas" 
                data-platforms="windows"
                data-maturity="preview"
                data-tags="hub encomendas shopee mercado livre temu logistica cd pacotes rc1.2 windows pre-release nsis zip distribuicao">
@@ -591,7 +593,7 @@
         </div>
       </article>
 
-      <!-- 5. INK AGENDA -->
+      <!-- 7. INK AGENDA -->
       <article class="product-card" id="ink" 
                data-title="Ink Agenda Desktop Criptografia" 
                data-category="bunker" 
@@ -679,7 +681,7 @@
         </div>
       </article>
 
-      <!-- 6. MINERADOR ETE 4.0 -->
+      <!-- 8. MINERADOR ETE 4.0 -->
       <article class="product-card" id="ete" 
                data-title="Minerador ETE 4.0 Efluentes Quimica" 
                data-category="engenharia" 
@@ -787,7 +789,7 @@
         </div>
       </article>
 
-      <!-- 7. REINO OIDC -->
+      <!-- 9. REINO OIDC -->
       <article class="product-card" id="oidc" 
                data-title="Reino OIDC OAuth 2.1 Identidade" 
                data-category="bunker" 
@@ -860,10 +862,10 @@
         </div>
       </article>
 
-      <!-- 8. CIRCUITO FERRADURA -->
+      <!-- 10. CIRCUITO FERRADURA -->
       <article class="product-card" id="circuito" 
                data-title="Circuito Ferradura Logica Educacao" 
-               data-category="engenharia" 
+               data-category="formacao" 
                data-maturity="estavel"
                data-platforms="windows"
                data-tags="circuito ferradura educacao logica python computacao formacao curso">
@@ -932,7 +934,7 @@
         </div>
       </article>
 
-      <!-- 9. BIOREATOR 4.0 -->
+      <!-- 11. BIOREATOR 4.0 -->
       <article class="product-card" id="bioreator40"
                data-title="BioReator 4.0 bioinsumos fermentacao"
                data-category="engenharia"
@@ -941,7 +943,7 @@
                data-tags="bioreator bioinsumos fermentacao ru community windows 1.0.0">
         <div class="card-top">
           <div class="product-identity">
-            <div class="product-icon-wrap icon-ete">
+            <div class="product-icon-wrap icon-bioreator">
               <i class="fas fa-vial"></i>
             </div>
             <div class="product-titles">
@@ -960,6 +962,15 @@
           <li>Premium em 18/06/2027, sem preço e sem PIX</li>
           <li>MSI e ZIP na release, sem assinatura digital</li>
         </ul>
+        <figure class="screen-schema">
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Bioinsumos</div>
+          <div class="schema-body" aria-hidden="true">
+            <div class="schema-row">Tanque · batelada · histórico</div>
+            <div class="schema-row">Biomassa · curva de Monod</div>
+            <div class="schema-total">Community 1.0.0</div>
+          </div>
+          <figcaption>Esquema do papel do produto. A vitrine está em <a href="https://ru.caracore.com.br/bioreator.html" target="_blank" rel="noopener">ru.caracore.com.br</a>.</figcaption>
+        </figure>
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>1.0.0</dd></div>
           <div><dt>Atualização</dt><dd>10/10/2026</dd></div>
@@ -1128,7 +1139,7 @@
           <ul>
             <li><a href="https://ink.caracore.com.br" target="_blank" rel="noopener">Ink Agenda</a></li>
             <li><a href="https://ete.caracore.com.br" target="_blank" rel="noopener">Minerador ETE 4.0</a></li>
-            <li><a href="https://github.com/chmulato/caracore-ru-releases/releases" target="_blank" rel="noopener">BioReator 4.0</a></li>
+            <li><a href="https://ru.caracore.com.br/bioreator.html" target="_blank" rel="noopener">BioReator 4.0</a></li>
             <li><a href="https://oidc.caracore.com.br" target="_blank" rel="noopener">Reino OIDC</a></li>
             <li><a href="https://circuito.caracore.com.br" target="_blank" rel="noopener">Circuito Ferradura</a></li>
           </ul>

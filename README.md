@@ -4,7 +4,7 @@ Repositório da **Loja Central e Hub de Downloads do Ecossistema Cara Core Infor
 
 - **URL Oficial:** [https://download.caracore.com.br](https://download.caracore.com.br)
 - **Página executiva:** `docs/index.html`
-- **Catálogo técnico:** `download.html`
+- **Catálogo técnico:** `docs/download.html`
 - **Mapa e roadmap:** `docs/mapa.html` e `docs/roadmap.html`
 - **Repositório Git:** `https://github.com/chmulato/caracore-loja.git`
 - **Branch Principal:** `master` (local e remoto)
@@ -27,6 +27,7 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 7. **Minerador ETE 4.0:** `v1.2.3` estável para Windows, Linux e macOS.
 8. **Reino OIDC:** `v2.0.2-free` para Windows. As três Eras são gratuitas para estudo pessoal, sem certificado digital. A edição paga está em desenvolvimento; a loja não combina PIX nesta etapa. Dúvidas e relatos são bem-vindos, sem SLA. Sem certificação nem consultoria. A página de download oferece só `v2.0.2-free`. `v2.0.1-free` e `v2.0.0` ficam no histórico.
 9. **Circuito Ferradura:** `v2.0.24` na loja e na release. Executável Windows sem assinatura digital; pacotes Windows, macOS e HTML offline. SHA256 do EXE `eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12`. `v2.0.23` fica no histórico.
+10. **BioReator 4.0:** Community `1.0.0` para Windows x64, sem assinatura digital. MSI, ZIP e o EXE dentro do ZIP. SHA256 do MSI `8efc60902c5ba6c37096401f02ba180b545f4dce754247e4a51ea1e96905995e` · ZIP `49e83e5361b77ca8bc1bd854e6acaf77ce50404380b5d84229e15816dad5405a` · EXE `378efe2eb3fd32e4fb5aa167d860ca86df11d45f9b31af53c0d5e65470611c38`. A Premium chega em 18/06/2027, sem preço e sem PIX. A vitrine é `https://ru.caracore.com.br`.
 
 ## 🛠️ Publicação no GitHub Pages
 

@@ -5,7 +5,7 @@
 > **Repositório Remoto:** `https://github.com/chmulato/caracore-loja.git` (branch principal: `master`)  
 > **Subdomínio Oficial:** `https://download.caracore.com.br`  
 > **Página executiva:** `docs/index.html` (entrada da central)  
-> **Catálogo técnico:** `download.html` (e `docs/download.html`)  
+> **Catálogo técnico:** `docs/download.html`  
 > **Mapa e roadmap:** `docs/mapa.html` e `docs/roadmap.html`  
 > **CNPJ:** 23.969.028/0001-37 — Cara Core Informática  
 > **Regra Mestre:** Seguir sempre o `AGENTS.md` global do ecossistema em `D:\onedrive\dev\AGENTS.md`.
@@ -34,13 +34,14 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 | **Minerador ETE 4.0** | `v1.2.3` | Estável | Windows, Linux, macOS | https://ete.caracore.com.br |
 | **Reino OIDC** | `v2.0.2-free` | Edição Free | Windows EXE `ReinoOIDC-2.0.2-free.exe` · SHA256 `d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc` · três Eras gratuitas para estudo pessoal, sem certificado digital; a edição paga está em desenvolvimento e a loja não combina PIX nesta etapa; dúvidas e relatos são bem-vindos, sem SLA; sem certificação nem consultoria. A página de download oferece só `v2.0.2-free`. `v2.0.1-free` e `v2.0.0` ficam no histórico | https://oidc.caracore.com.br |
 | **Circuito Ferradura** | `v2.0.24` | Estável | Windows EXE sem assinatura · SHA256 `eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12` · pacotes Windows, macOS e HTML na loja · `v2.0.23` no histórico | https://circuito.caracore.com.br |
+| **BioReator 4.0** | Community `1.0.0`; Premium em 18/06/2027, sem preço e sem PIX | Estável | Windows x64, sem assinatura. MSI SHA256 `8efc60902c5ba6c37096401f02ba180b545f4dce754247e4a51ea1e96905995e` · ZIP `49e83e5361b77ca8bc1bd854e6acaf77ce50404380b5d84229e15816dad5405a` · EXE dentro do ZIP `378efe2eb3fd32e4fb5aa167d860ca86df11d45f9b31af53c0d5e65470611c38` | https://ru.caracore.com.br |
 | **Cara Core Seed** | Uso Interno | Fora do catálogo público | Sem download aberto | https://seed.caracore.com.br |
 
 ---
 
 ## 3. Diretrizes Técnicas
 
-- **Página de Entrada:** `docs/index.html` apresenta o ecossistema para quem decide. `download.html` permanece o catálogo técnico, com maturidade, caso de uso, versão e SHA256 antes do arquivo.
+- **Página de Entrada:** `docs/index.html` apresenta o ecossistema para quem decide. `docs/download.html` permanece o catálogo técnico, com maturidade, caso de uso, versão e SHA256 antes do arquivo.
 - **Mapa:** `docs/mapa.html` organiza a casa por problema de negócio. Cada produto tem acesso e banco próprios.
 - **Roadmap:** `docs/roadmap.html` usa as datas públicas da casa. Sem arquivo para o que ainda não tem release.
 - **Compatibilidade GitHub Pages:** Suporte tanto para publicação na raiz (`/`) quanto em (`/docs`).
