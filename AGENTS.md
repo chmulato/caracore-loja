@@ -47,4 +47,5 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 - **Compatibilidade GitHub Pages:** Suporte tanto para publicação na raiz (`/`) quanto em (`/docs`).
 - **CNAME:** `download.caracore.com.br` no arquivo `CNAME` e `docs/CNAME`.
 - **Integridade:** Não inventar versões, integrações PIX no Free Java ou depoimentos fictícios.
+- **PDV — retomada 11/10/2026:** RC6 pública, build 11/10, SHA-256 `0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325`, Windows 10/11 x64 + Edge e Java 25 incluído (sem instalar JDK/Python). RC7 somente em QA local, sem tag/download publicado; checklist final 1/10 concluído, próximo P1.3. Fonte de retomada: `caracore-pdv/docs/arquitetura/CONTINUIDADE_DESENVOLVIMENTO.md` e `docs/relatorio-rc7.md` na oficina. GA em reavaliação, sem data nova; manter Free `v3.2.7-free` como estável.
 - **Hub:** o cartão vigente é a pré-release Windows `v2.1.0-rc1.2`. O banco do produto é SQLite local (WAL). A release seguinte entra com outra tag e os SHA-256 dessa tag, no mesmo corte da loja `hub.caracore.com.br` e da matriz.
