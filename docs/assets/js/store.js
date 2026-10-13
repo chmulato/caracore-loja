@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const chipButtons = document.querySelectorAll('.chip-btn');
   const maturityButtons = document.querySelectorAll('.maturity-btn');
   const osFilterSelect = document.getElementById('os-filter');
-  const productCards = document.querySelectorAll('.product-card');
+  const catalog = document.getElementById('products-catalog');
+  const productCards = Array.from(document.querySelectorAll('#products-catalog > .product-card'));
   const resultsSummaryEl = document.getElementById('results-summary');
   const themeToggleBtn = document.getElementById('theme-toggle');
   const toastEl = document.getElementById('toast-msg');
@@ -17,10 +18,79 @@ document.addEventListener('DOMContentLoaded', () => {
   const openModalBtn = document.getElementById('open-integrity-modal');
   const closeModalBtn = document.getElementById('close-integrity-modal');
 
-  let currentCategory = 'all';
+  let currentGoal = 'all';
   let currentMaturity = 'all';
   let currentOS = 'all';
   let searchQuery = '';
+
+  const catalogGroups = [
+    {
+      id: 'available-downloads',
+      title: 'Disponível para download',
+      description: 'Versões estáveis para instalar e usar agora.',
+      cards: ['pdv-java', 'ink', 'ete', 'oidc', 'circuito', 'bioreator40']
+    },
+    {
+      id: 'evaluation-previews',
+      title: 'Avaliação e preview',
+      description: 'Pilotos e pré-releases para avaliação; confira o status antes de instalar.',
+      cards: ['pdv-v4', 'pdv-rust', 'hub', 'caracore-seed']
+    },
+    {
+      id: 'online-products',
+      title: 'Acesso online',
+      description: 'Serviços acessados pelo navegador, sem instalador para baixar.',
+      cards: ['cso-frotas']
+    }
+  ];
+
+  function organizeCatalog() {
+    if (!catalog || productCards.length === 0) return [];
+
+    const fragment = document.createDocumentFragment();
+    const sections = [];
+
+    catalogGroups.forEach(group => {
+      const section = document.createElement('section');
+      section.className = 'catalog-section';
+      section.id = group.id;
+      section.innerHTML = `
+        <header class="catalog-section-heading">
+          <h2>${group.title}</h2>
+          <p>${group.description}</p>
+        </header>
+        <div class="products-grid"></div>
+      `;
+      const grid = section.querySelector('.products-grid');
+
+      group.cards.forEach(id => {
+        const card = productCards.find(item => item.id === id);
+        if (!card) return;
+
+        grid.appendChild(card);
+        const technicalDetails = document.createElement('details');
+        technicalDetails.className = 'technical-details';
+        technicalDetails.innerHTML = '<summary>Detalhes técnicos <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>';
+
+        ['.screen-schema', '.trust-metrics', '.specs-box', '.checksum-box'].forEach(selector => {
+          card.querySelectorAll(selector).forEach(element => technicalDetails.appendChild(element));
+        });
+
+        if (technicalDetails.childElementCount > 1) card.appendChild(technicalDetails);
+      });
+
+      if (grid.children.length > 0) {
+        fragment.appendChild(section);
+        sections.push(section);
+      }
+    });
+
+    catalog.replaceWith(fragment);
+    document.documentElement.classList.add('catalog-enhanced');
+    return sections;
+  }
+
+  const catalogSections = organizeCatalog();
 
   // Filter function
   function filterCards() {
@@ -30,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const title = card.getAttribute('data-title')?.toLowerCase() || '';
       const desc = card.getAttribute('data-desc')?.toLowerCase() || '';
       const tags = card.getAttribute('data-tags')?.toLowerCase() || '';
-      const category = card.getAttribute('data-category') || '';
+      const goals = (card.getAttribute('data-goal') || '').split(/\s+/);
       const maturity = card.getAttribute('data-maturity') || '';
       const platforms = card.getAttribute('data-platforms')?.toLowerCase() || '';
 
@@ -39,12 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
         desc.includes(searchQuery) || 
         tags.includes(searchQuery);
 
-      const matchesCategory = currentCategory === 'all' || category === currentCategory;
+      const matchesGoal = currentGoal === 'all' || goals.includes(currentGoal);
       const matchesMaturity = currentMaturity === 'all' || maturity === currentMaturity;
 
       const matchesOS = currentOS === 'all' || platforms.includes(currentOS.toLowerCase());
 
-      if (matchesSearch && matchesCategory && matchesMaturity && matchesOS) {
+      if (matchesSearch && matchesGoal && matchesMaturity && matchesOS) {
         card.style.display = 'flex';
         visible++;
       } else {
@@ -55,6 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (resultsSummaryEl) {
       resultsSummaryEl.textContent = `Mostrando ${visible} de ${productCards.length} itens do catálogo`;
     }
+
+    catalogSections.forEach(section => {
+      section.hidden = !Array.from(section.querySelectorAll('.product-card'))
+        .some(card => card.style.display !== 'none');
+    });
 
     const noResultsEl = document.getElementById('no-results-state');
     if (noResultsEl) {
@@ -75,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       chipButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      currentCategory = btn.getAttribute('data-cat') || 'all';
+      currentGoal = btn.getAttribute('data-goal') || 'all';
       filterCards();
     });
   });

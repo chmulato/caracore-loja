@@ -264,6 +264,185 @@ a {
   box-shadow: var(--shadow-card);
 }
 
+.core-products {
+  margin: 0 0 2rem;
+}
+
+.catalog-section-heading {
+  margin: 0 0 1rem;
+}
+
+.catalog-eyebrow {
+  margin: 0 0 0.3rem;
+  color: var(--emerald-400);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.catalog-section-heading h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+}
+
+.catalog-section-heading p {
+  margin: 0.35rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+
+.core-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.core-product-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.15rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.core-product-card--featured {
+  border-color: var(--emerald-500);
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.12);
+}
+
+.core-product-status {
+  color: var(--emerald-400);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.core-product-card h3 {
+  margin: 0.45rem 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+}
+
+.core-product-card p {
+  flex: 1;
+  margin: 0 0 0.9rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.core-product-link {
+  color: var(--emerald-400);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.advanced-filters {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.8rem;
+}
+
+.advanced-filters > summary {
+  width: fit-content;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.advanced-filters > summary::-webkit-details-marker {
+  display: none;
+}
+
+.advanced-filters > summary i {
+  margin-left: 0.25rem;
+  transition: transform 0.2s ease;
+}
+
+.advanced-filters[open] > summary i {
+  transform: rotate(180deg);
+}
+
+.advanced-filters .filter-actions {
+  justify-content: flex-start;
+  margin-top: 0.8rem;
+}
+
+.catalog-section {
+  margin-bottom: 2.25rem;
+}
+
+.catalog-section[hidden] {
+  display: none;
+}
+
+.catalog-section .products-grid {
+  margin-bottom: 0;
+}
+
+html.catalog-enhanced .product-card .version-tag {
+  display: none;
+}
+
+.technical-details {
+  order: 9;
+  margin-top: 0.8rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.65rem;
+}
+
+.technical-details > summary {
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.technical-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.technical-details > summary i {
+  margin-left: 0.25rem;
+  transition: transform 0.2s ease;
+}
+
+.technical-details[open] > summary i {
+  transform: rotate(180deg);
+}
+
+.technical-details > .screen-schema,
+.technical-details > .trust-metrics,
+.technical-details > .specs-box,
+.technical-details > .checksum-box {
+  margin-top: 0.75rem;
+}
+
+.roadmap-catalog-link {
+  margin: 0 0 2.5rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+}
+
+.roadmap-catalog-link a {
+  color: var(--emerald-400);
+  font-weight: 700;
+}
+
 .search-box-wrap {
   position: relative;
   margin-bottom: 1rem;
@@ -374,6 +553,10 @@ a {
 
 @media (max-width: 480px) {
   .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .core-products-grid {
     grid-template-columns: 1fr;
   }
 }

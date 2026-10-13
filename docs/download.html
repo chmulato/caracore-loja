@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo técnico | Central de Downloads Cara Core</title>
-  <meta name="description" content="Catálogo técnico da Cara Core: caixa, encomendas, frota e agenda, com maturidade, versão, plataforma e SHA256 de cada arquivo publicado.">
+  <title>Produtos e downloads | Cara Core Informática</title>
+  <meta name="description" content="Encontre o produto Cara Core para sua necessidade: baixe versões estáveis, avalie previews ou acesse serviços online.">
   <meta name="author" content="Cara Core Informática">
   <link rel="canonical" href="https://download.caracore.com.br/download.html">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Central de Downloads | Cara Core Informática">
-  <meta property="og:description" content="Acesse os produtos e downloads disponíveis da Cara Core. Aplicações web e itens de roadmap são identificados como tais.">
+  <meta property="og:description" content="Escolha por necessidade: baixe produtos estáveis, avalie previews ou acesse serviços online da Cara Core.">
   <meta property="og:url" content="https://download.caracore.com.br/download.html">
   <meta property="og:type" content="website">
   
@@ -75,62 +75,85 @@
     <!-- HERO -->
     <section class="hero-section hero-compact">
       <div class="hero-pill">
-        <i class="fas fa-cube"></i> Catálogo técnico · versão, status e SHA256
+        <i class="fas fa-cube"></i> Produtos e downloads Cara Core
       </div>
       <h2 class="hero-title">
-        O valor do produto primeiro. <span class="gradient-text">O arquivo depois.</span>
+        Encontre a solução. <span class="gradient-text">Baixe ou acesse.</span>
       </h2>
       <p class="hero-desc">
-        Cada card mostra para quem serve, o papel da tela, os requisitos, a versão e o SHA256 publicado. O download fica no fim do card.
+        Comece pelo que você precisa fazer. Produtos estáveis, pilotos e previews estão separados; informações técnicas ficam disponíveis em cada card.
       </p>
     </section>
 
-    <!-- FILTER & SEARCH PANEL -->
-    <section class="filter-panel" aria-label="Filtros de busca">
-      <div class="search-box-wrap">
-        <i class="fas fa-search search-icon"></i>
-        <input type="text" id="search-input" class="search-input" placeholder="Buscar por software, sistema (Windows, Linux, macOS) ou recurso..." autocomplete="off">
+    <section class="core-products" aria-labelledby="core-products-title">
+      <div class="catalog-section-heading">
+        <p class="catalog-eyebrow">Produtos principais</p>
+        <h2 id="core-products-title">Comece por aqui</h2>
       </div>
-
-      <div class="filter-actions">
-        <div class="category-chips">
-          <button class="chip-btn active" data-cat="all"><i class="fas fa-border-all"></i> Todos</button>
-          <button class="chip-btn" data-cat="pdv"><i class="fas fa-cash-register"></i> PDV & Caixa</button>
-          <button class="chip-btn" data-cat="frota"><i class="fas fa-truck"></i> Frotas</button>
-          <button class="chip-btn" data-cat="encomendas"><i class="fas fa-boxes-packing"></i> Encomendas</button>
-          <button class="chip-btn" data-cat="bunker"><i class="fas fa-vault"></i> Bunker & Ferramentas</button>
-          <button class="chip-btn" data-cat="formacao"><i class="fas fa-graduation-cap"></i> Formação</button>
-          <button class="chip-btn" data-cat="engenharia"><i class="fas fa-flask"></i> Engenharia & Ciência</button>
-        </div>
-
-        <select id="os-filter" class="os-filter-select" aria-label="Filtrar por Sistema Operacional">
-          <option value="all">Todas as Plataformas</option>
-          <option value="windows">Windows</option>
-          <option value="linux">Linux</option>
-          <option value="macos">macOS</option>
-          <option value="web">Web / SaaS</option>
-        </select>
-      </div>
-
-      <div class="maturity-row" aria-label="Filtrar por maturidade">
-        <button type="button" class="maturity-btn active" data-maturity="all">Todas as maturidades</button>
-        <button type="button" class="maturity-btn" data-maturity="estavel"><i class="maturity-dot dot-estavel"></i> Produção estável</button>
-        <button type="button" class="maturity-btn" data-maturity="piloto"><i class="maturity-dot dot-piloto"></i> Piloto controlado</button>
-        <button type="button" class="maturity-btn" data-maturity="preview"><i class="maturity-dot dot-preview"></i> Preview tecnológico</button>
-        <button type="button" class="maturity-btn" data-maturity="planejamento"><i class="maturity-dot dot-plan"></i> Planejamento</button>
+      <div class="core-products-grid">
+        <article class="core-product-card core-product-card--featured">
+          <span class="core-product-status">Download estável</span>
+          <h3>PDV Java</h3>
+          <p>Frente de caixa local para varejo e balcão.</p>
+          <a href="#pdv-java" class="core-product-link">Baixar Free <i class="fas fa-arrow-down"></i></a>
+        </article>
+        <article class="core-product-card">
+          <span class="core-product-status">Preview Windows</span>
+          <h3>CaraCore Hub</h3>
+          <p>Gestão local de encomendas de marketplaces.</p>
+          <a href="#hub" class="core-product-link">Ver preview <i class="fas fa-arrow-down"></i></a>
+        </article>
+        <article class="core-product-card">
+          <span class="core-product-status">Acesso online</span>
+          <h3>CSO Frotas</h3>
+          <p>Gestão operacional de frotas pelo navegador.</p>
+          <a href="https://cso.caracore.com.br/" class="core-product-link" target="_blank" rel="noopener">Acessar CSO <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
       </div>
     </section>
 
-    <!-- RESULTS SUMMARY -->
-    <div class="results-meta">
-      <span id="results-summary" aria-live="polite">Catálogo de soluções Cara Core</span>
-      <span><i class="fas fa-fingerprint text-emerald-400"></i> SHA256 publicado em cada release</span>
-    </div>
-    <p class="text-sm text-secondary" style="margin-top: 0.5rem; font-size: 0.78rem;">
-      Como conferir no PowerShell: <code>Get-FileHash -Algorithm SHA256 .\arquivo-baixado</code>
-    </p>
+    <!-- SEARCH AND GOAL FILTER -->
+    <section class="filter-panel" aria-label="Filtros de busca">
+      <div class="search-box-wrap">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar produto ou necessidade..." autocomplete="off">
+      </div>
 
-    <!-- PRODUCTS CATALOG -->
+      <div class="category-chips" aria-label="Filtrar por objetivo">
+        <button class="chip-btn active" data-goal="all"><i class="fas fa-border-all"></i> Todos</button>
+        <button class="chip-btn" data-goal="vender"><i class="fas fa-cash-register"></i> Quero vender</button>
+        <button class="chip-btn" data-goal="agenda"><i class="fas fa-calendar-days"></i> Organizar agenda</button>
+        <button class="chip-btn" data-goal="frota"><i class="fas fa-truck"></i> Gerenciar frota</button>
+        <button class="chip-btn" data-goal="encomendas"><i class="fas fa-boxes-packing"></i> Processar encomendas</button>
+        <button class="chip-btn" data-goal="estudar"><i class="fas fa-graduation-cap"></i> Estudar tecnologia</button>
+        <button class="chip-btn" data-goal="licencas"><i class="fas fa-key"></i> Gerir licenças</button>
+      </div>
+
+      <details class="advanced-filters">
+        <summary>Filtros técnicos <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+        <div class="filter-actions">
+          <select id="os-filter" class="os-filter-select" aria-label="Filtrar por sistema operacional">
+            <option value="all">Todas as plataformas</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+            <option value="macos">macOS</option>
+            <option value="web">Web / SaaS</option>
+          </select>
+          <div class="maturity-row" aria-label="Filtrar por maturidade">
+            <button type="button" class="maturity-btn active" data-maturity="all">Todas</button>
+            <button type="button" class="maturity-btn" data-maturity="estavel"><i class="maturity-dot dot-estavel"></i> Estável</button>
+            <button type="button" class="maturity-btn" data-maturity="piloto"><i class="maturity-dot dot-piloto"></i> Piloto</button>
+            <button type="button" class="maturity-btn" data-maturity="preview"><i class="maturity-dot dot-preview"></i> Preview</button>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <div class="results-meta">
+      <span id="results-summary" aria-live="polite">Soluções Cara Core</span>
+      <span>Detalhes técnicos e checksums em cada produto</span>
+    </div>
+
     <section class="products-grid" id="products-catalog">
 
       <!-- 1. PDV JAVA FREE -->
@@ -139,6 +162,7 @@
                data-category="pdv" 
                data-platforms="windows linux macos" 
                data-maturity="estavel"
+               data-goal="vender"
                data-tags="pdv java caixa balcao vendas sqlite free app web local recibo digital varejo offline">
         <div class="card-top">
           <div class="product-identity">
@@ -242,6 +266,7 @@
                data-category="pdv"
                data-platforms="windows"
                data-maturity="preview"
+               data-goal="vender"
                data-tags="pdv java qute rc6 preview pre-release teste windows">
         <div class="card-top">
           <div class="product-identity">
@@ -314,6 +339,7 @@
                data-category="pdv" 
                data-platforms="windows" 
                data-maturity="piloto"
+               data-goal="vender"
                data-tags="pdv rust tauri react sqlite piloto leve rapido balcao offline desktop">
         <div class="card-top">
           <div class="product-identity">
@@ -387,6 +413,7 @@
                data-category="frota" 
                data-platforms="web" 
                data-maturity="estavel"
+               data-goal="frota"
                data-tags="cso frota frotas transportes veiculos manutencao abastecimento custos saas km documentos pneus">
         <div class="card-top">
           <div class="product-identity">
@@ -450,64 +477,13 @@
         </div>
       </article>
 
-      <!-- 5. CSO TRANSPORTES -->
-      <article class="product-card" id="cso-transportes"
-               data-title="CaraCore CSO Transportes desktop"
-               data-category="frota"
-               data-platforms="roadmap"
-               data-maturity="planejamento"
-               data-tags="cso transportes desktop bunker roadmap 2028 planejamento">
-        <div class="card-top">
-          <div class="product-identity">
-            <div class="product-icon-wrap icon-cso">
-              <i class="fas fa-truck"></i>
-            </div>
-            <div class="product-titles">
-              <h3>CaraCore CSO Transportes</h3>
-              <span class="version-tag">GA planejado · 08/11/2028</span>
-            </div>
-          </div>
-          <span class="status-badge status-garage">Em breve</span>
-        </div>
-
-        <p class="card-desc">
-          Linha desktop prevista para a operação de transportes no computador da empresa. O GA planejado é 08/11/2028. Ainda sem arquivo público.
-        </p>
-        <ul class="use-case">
-          <li>Transportes no computador da empresa</li>
-          <li>GA planejado para 08/11/2028</li>
-          <li>Sem instalador nesta data</li>
-        </ul>
-        <dl class="trust-metrics">
-          <div><dt>Versão</dt><dd>Sem release</dd></div>
-          <div><dt>Marco</dt><dd>08/11/2028</dd></div>
-          <div><dt>Status</dt><dd>Planejamento</dd></div>
-          <div><dt>Plataforma</dt><dd>Desktop previsto</dd></div>
-        </dl>
-
-        <div class="specs-box">
-          <div class="spec-line"><i class="fas fa-calendar"></i> <span>Data planejada: <strong>08/11/2028</strong>.</span></div>
-          <div class="spec-line"><i class="fas fa-info-circle"></i> <span>Ainda sem download público. Não é rastreamento GPS.</span></div>
-        </div>
-
-        <div class="card-actions">
-          <a href="https://cso-transp.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Ver informações do CSO Transportes">
-            <i class="fas fa-globe"></i> Ver produto
-          </a>
-        </div>
-
-        <div class="card-links-sub">
-          <a href="https://cso-transp.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja CSO</a>
-          <a href="https://wiki.caracore.com.br/projeto-cso.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
-        </div>
-      </article>
-
-      <!-- 6. CARACORE HUB -->
+      <!-- CARACORE HUB -->
       <article class="product-card" id="hub" 
                data-title="CaraCore Hub Encomendas Centros de Distribuição v2.1.0-rc1.2" 
                data-category="encomendas" 
                data-platforms="windows"
                data-maturity="preview"
+               data-goal="encomendas"
                data-tags="hub encomendas shopee mercado livre temu logistica cd pacotes rc1.2 windows pre-release nsis zip distribuicao">
         <div class="card-top">
           <div class="product-identity">
@@ -599,6 +575,7 @@
                data-category="bunker" 
                data-platforms="windows"
                data-maturity="estavel"
+               data-goal="agenda"
                data-tags="ink agenda tarefas notas criptografia offline bunker javafx estudio financeiro">
         <div class="card-top">
           <div class="product-identity">
@@ -687,6 +664,7 @@
                data-category="engenharia" 
                data-platforms="windows linux macos" 
                data-maturity="estavel"
+               data-goal="estudar"
                data-tags="ete minerador efluentes quimica tratamento dados ambiental ouro python estacao">
         <div class="card-top">
           <div class="product-identity">
@@ -795,6 +773,7 @@
                data-category="bunker" 
                data-platforms="windows"
                data-maturity="estavel"
+               data-goal="estudar"
                data-tags="oidc oauth autenticacao identidade estudo bunker seguranca eras">
         <div class="card-top">
           <div class="product-identity">
@@ -868,6 +847,7 @@
                data-category="formacao" 
                data-maturity="estavel"
                data-platforms="windows"
+               data-goal="estudar"
                data-tags="circuito ferradura educacao logica python computacao formacao curso">
         <div class="card-top">
           <div class="product-identity">
@@ -940,6 +920,7 @@
                data-category="engenharia"
                data-platforms="windows"
                data-maturity="estavel"
+               data-goal="estudar"
                data-tags="bioreator bioinsumos fermentacao ru community windows 1.1.1">
         <div class="card-top">
           <div class="product-identity">
@@ -1039,6 +1020,7 @@
                data-category="bunker"
                data-platforms="windows"
                data-maturity="piloto"
+               data-goal="licencas"
                data-tags="seed licenças clientes gestão local sqlite windows piloto download avaliação">
         <div class="card-top">
           <div class="product-identity">
@@ -1088,11 +1070,13 @@
 
     </section>
 
+    <p class="roadmap-catalog-link">O CSO Transportes e outros itens planejados não estão disponíveis para instalação. Consulte o <a href="roadmap.html">roadmap de próximos lançamentos</a>.</p>
+
     <!-- NO RESULTS FALLBACK -->
     <div id="no-results-state" style="display: none; text-align: center; padding: 4rem 1rem;">
       <i class="fas fa-box-open" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
       <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 0.5rem;">Nenhuma aplicação encontrada</h3>
-      <p style="color: var(--text-secondary); font-size: 0.9rem;">Tente ajustar a pesquisa ou limpar os filtros de categoria, maturidade e sistema.</p>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">Tente outro objetivo, ajuste a pesquisa ou revise os filtros técnicos.</p>
     </div>
 
     <!-- BUNKER DIGITAL PHILOSOPHY -->
