@@ -1135,6 +1135,28 @@ a {
   line-height: 1.3;
 }
 
+.product-card#caracore-seed .trust-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product-card#caracore-seed .trust-metrics div {
+  min-width: 0;
+}
+
+.product-card#caracore-seed .spec-line {
+  align-items: flex-start;
+}
+
+.product-card#caracore-seed .spec-line > span {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-card#caracore-seed .spec-line code {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
 .product-card > .card-top { order: 1; }
 .product-card > .card-desc { order: 2; }
 .product-card > .use-case { order: 3; }
