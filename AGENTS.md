@@ -16,7 +16,7 @@
 
 Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Cara Core Informática, sob a filosofia do **Bunker Digital**:
 - **Offline-First & Soberania de Dados:** Distribuição direta de binários com persistência local (SQLite/arquivos).
-- **Transparência Radical:** O catálogo usa os selos Estável, Pré-release, Piloto, Em breve e Acesso online (SaaS); exibe versões e checksums SHA256 publicados. Ferramentas internas sem oferta pública ficam fora do catálogo.
+- **Transparência Radical:** O catálogo usa os selos Estável, Pré-release, Piloto, Em breve e Acesso online (SaaS); exibe versões e checksums SHA256 publicados. Um piloto fechado pode aparecer sem binário público, com status e CTA de convite explícitos.
 - **Branch Principal:** Sempre `master` tanto local quanto remotamente.
 
 ---
@@ -35,7 +35,7 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 | **Reino OIDC** | `v2.0.2-free` | Edição Free | Windows EXE `ReinoOIDC-2.0.2-free.exe` · SHA256 `d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc` · três Eras gratuitas para estudo pessoal, sem certificado digital; a edição paga está em desenvolvimento e a loja não combina PIX nesta etapa; dúvidas e relatos são bem-vindos, sem SLA; sem certificação nem consultoria. A página de download oferece só `v2.0.2-free`. `v2.0.1-free` e `v2.0.0` ficam no histórico | https://oidc.caracore.com.br |
 | **Circuito Ferradura** | `v2.0.24` | Estável | Windows EXE sem assinatura · SHA256 `eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12` · pacotes Windows, macOS e HTML na loja · `v2.0.23` no histórico | https://circuito.caracore.com.br |
 | **BioReator 4.0** | Community `1.1.1` publicada em 13/10/2026; Premium em 18/06/2027, sem preço e sem PIX | Estável | Windows x64, sem assinatura. MSI SHA256 `6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21` · ZIP `b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7` · EXE dentro do ZIP `88eb22c17b547ded71aed275021bfbbd4121b171cbaba4373dfdca96c11a609a` | https://ru.caracore.com.br |
-| **Cara Core Seed** | Uso Interno | Fora do catálogo público | Sem download aberto | https://seed.caracore.com.br |
+| **Cara Core Seed** | Candidato `0.1.3` | Piloto fechado por convite; homologação independente pendente | Windows x64 · sem binário/checksum público; Linux fora desta etapa | https://seed.caracore.com.br |
 
 ---
 
@@ -49,3 +49,4 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 - **Integridade:** Não inventar versões, integrações PIX no Free Java ou depoimentos fictícios.
 - **PDV — retomada 11/10/2026:** RC6 pública, build 11/10, SHA-256 `0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325`, Windows 10/11 x64 + Edge e Java 25 incluído (sem instalar JDK/Python). RC7 somente em QA local, sem tag/download publicado; checklist final 1/10 concluído, próximo P1.3. Fonte de retomada: `caracore-pdv/docs/arquitetura/CONTINUIDADE_DESENVOLVIMENTO.md` e `docs/relatorio-rc7.md` na oficina. GA em reavaliação, sem data nova; manter Free `v3.2.7-free` como estável.
 - **Hub:** o cartão vigente é a pré-release Windows `v2.1.0-rc1.2`. O banco do produto é SQLite local (WAL). A release seguinte entra com outra tag e os SHA-256 dessa tag, no mesmo corte da loja `hub.caracore.com.br` e da matriz.
+- **Seed:** o cartão no catálogo apresenta o candidato Windows `0.1.3` como piloto por convite, sem arquivo ou checksum. Testes automatizados passaram, mas homologação independente e instalação/uso em perfil limpo permanecem pendentes. Não publicar nem distribuir até aceite. Seed é local, sem monitoramento remoto de heartbeats; Linux fica fora desta etapa; primeiro acesso `admin`/`admin`, troca obrigatória para senha de exatamente 8 caracteres com confirmação e chave de recuperação.
