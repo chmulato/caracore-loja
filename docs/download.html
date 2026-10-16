@@ -35,7 +35,7 @@
           </div>
           <div class="brand-info">
             <h1>Cara Core <span class="badge-tag">Downloads</span></h1>
-            <p>Engenharia B2B & Bunker Digital</p>
+            <p>Programas para sua empresa</p>
           </div>
         </a>
 
@@ -60,7 +60,7 @@
     
     <section class="sovereignty-banner" aria-label="Diferencial da casa">
       <p class="sovereignty-kicker">Diferencial da casa</p>
-      <h2>Soberania de dados e operação offline-first</h2>
+      <h2>Programas que rodam no computador da sua empresa, com versão e SHA256 publicados.</h2>
       <p>
         Caixa, agenda e os pacotes desktop guardam o banco no computador do cliente.
         O CSO Frotas é acesso online. Os canais do Hub precisam de internet.
@@ -171,21 +171,24 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore PDV (Java)</h3>
-              <span class="version-tag">v3.2.12-free · atualização corretiva da linha 3.2.x</span>
+              <span class="version-tag">v3.2.12-free · 15/10/2026</span>
             </div>
           </div>
           <span class="status-badge status-free">Estável</span>
         </div>
 
         <p class="card-desc">
-          Frente de caixa para varejo e balcão. A venda acontece no navegador do próprio computador, com o banco SQLite local.
+          Frente de caixa para varejo e balcão. A venda acontece no navegador, com os dados no computador da loja.
         </p>
         <ul class="use-case">
           <li>Balcão e pequeno varejo</li>
           <li>Operação no computador da loja</li>
           <li>100 vendas por mês no Free</li>
           <li>Recibo digital sem valor fiscal</li>
-          <li>Manutenção restrita até 08/11/2026</li>
+          <li>Requer JDK 25 instalado</li>
+          <li>Homologação em andamento · <a href="https://pdv.caracore.com.br/wiki-release-v3-2-12-free.html#validacao">ressalvas</a></li>
+          <li>SHA256 Windows: <code>6d7a50b0…45f7c0e2</code></li>
+          <li>SHA256 Linux/macOS: <code>795a3963…a99fd9c1</code> · mesmo pacote Java portátil</li>
         </ul>
         <figure class="screen-schema">
           <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Frente de caixa</div>
@@ -199,16 +202,16 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v3.2.12-free</dd></div>
           <div><dt>Atualização</dt><dd>15/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Status</dt><dd>Estável publicada; homologação em andamento</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
           <div><dt>Plataforma</dt><dd>Windows, Linux, macOS</dd></div>
         </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-check"></i> <span><strong>Plano Free:</strong> 100 vendas/mês · 100 produtos</span></div>
-          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span><strong>Validação pendente:</strong> 19/19 testes focados Java 25/H2 e integridade dos ZIPs aprovados. Suíte completa, smoke portátil SQLite e execução Linux/macOS pendentes; publicação estável/Latest autorizada, sem homologação operacional completa.</span></div>
-          <div class="spec-line"><i class="fas fa-circle-info"></i> <span>Corretiva de HTTP 405 e estorno/cancelamento. Antes de atualizar, encerre o PDV, faça backup e preserve os dados. <a href="https://pdv.caracore.com.br/wiki-release-v3-2-12-free.html">Notas e ressalvas da 3.2.12</a>.</span></div>
-          <div class="spec-line"><i class="fas fa-user"></i> <span>1 Operador · 4 Vendedores · 1 Loja</span></div>
+          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span><strong>Homologação em andamento.</strong> Consulte as <a href="https://pdv.caracore.com.br/wiki-release-v3-2-12-free.html#validacao">ressalvas nas notas</a>.</span></div>
+          <div class="spec-line"><i class="fas fa-circle-info"></i> <span>Antes de atualizar, feche o PDV, faça backup de <code>%APPDATA%\caracore</code> e extraia o ZIP em outra pasta. Seus dados e sua senha são mantidos.</span></div>
+          <div class="spec-line"><i class="fas fa-user"></i> <span>1 operador · 1 loja</span></div>
           <div class="spec-line"><i class="fas fa-desktop"></i> <span>UI no navegador em <code>http://localhost:8080/login</code></span></div>
           <div class="spec-line"><i class="fas fa-receipt"></i> <span>Recibo digital por link e PDF, sem valor fiscal</span></div>
           <div class="spec-line"><i class="fas fa-circle-info"></i> <span>Sem PIX integrado e sem emissão de NF-e/NFC-e</span></div>
@@ -239,16 +242,7 @@
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Linux x64)</span>
-              <span class="hash-code">795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1</span>
-            </div>
-            <button class="btn-copy-hash" onclick="copyHash('795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1', this)" title="Copiar SHA256 completo">
-              <i class="fas fa-copy"></i>
-            </button>
-          </div>
-          <div class="checksum-box">
-            <div>
-              <span class="hash-label">SHA256 (macOS x64)</span>
+              <span class="hash-label">SHA256 (Linux e macOS: mesmo pacote Java portátil; requer JDK 25 instalado)</span>
               <span class="hash-code">795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1</span>
             </div>
             <button class="btn-copy-hash" onclick="copyHash('795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1', this)" title="Copiar SHA256 completo">
@@ -258,6 +252,7 @@
         </div>
 
         <div class="card-links-sub">
+          <a href="https://pdv.caracore.com.br/download.html" class="card-link-item"><i class="fas fa-download"></i> Instalação e SHA256</a>
           <a href="https://pdv.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do PDV</a>
           <a href="https://wiki.caracore.com.br/projeto-pdv.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Manual na Wiki</a>
         </div>
@@ -285,7 +280,7 @@
         </div>
 
         <p class="card-desc">
-          Pré-release pública da edição Free para avaliação no Windows. A versão estável para adoção é a v3.2.12-free; a RC7 segue em QA local, sem download público.
+          Prévia da edição Free para avaliação no Windows. A versão atual é a 3.2.12-free, publicada como estável com homologação em andamento.
         </p>
         <ul class="use-case">
           <li>Avaliação da linha v4</li>
@@ -311,7 +306,7 @@
         </dl>
 
         <div class="specs-box">
-          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Preview para teste; a versão estável é a v3.2.12-free. A linha 3.2.x permanece em manutenção restrita; 08/11/2026 não é data de GA da v4. Java 25 incluído no ZIP, sem instalar JDK ou Python.</span></div>
+          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Somente para avaliação, não é a versão final. Não precisa instalar Java: ele vem dentro do ZIP.</span></div>
         </div>
 
         <div class="card-actions">
