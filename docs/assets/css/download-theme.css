@@ -1,0 +1,58 @@
+/* Cara Core — Central de Downloads (download.caracore.com.br)
+   Camada de tema da central, carregada depois de portal-style.css (comum às
+   lojas) e antes de central-theme.css (componentes do catálogo).
+
+   Paleta neutra: grafite da marca (#111827, o mesmo tom do símbolo Cara Core)
+   com um azul institucional de interface. A cor de cada produto não vira cor
+   de página: ela fica restrita ao selo de status do card. */
+
+:root {
+  --brand-a: #111827; /* grafite da marca */
+  --brand-b: #1f2937;
+  --brand-c: #1d4ed8; /* azul de interface */
+
+  /* ação e destaque. --accent-strong é o tom de texto sobre superfície clara
+     (8,6:1 com branco); --accent-soft é o tom sobre fundo escuro (8,4:1 em
+     #0b1220). O par do gradiente de ação fica em 6,3:1 no pior ponto. */
+  --accent: #1d4ed8;
+  --accent-soft: #60a5fa;
+  --accent-strong: #1e40af;
+  --accent-rgb: 29, 78, 216;
+  --cta-grad-a: #111827;
+  --cta-grad-b: #1d4ed8;
+
+  /* superfícies e texto do catálogo */
+  --cc-bg: #f8fafc;
+  --cc-surface: #ffffff;
+  --cc-surface-soft: #f8fafc;
+  --cc-border: #e5e7eb;
+  --cc-border-strong: #d1d5db;
+  --cc-ink: #0f172a;
+  --cc-ink-soft: #475569;
+  --cc-ink-muted: #64748b;
+
+  /* aliases legados: o HTML do catálogo usa estes nomes em style="" */
+  --text-primary: var(--cc-ink);
+  --text-secondary: var(--cc-ink-soft);
+  --text-muted: var(--cc-ink-muted);
+  --font-heading: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  /* hash e código usam a monoespaçada do próprio sistema (sem webfont) */
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+body {
+  background-color: var(--cc-bg);
+  color: var(--cc-ink);
+}
+
+/* CTA do cabeçalho — estrutura e classes iguais nas vitrines.
+   Só a cor muda, e ela vem das variáveis do tema. */
+.cta-link { color: #374151; }
+.cta-link:hover { color: var(--accent-strong); }
+.cta-btn { background: linear-gradient(135deg, var(--cta-grad-a) 0%, var(--cta-grad-b) 100%); }
+
+/* Hero: mesma moldura do portal, com respiro um pouco menor por ser catálogo.
+   O fundo usa o gradiente de ação pelo mesmo motivo de contraste do CTA. */
+.portal-hero.central-hero { box-shadow: 0 24px 60px rgba(17, 24, 39, 0.22); }
+.portal-hero.central-hero.green-bg { background: linear-gradient(135deg, var(--cta-grad-a) 0%, var(--cta-grad-b) 100%); }
+.portal-hero.central-hero h1 { font-family: var(--font-heading); letter-spacing: -0.02em; }

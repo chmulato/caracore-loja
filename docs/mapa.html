@@ -13,19 +13,21 @@
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Marca (mesmos arquivos das lojas de PDV, Hub e CSO) -->
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
   <link rel="apple-touch-icon" href="assets/brand/caracore-logo.svg">
-  <meta name="theme-color" content="#0b1f3a">
+  <meta name="theme-color" content="#111827">
 
   <!-- Tailwind + CSS: portal-style.css é o compartilhado das lojas;
-       central-theme.css guarda só o que é desta central. -->
+       download-theme.css traz os tokens neutros desta central e
+       central-theme.css os componentes do catálogo. -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/portal-style.css">
+  <link rel="stylesheet" href="assets/css/download-theme.css">
   <link rel="stylesheet" href="assets/css/central-theme.css">
 
   <script>
@@ -41,11 +43,11 @@
 <body class="smooth-scroll bg-gray-50">
 
   <nav class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600" aria-label="Navegação institucional">
-    <a href="https://www.caracore.com.br/" class="hover:text-green-600">Cara Core Informática</a>
+    <a href="https://www.caracore.com.br/" class="hover:text-blue-700">Cara Core Informática</a>
     <span> · </span>
-    <a href="https://www.caracore.com.br/portfolio.html" class="hover:text-green-600" rel="noopener">Portfólio</a>
+    <a href="https://www.caracore.com.br/portfolio.html" class="hover:text-blue-700" rel="noopener">Portfólio</a>
     <span> · </span>
-    <a href="index.html" class="hover:text-green-600">Central de Downloads</a>
+    <a href="index.html" class="hover:text-blue-700">Central de Downloads</a>
     <span> · </span>
     <span class="text-gray-900">Mapa</span>
   </nav>
@@ -55,25 +57,20 @@
     <nav class="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Menu da central">
       <div class="flex justify-between items-center h-20">
         <a href="index.html" class="flex items-center space-x-3">
-          <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" class="w-12 h-12 rounded-lg" aria-hidden="true">
+          <img src="assets/brand/caracore-logo.svg" alt="Cara Core Informática" width="48" height="48" class="w-12 h-12 rounded-lg">
           <div>
-            <p class="text-xl font-bold text-gray-900">Cara Core Downloads</p>
-            <p class="text-xs text-gray-600">Programas para sua empresa</p>
+            <p class="text-xl font-bold text-gray-900">CaraCore Downloads</p>
+            <p class="text-xs text-gray-600">Central de versões</p>
           </div>
         </a>
 
         <div class="central-nav" aria-label="Seções da central">
-          <a href="index.html" class="central-nav-link">Negócio</a>
-          <a href="download.html" class="central-nav-link">Catálogo</a>
-          <a href="mapa.html" class="central-nav-link" aria-current="page">Mapa</a>
-          <a href="roadmap.html" class="central-nav-link">Roadmap</a>
-          <a href="https://www.caracore.com.br" class="central-nav-link">Matriz</a>
-          <a href="https://wiki.caracore.com.br" class="central-nav-link">Wiki</a>
-          <a href="download.html#ajuda-integridade" class="central-nav-link">SHA256</a>
-          <a href="download.html#pdv-java" class="cta-link text-sm font-medium transition">Baixar Free</a>
-          <a href="https://wa.me/5541999097797" class="cta-btn text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition text-center" target="_blank" rel="noopener">
-            Suporte
-          </a>
+          <a href="download.html#catalogo" class="central-nav-link">Produtos</a>
+          <a href="download.html#instalar" class="central-nav-link">Como instalar</a>
+          <a href="download.html#ajuda-integridade" class="central-nav-link">Verificar SHA256</a>
+          <a href="download.html#seguranca" class="central-nav-link">Segurança</a>
+          <a href="https://wa.me/5541999097797" class="cta-link text-sm font-medium transition" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a href="download.html#catalogo" class="cta-btn text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition text-center">Ver produtos</a>
         </div>
 
         <div class="flex items-center gap-3">
@@ -87,14 +84,11 @@
       </div>
 
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html">Negócio</a>
-        <a href="download.html">Catálogo</a>
-        <a href="mapa.html" aria-current="page">Mapa</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="https://www.caracore.com.br" rel="noopener">Matriz</a>
-        <a href="https://wiki.caracore.com.br" rel="noopener">Wiki</a>
-        <a href="download.html#ajuda-integridade">Verificação SHA256</a>
-        <a href="https://wa.me/5541999097797" rel="noopener">Suporte no WhatsApp</a>
+        <a href="download.html#catalogo">Produtos</a>
+        <a href="download.html#instalar">Como instalar</a>
+        <a href="download.html#ajuda-integridade">Verificar SHA256</a>
+        <a href="download.html#seguranca">Segurança</a>
+        <a href="https://wa.me/5541999097797" rel="noopener">Falar no WhatsApp</a>
       </div>
     </nav>
   </header>
@@ -103,11 +97,11 @@
   <section class="portal-hero central-hero green-bg text-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
       <div class="max-w-3xl mx-auto text-center">
-        <p class="text-sm uppercase tracking-wide text-green-100 mb-4">Mapa do ecossistema</p>
+        <p class="text-sm uppercase tracking-wide text-blue-100 mb-4">Mapa do ecossistema</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Uma casa. Produtos com acesso próprio.
         </h1>
-        <p class="text-lg md:text-xl text-green-50 mb-8">
+        <p class="text-lg md:text-xl text-blue-50 mb-8">
           A Cara Core reúne caixa, encomendas, frota, agenda e estudo sob a mesma engenharia:
           dado no computador do cliente, status visível e arquivo com SHA256.
           Cada aplicativo abre com o próprio acesso e o próprio banco.
@@ -286,11 +280,11 @@
       </div>
 
       <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-gray-400">
-        <p>&copy; 2026 Cara Core Informática. Todos os direitos reservados.</p>
+        <p>&copy; 2024–2026 Cara Core Informática · CNPJ 23.969.028/0001-37 · <a href="https://www.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">www.caracore.com.br</a></p>
         <p class="flex flex-wrap gap-x-3 gap-y-1">
-          <a href="index.html" class="hover:text-white">Negócio</a>
+          <a href="index.html" class="hover:text-white">Início</a>
           <span aria-hidden="true">·</span>
-          <a href="mapa.html" class="text-green-400">Mapa</a>
+          <a href="mapa.html" class="text-blue-300">Mapa</a>
           <span aria-hidden="true">·</span>
           <a href="roadmap.html" class="hover:text-white">Roadmap</a>
           <span aria-hidden="true">·</span>

@@ -1,0 +1,443 @@
+{
+  "schema": 1,
+  "atualizado": "2026-10-28",
+  "moeda": "BRL",
+  "produtos": [
+    {
+      "ancora": "pdv-java",
+      "produto": "CaraCore PDV (Java)",
+      "versao": "v3.2.12-free",
+      "rotuloVersao": "v3.2.12-free · 15/10/2026",
+      "status": "estavel",
+      "statusLabel": "Estável",
+      "statusClasse": "status-free",
+      "plataformas": ["windows", "linux", "macos"],
+      "loja": "https://pdv.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-pdv.html",
+      "downloads": [
+        {
+          "rotulo": "Windows x64 (.ZIP)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v3.2.12-free/caracore-pdv-v3.2.12-free-windows-x64.zip",
+          "sha256": "6d7a50b0acf2a05620a090eebdd48f049a1dd5599ccb6c40c419c38145f7c0e2"
+        },
+        {
+          "rotulo": "Linux x64",
+          "plataforma": "linux",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v3.2.12-free/caracore-pdv-v3.2.12-free-linux-x64.zip",
+          "sha256": "795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1"
+        },
+        {
+          "rotulo": "macOS x64",
+          "plataforma": "macos",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v3.2.12-free/caracore-pdv-v3.2.12-free-macos-x64.zip",
+          "sha256": "795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (Windows)",
+          "valor": "6d7a50b0acf2a05620a090eebdd48f049a1dd5599ccb6c40c419c38145f7c0e2"
+        },
+        {
+          "rotulo": "SHA256 (Linux e macOS: mesmo ZIP; requer JDK 25 instalado — o Java não vem embutido)",
+          "valor": "795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1"
+        }
+      ],
+      "avisos": [
+        "Sem assinatura digital nos três ZIPs.",
+        "Homologação em andamento; ressalvas publicadas na wiki do PDV.",
+        "Requer JDK 25 instalado: o Java não vem embutido."
+      ]
+    },
+    {
+      "ancora": "pdv-v4",
+      "produto": "CaraCore PDV (Java) · v4",
+      "versao": "v4.0.0-rc6",
+      "rotuloVersao": "v4.0.0-rc6 · Windows x64",
+      "status": "preview",
+      "statusLabel": "Pré-release",
+      "statusClasse": "status-pilot",
+      "plataformas": ["windows"],
+      "loja": "https://pdv.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-pdv.html",
+      "downloads": [
+        {
+          "rotulo": "Windows x64 (.ZIP)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-rc6/CaraCore-PDV-4.0.0-rc6-qute-portable-windows-x64.zip",
+          "sha256": "0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (Windows x64)",
+          "valor": "0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325"
+        }
+      ],
+      "avisos": [
+        "Somente para avaliação: não é a versão final.",
+        "Java 25 vem dentro do ZIP.",
+        "Windows 10/11 x64 com Microsoft Edge."
+      ]
+    },
+    {
+      "ancora": "pdv-rust",
+      "produto": "CaraCore PDV (Rust)",
+      "versao": "v0.1.4",
+      "rotuloVersao": "v0.1.4 · Piloto Windows",
+      "status": "piloto",
+      "statusLabel": "Piloto",
+      "statusClasse": "status-pilot",
+      "plataformas": ["windows"],
+      "loja": "https://pdv-rust.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-pdv-rust.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (.ZIP)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-rust-pdv-releases/releases/download/v0.1.4/CaraCore-PDV-v0.1.4-windows.zip",
+          "sha256": "7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (Windows ZIP)",
+          "valor": "7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37"
+        }
+      ],
+      "avisos": [
+        "Piloto com teto de 100 vendas na vida.",
+        "Linha de avaliação: convive com o PDV Java."
+      ]
+    },
+    {
+      "ancora": "cso-frotas",
+      "produto": "CaraCore CSO Frotas",
+      "versao": "FRO 24/24",
+      "rotuloVersao": "Produção Ativa · Web SaaS",
+      "status": "estavel",
+      "statusLabel": "Acesso online (SaaS)",
+      "statusClasse": "status-saas",
+      "plataformas": ["web"],
+      "loja": "https://cso-transp.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-cso.html",
+      "downloads": [
+        {
+          "rotulo": "Começar grátis",
+          "plataforma": "web",
+          "principal": true,
+          "url": "https://cso.caracore.com.br/cadastro",
+          "sha256": null
+        },
+        {
+          "rotulo": "Entrar",
+          "plataforma": "web",
+          "principal": false,
+          "url": "https://cso.caracore.com.br/login",
+          "sha256": null
+        }
+      ],
+      "sha256": [],
+      "avisos": [
+        "Acesso online pelo navegador: não há instalador.",
+        "Gestão operacional de frota, não é rastreador GPS."
+      ]
+    },
+    {
+      "ancora": "hub",
+      "produto": "CaraCore Hub",
+      "versao": "v2.1.0-rc1.7",
+      "rotuloVersao": "v2.1.0-rc1.7 · Windows x64 · sem assinatura digital",
+      "status": "preview",
+      "statusLabel": "Pré-release",
+      "statusClasse": "status-pilot",
+      "plataformas": ["windows"],
+      "loja": "https://hub.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-hub.html",
+      "downloads": [
+        {
+          "rotulo": "Windows x64 (.EXE)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.7/CaraCore.Hub-2.1.0-rc1.7-win-x64.exe",
+          "sha256": "1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1"
+        },
+        {
+          "rotulo": "ZIP sem instalador",
+          "plataforma": "windows",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.7/CaraCore.Hub-2.1.0-rc1.7-win-x64.zip",
+          "sha256": "924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.exe)",
+          "valor": "1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1"
+        },
+        {
+          "rotulo": "SHA256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.zip)",
+          "valor": "924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e"
+        }
+      ],
+      "avisos": [
+        "Pré-release; GA do instalador planejado para 06/04/2027.",
+        "Instalador e ZIP sem assinatura digital. Não desative SmartScreen, Defender ou antivírus.",
+        "Free: suporte opcional de R$ 79,90/mês a partir do GA."
+      ]
+    },
+    {
+      "ancora": "ink",
+      "produto": "Ink Agenda Desktop",
+      "versao": "v2.0.1",
+      "rotuloVersao": "v2.0.1 · Estável",
+      "status": "estavel",
+      "statusLabel": "Estável",
+      "statusClasse": "status-free",
+      "plataformas": ["windows"],
+      "loja": "https://ink.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-ink.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (.ZIP)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows.zip",
+          "sha256": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
+        },
+        {
+          "rotulo": "Instalador Windows (.EXE)",
+          "plataforma": "windows",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows-setup.exe",
+          "sha256": "49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (Windows ZIP)",
+          "valor": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
+        },
+        {
+          "rotulo": "SHA256 (Windows instalador EXE)",
+          "valor": "49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b"
+        }
+      ],
+      "avisos": [
+        "Dados no próprio Windows; backup .inkbak protegido por senha.",
+        "Java 25 e JavaFX no pacote Windows."
+      ]
+    },
+    {
+      "ancora": "ete",
+      "produto": "Minerador ETE 4.0",
+      "versao": "v1.2.3",
+      "rotuloVersao": "v1.2.3",
+      "status": "estavel",
+      "statusLabel": "Estável",
+      "statusClasse": "status-free",
+      "plataformas": ["windows", "linux", "macos"],
+      "loja": "https://ete.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-minerador.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (.EXE)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-windows-x64.exe",
+          "sha256": "20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791"
+        },
+        {
+          "rotulo": "Windows (.ZIP)",
+          "plataforma": "windows",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-windows-x64.zip",
+          "sha256": "00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc"
+        },
+        {
+          "rotulo": "Linux (.tar.gz)",
+          "plataforma": "linux",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-linux-x86_64.tar.gz",
+          "sha256": "5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f"
+        },
+        {
+          "rotulo": "macOS (.DMG)",
+          "plataforma": "macos",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-ete-releases/releases/download/v1.2.3/Minerador40-macos-universal.dmg",
+          "sha256": "9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (Windows EXE)",
+          "valor": "20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791"
+        },
+        {
+          "rotulo": "SHA256 (Windows ZIP)",
+          "valor": "00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc"
+        },
+        {
+          "rotulo": "SHA256 (Linux x86_64)",
+          "valor": "5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f"
+        },
+        {
+          "rotulo": "SHA256 (macOS universal)",
+          "valor": "9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc"
+        }
+      ],
+      "avisos": [
+        "Versão publicada para Windows, Linux e macOS."
+      ]
+    },
+    {
+      "ancora": "oidc",
+      "produto": "Reino OIDC",
+      "versao": "v2.0.2-free",
+      "rotuloVersao": "v2.0.2-free · OAuth 2.1",
+      "status": "estavel",
+      "statusLabel": "Edição Free",
+      "statusClasse": "status-free",
+      "plataformas": ["windows"],
+      "loja": "https://oidc.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-reino.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (2.0.2)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-oidc-releases/releases/download/v2.0.2-free/ReinoOIDC-2.0.2-free.exe",
+          "sha256": "d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 (Windows EXE)",
+          "valor": "d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc"
+        }
+      ],
+      "avisos": [
+        "Três Eras gratuitas para estudo pessoal.",
+        "Edição paga em desenvolvimento; sem pagamento nesta etapa.",
+        "Sem SLA, certificação ou consultoria."
+      ]
+    },
+    {
+      "ancora": "circuito",
+      "produto": "Circuito Ferradura",
+      "versao": "v2.0.24",
+      "rotuloVersao": "v2.0.24 · Windows, macOS e HTML",
+      "status": "estavel",
+      "statusLabel": "Estável",
+      "statusClasse": "status-free",
+      "plataformas": ["windows"],
+      "loja": "https://circuito.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-python.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (.EXE)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-circuito-releases/releases/download/v2.0.24/CircuitoFerradura.exe",
+          "sha256": "eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 publicado (Windows EXE)",
+          "valor": "eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12"
+        }
+      ],
+      "avisos": [
+        "Executável Windows sem assinatura digital.",
+        "Pacotes macOS e HTML ficam na loja do produto."
+      ]
+    },
+    {
+      "ancora": "bioreator40",
+      "produto": "BioReator 4.0",
+      "versao": "1.1.1",
+      "rotuloVersao": "Community 1.1.1 · Windows",
+      "status": "estavel",
+      "statusLabel": "Community",
+      "statusClasse": "status-free",
+      "plataformas": ["windows"],
+      "loja": "https://ru.caracore.com.br/bioreator.html",
+      "wiki": "https://wiki.caracore.com.br/projeto-bioreator.html",
+      "downloads": [
+        {
+          "rotulo": "Windows x64 (.MSI)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-ru-releases/releases/download/bioreator-1.1.1/BioReator40-1.1.1.msi",
+          "sha256": "6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21"
+        },
+        {
+          "rotulo": "Windows x64 (.ZIP)",
+          "plataforma": "windows",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-ru-releases/releases/download/bioreator-1.1.1/BioReator40-1.1.1-windows-x64.zip",
+          "sha256": "b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA256 do MSI",
+          "valor": "6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21"
+        },
+        {
+          "rotulo": "SHA256 do ZIP",
+          "valor": "b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7"
+        },
+        {
+          "rotulo": "SHA256 do EXE dentro do ZIP",
+          "valor": "88eb22c17b547ded71aed275021bfbbd4121b171cbaba4373dfdca96c11a609a"
+        }
+      ],
+      "avisos": [
+        "Community 1.1.1 publicada em 13/10/2026.",
+        "Premium em 18/06/2027, sem preço e sem PIX.",
+        "MSI, ZIP e EXE sem assinatura digital."
+      ]
+    },
+    {
+      "ancora": "caracore-seed",
+      "produto": "CaraCore Seed",
+      "versao": "0.1.5",
+      "rotuloVersao": "Pré-release candidata 0.1.5 · Windows x64",
+      "status": "piloto",
+      "statusLabel": "Piloto · avaliação",
+      "statusClasse": "status-pilot",
+      "plataformas": ["windows"],
+      "loja": "https://seed.caracore.com.br/",
+      "wiki": "https://wiki.caracore.com.br/projeto-seed.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (.EXE)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-seed-releases/releases/download/v0.1.5/caracore-seed-0.1.5-windows-x64.exe",
+          "sha256": "e449ca2cee74fda135ac098d2333fe674c2c476773a7d4adb60bc016a767db16"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA-256 (216.466.586 bytes)",
+          "valor": "e449ca2cee74fda135ac098d2333fe674c2c476773a7d4adb60bc016a767db16"
+        }
+      ],
+      "avisos": [
+        "Versão experimental: não homologada nem pronta para produção.",
+        "Instalador unsigned. Não desative SmartScreen, Defender ou outras proteções.",
+        "Ao atualizar, preserve banco e chaves; licenças antigas podem pedir rotação do token."
+      ]
+    }
+  ]
+}
