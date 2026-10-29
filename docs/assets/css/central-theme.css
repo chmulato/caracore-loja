@@ -18,6 +18,11 @@
   /* verde escuro para texto sobre superfície clara (--green puro dá 3,77:1
      com branco, abaixo de 4,5:1 exigido para texto pequeno) */
   --green-strong: #047857;
+  /* gradiente de ação (hero, CTA do topo e botão de download). O par
+     --green → --green2 fica em 2,54:1 com texto branco; este passa em AA
+     com 5,48:1 no pior ponto do gradiente. */
+  --cta-grad-a: #065f46;
+  --cta-grad-b: #047857;
 
   /* superfícies e texto do catálogo */
   --cc-bg: #f8fafc;
@@ -46,11 +51,13 @@ body {
 /* CTA do cabeçalho — estrutura e classes iguais nas quatro vitrines.
    Só a cor muda, e ela vem das variáveis do tema da loja. */
 .cta-link { color: #374151; }
-.cta-link:hover { color: var(--green); }
-.cta-btn { background: linear-gradient(135deg, var(--green) 0%, var(--green2) 100%); }
+.cta-link:hover { color: var(--green-strong); }
+.cta-btn { background: linear-gradient(135deg, var(--cta-grad-a) 0%, var(--cta-grad-b) 100%); }
 
-/* Hero: mesma moldura do portal, com respiro um pouco menor por ser catálogo. */
+/* Hero: mesma moldura do portal, com respiro um pouco menor por ser catálogo.
+   O fundo usa o gradiente de ação pelo mesmo motivo de contraste do CTA. */
 .portal-hero.central-hero { box-shadow: 0 24px 60px rgba(11, 31, 58, 0.22); }
+.portal-hero.central-hero.green-bg { background: linear-gradient(135deg, var(--cta-grad-a) 0%, var(--cta-grad-b) 100%); }
 .portal-hero.central-hero h1 { font-family: var(--font-heading); letter-spacing: -0.02em; }
 
 /* CTAs do herói: classes próprias para não herdarem o remapeamento escuro
@@ -559,7 +566,7 @@ html:not(.catalog-enhanced) .filter-panel { display: none; }
   width: 100%;
   padding: 0.8rem 1rem;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--green) 0%, var(--green2) 100%);
+  background: linear-gradient(135deg, var(--cta-grad-a) 0%, var(--cta-grad-b) 100%);
   color: #ffffff;
   font-size: 0.92rem;
   font-weight: 700;
@@ -806,7 +813,7 @@ html:not(.catalog-enhanced) .filter-panel { display: none; }
   color: var(--cc-ink-soft);
   background: var(--cc-surface);
 }
-.roadmap-catalog-link a { color: var(--green); font-weight: 600; }
+.roadmap-catalog-link a { color: var(--green-strong); font-weight: 600; }
 
 /* ---------------------------------------------------- modal e toast */
 
@@ -1030,11 +1037,13 @@ html[data-theme="dark"] .screen-schema figcaption,
 html[data-theme="dark"] .catalog-section-heading p,
 html[data-theme="dark"] .results-meta,
 html[data-theme="dark"] .advanced-filters > summary,
+html[data-theme="dark"] .technical-details > summary,
 html[data-theme="dark"] .filter-panel label,
 html[data-theme="dark"] .breadcrumb,
 html[data-theme="dark"] .breadcrumb a,
 html[data-theme="dark"] .roadmap-catalog-link { color: #94a3b8; }
 html[data-theme="dark"] .breadcrumb span[class*="text-gray-900"] { color: #f1f5f9; }
+html[data-theme="dark"] .roadmap-catalog-link a { color: var(--green2); }
 html[data-theme="dark"] .breadcrumb a:hover,
 html[data-theme="dark"] .screen-schema figcaption a { color: var(--green2); }
 /* rótulo verde da seção precisa do tom claro no escuro (--green-strong
