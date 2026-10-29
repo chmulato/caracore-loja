@@ -1115,3 +1115,225 @@ select:focus-visible {
   outline: 3px solid rgba(16, 185, 129, 0.5);
   outline-offset: 2px;
 }
+
+/* ------------------------------------- páginas internas (mapa e roadmap) */
+
+/* Contêiner das páginas que não são o catálogo. Mesma superfície de
+   .integrity-help e .bunker-section para a central parecer uma casa só, e não
+   duas vitrines diferentes no mesmo domínio. */
+.page-card {
+  margin-top: 2.5rem;
+  padding: clamp(1.25rem, 2.5vw, 2.25rem);
+  background: var(--cc-surface);
+  border: 1px solid var(--cc-border);
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  scroll-margin-top: 6rem;
+}
+.page-card > .catalog-section-heading { margin-bottom: 1.5rem; }
+
+/* Raiz da árvore do mapa: a casa antes dos ramos. */
+.house-root {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border-radius: 9999px;
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.35);
+  color: var(--green-strong);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.house-root i { color: var(--green); }
+
+.branch-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+}
+.branch-card {
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--cc-border);
+  border-radius: 14px;
+  background: var(--cc-surface-soft);
+}
+.branch-card h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cc-ink);
+}
+.branch-card > p {
+  margin: 0.2rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--cc-ink-soft);
+}
+.branch-card ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.branch-card li {
+  position: relative;
+  padding-left: 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--cc-ink-soft);
+}
+.branch-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: var(--green);
+}
+.branch-card a { color: var(--green-strong); font-weight: 600; text-decoration: none; }
+.branch-card a:hover { text-decoration: underline; }
+
+/* Cartões de leitura (mapa) e eras (roadmap). */
+.info-grid,
+.era-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+}
+.info-card,
+.era-card {
+  padding: 1.2rem 1.25rem;
+  border: 1px solid var(--cc-border);
+  border-radius: 16px;
+  background: var(--cc-surface-soft);
+}
+.info-card h3,
+.info-card h4,
+.era-card h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cc-ink);
+}
+.info-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--cc-ink-soft);
+}
+.info-card a,
+.era-card a { color: var(--green-strong); font-weight: 600; text-decoration: none; }
+.info-card a:hover,
+.era-card a:hover { text-decoration: underline; }
+
+.era-label,
+.card-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  /* ink-soft, não ink-muted: o rótulo é pequeno e o cinza 500 só passa
+     raspando em 4,5:1 sobre a superfície clara dos cartões */
+  color: var(--cc-ink-soft);
+}
+/* O mesmo rótulo dentro de cartão que já tem parágrafo próprio
+   (.branch-card > p / .info-card p têm especificidade maior e venceriam
+   o .card-label sozinho): repete a tipografia com o seletor mais forte. */
+.branch-card > .card-label,
+.info-card > .card-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cc-ink-soft);
+}
+/* estado planejado, que não existia no catálogo (só estável, piloto e preview) */
+.dot-plan { background: #64748b; }
+.era-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.era-card li {
+  position: relative;
+  padding-left: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--cc-ink-soft);
+}
+.era-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 9999px;
+  background: var(--cc-border-strong);
+}
+.era-card li strong { color: var(--cc-ink); font-weight: 700; }
+
+.era-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--cc-ink-soft);
+}
+.era-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+/* Fecho das páginas internas: mesma dupla de botões do catálogo. */
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+.cta-row .btn-download-primary { width: auto; }
+
+html[data-theme="dark"] .page-card,
+html[data-theme="dark"] .branch-card,
+html[data-theme="dark"] .info-card,
+html[data-theme="dark"] .era-card { background: #111827; border-color: #1f2937; }
+html[data-theme="dark"] .branch-card h3,
+html[data-theme="dark"] .info-card h3,
+html[data-theme="dark"] .info-card h4,
+html[data-theme="dark"] .era-card h3,
+html[data-theme="dark"] .era-card li strong { color: #f1f5f9; }
+html[data-theme="dark"] .branch-card > p,
+html[data-theme="dark"] .branch-card li,
+html[data-theme="dark"] .info-card p,
+html[data-theme="dark"] .era-card li,
+html[data-theme="dark"] .era-label,
+html[data-theme="dark"] .card-label,
+html[data-theme="dark"] .era-legend { color: #94a3b8; }
+html[data-theme="dark"] .branch-card a,
+html[data-theme="dark"] .info-card a,
+html[data-theme="dark"] .era-card a { color: var(--green2); }
+html[data-theme="dark"] .house-root {
+  background: rgba(16, 185, 129, 0.16);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+html[data-theme="dark"] .era-card li::before { background: #334155; }
+

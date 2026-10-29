@@ -10,51 +10,143 @@
   <meta property="og:description" content="A 3.2.12 é a última Free da linha 3.2.x. A PDV v4 avança pelo ciclo de RCs; GA após gates e aceites formais, sem data automática em 08/11.">
   <meta property="og:url" content="https://download.caracore.com.br/roadmap.html">
   <meta property="og:type" content="website">
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="assets/css/store.css">
+
+  <!-- Marca (mesmos arquivos das lojas de PDV, Hub e CSO) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/brand/caracore-logo.svg">
+  <meta name="theme-color" content="#0b1f3a">
+
+  <!-- Tailwind + CSS: portal-style.css é o compartilhado das lojas;
+       central-theme.css guarda só o que é desta central. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/portal-style.css">
+  <link rel="stylesheet" href="assets/css/central-theme.css">
+
+  <script>
+    /* aplica o tema salvo antes da primeira pintura (evita flash) */
+    try {
+      var savedTheme = localStorage.getItem('caracore_theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    } catch (err) { /* file:// com storage bloqueado: segue no claro */ }
+  </script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="nav-wrap">
-        <a href="index.html" class="brand-logo">
-          <div class="brand-icon"><i class="fas fa-shield-halved"></i></div>
-          <div class="brand-info">
-            <h1>Cara Core <span class="badge-tag">Downloads</span></h1>
-            <p>Engenharia B2B & Bunker Digital</p>
+<body class="smooth-scroll bg-gray-50">
+
+  <nav class="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8 pt-3 text-sm text-gray-600" aria-label="Navegação institucional">
+    <a href="https://www.caracore.com.br/" class="hover:text-green-600">Cara Core Informática</a>
+    <span> · </span>
+    <a href="https://www.caracore.com.br/portfolio.html" class="hover:text-green-600" rel="noopener">Portfólio</a>
+    <span> · </span>
+    <a href="index.html" class="hover:text-green-600">Central de Downloads</a>
+    <span> · </span>
+    <span class="text-gray-900">Roadmap</span>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="portal-header bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8" aria-label="Menu da central">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="assets/brand/caracore-logo.svg" alt="" width="48" height="48" class="w-12 h-12 rounded-lg" aria-hidden="true">
+          <div>
+            <p class="text-xl font-bold text-gray-900">Cara Core Downloads</p>
+            <p class="text-xs text-gray-600">Programas para sua empresa</p>
           </div>
         </a>
-        <div class="nav-links">
-          <a href="index.html" class="nav-item"><i class="fas fa-briefcase"></i> <span class="nav-text">Negócio</span></a>
-          <a href="download.html" class="nav-item"><i class="fas fa-download"></i> <span class="nav-text">Catálogo</span></a>
-          <a href="mapa.html" class="nav-item"><i class="fas fa-diagram-project"></i> <span class="nav-text">Mapa</span></a>
-          <a href="roadmap.html" class="nav-item active"><i class="fas fa-road"></i> <span class="nav-text">Roadmap</span></a>
-          <a href="https://www.caracore.com.br" class="nav-item"><i class="fas fa-building"></i> <span class="nav-text">Matriz</span></a>
-          <a href="https://wiki.caracore.com.br" class="nav-item"><i class="fas fa-book"></i> <span class="nav-text">Wiki</span></a>
-          <a href="download.html#ajuda-integridade" class="nav-item"><i class="fas fa-fingerprint"></i> <span class="nav-text">SHA256</span></a>
-          <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"><i class="fas fa-sun"></i></button>
+
+        <div class="central-nav" aria-label="Seções da central">
+          <a href="index.html" class="central-nav-link">Negócio</a>
+          <a href="download.html" class="central-nav-link">Catálogo</a>
+          <a href="mapa.html" class="central-nav-link">Mapa</a>
+          <a href="roadmap.html" class="central-nav-link" aria-current="page">Roadmap</a>
+          <a href="https://www.caracore.com.br" class="central-nav-link">Matriz</a>
+          <a href="https://wiki.caracore.com.br" class="central-nav-link">Wiki</a>
+          <a href="download.html#ajuda-integridade" class="central-nav-link">SHA256</a>
+          <a href="download.html#pdv-java" class="cta-link text-sm font-medium transition">Baixar Free</a>
+          <a href="https://wa.me/5541999097797" class="cta-btn text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition text-center" target="_blank" rel="noopener">
+            Suporte
+          </a>
         </div>
-      </nav>
-    </div>
+
+        <div class="flex items-center gap-3">
+          <button id="theme-toggle" class="text-gray-700 px-2 py-1" aria-label="Ativar modo escuro" title="Alternar tema escuro/claro">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="menu-toggle" class="lg:hidden text-gray-700" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">Negócio</a>
+        <a href="download.html">Catálogo</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="roadmap.html" aria-current="page">Roadmap</a>
+        <a href="https://www.caracore.com.br" rel="noopener">Matriz</a>
+        <a href="https://wiki.caracore.com.br" rel="noopener">Wiki</a>
+        <a href="download.html#ajuda-integridade">Verificação SHA256</a>
+        <a href="https://wa.me/5541999097797" rel="noopener">Suporte no WhatsApp</a>
+      </div>
+    </nav>
   </header>
 
-  <main class="container" style="flex: 1;">
-    <section class="page-hero">
-      <p class="sovereignty-kicker">Roadmap público</p>
-      <h2>O que já opera e o que tem data.</h2>
-      <p class="lead">
-        A linha Free 3.2.x recebe a corretiva v3.2.12; 08/11/2026 encerra sua manutenção de transição. A PDV v4 avança pelo ciclo de RCs, sem data automática de GA.
-        O que está em produção permanece no ar. O que ainda não tem arquivo permanece sem botão de download.
-      </p>
-    </section>
+  <!-- HERO -->
+  <section class="portal-hero central-hero green-bg text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-sm uppercase tracking-wide text-green-100 mb-4">Roadmap público</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          O que já opera e o que tem data.
+        </h1>
+        <p class="text-lg md:text-xl text-green-50 mb-8">
+          A linha Free 3.2.x recebe a corretiva v3.2.12; 08/11/2026 encerra sua manutenção de transição.
+          A PDV v4 avança pelo ciclo de RCs, sem data automática de GA.
+          O que está em produção permanece no ar. O que ainda não tem arquivo permanece sem botão de download.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="download.html" class="hero-cta-primary">
+            <i class="fas fa-download" aria-hidden="true"></i> Ver o que dá para baixar agora
+          </a>
+          <a href="mapa.html" class="hero-cta-secondary">
+            Voltar ao mapa
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section-block">
-      <div class="roadmap-grid">
-        <article class="roadmap-era">
-          <p class="era-label"><i class="maturity-dot dot-estavel"></i> Em operação</p>
+  <!-- MAIN CONTENT -->
+  <main id="conteudo" class="page-shell">
+
+    <section class="page-card" id="eras" aria-labelledby="eras-title">
+      <div class="catalog-section-heading">
+        <p class="catalog-eyebrow">Estados e datas</p>
+        <h2 id="eras-title">Seis faixas, uma regra</h2>
+        <p>
+          Só entra botão de download o que tem arquivo publicado. O resto aparece com o estado
+          verdadeiro: em operação, em estabilização, piloto ou planejado.
+        </p>
+      </div>
+
+      <div class="era-legend" aria-label="Legenda dos estados">
+        <span><i class="maturity-dot dot-estavel" aria-hidden="true"></i> Em operação</span>
+        <span><i class="maturity-dot dot-preview" aria-hidden="true"></i> Em desenvolvimento</span>
+        <span><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Piloto</span>
+        <span><i class="maturity-dot dot-plan" aria-hidden="true"></i> Planejado</span>
+      </div>
+
+      <div class="era-grid">
+        <article class="era-card">
+          <p class="era-label"><i class="maturity-dot dot-estavel" aria-hidden="true"></i> Em operação</p>
           <h3>Já publicado</h3>
           <ul>
             <li>PDV Java Free <a href="download.html#pdv-java">v3.2.12-free</a> · atualização corretiva da linha 3.2.x</li>
@@ -67,8 +159,8 @@
           </ul>
         </article>
 
-        <article class="roadmap-era">
-          <p class="era-label"><i class="maturity-dot dot-preview"></i> Em desenvolvimento e estabilização</p>
+        <article class="era-card">
+          <p class="era-label"><i class="maturity-dot dot-preview" aria-hidden="true"></i> Em desenvolvimento e estabilização</p>
           <h3>Frente atual</h3>
           <ul>
             <li>PDV Java v4: a pré-release pública é a <a href="download.html#pdv-v4">v4.0.0-rc6</a>; a RC7 está somente em QA local, sem download publicado. A v4 segue pelo ciclo de RCs e só pode ser promovida a GA após gates e aceites formais. 08/11/2026 encerra a manutenção da 3.2.12, não define GA da v4.</li>
@@ -76,8 +168,8 @@
           </ul>
         </article>
 
-        <article class="roadmap-era">
-          <p class="era-label"><i class="maturity-dot dot-piloto"></i> Piloto em aberto</p>
+        <article class="era-card">
+          <p class="era-label"><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Piloto em aberto</p>
           <h3>Linha Rust</h3>
           <ul>
             <li><a href="download.html#pdv-rust">PDV Rust v0.1.4</a> segue piloto Windows.</li>
@@ -85,8 +177,9 @@
           </ul>
         </article>
 
-        <article class="roadmap-era">
-          <p class="era-label"><i class="maturity-dot dot-preview"></i> 2027</p>
+
+        <article class="era-card">
+          <p class="era-label"><i class="maturity-dot dot-preview" aria-hidden="true"></i> 2027</p>
           <h3>Hub e garagem</h3>
           <ul>
             <li>Hub: GA do instalador Windows em <strong>06/04/2027</strong>. A oferta atual é a pré-release <a href="download.html#hub">v2.1.0-rc1.7</a>.</li>
@@ -95,17 +188,17 @@
           </ul>
         </article>
 
-        <article class="roadmap-era">
-          <p class="era-label"><i class="maturity-dot dot-plan"></i> 2028</p>
+        <article class="era-card">
+          <p class="era-label"><i class="maturity-dot dot-plan" aria-hidden="true"></i> 2028</p>
           <h3>Transportes e Ink</h3>
           <ul>
-            <li><a href="download.html#cso-transportes">CSO Transportes</a>: desktop, GA planejado para <strong>08/11/2028</strong>.</li>
+            <li>CSO Transportes: desktop, GA planejado para <strong>08/11/2028</strong>. A vitrine é <a href="https://cso-transp.caracore.com.br" target="_blank" rel="noopener">cso-transp.caracore.com.br</a>; sem arquivo nesta central.</li>
             <li>Ink Agenda 3.0 em PWA: não antes de 2028. Até lá o Desktop v2.0.1 permanece a versão publicada.</li>
           </ul>
         </article>
 
-        <article class="roadmap-era">
-          <p class="era-label"><i class="maturity-dot dot-plan"></i> 2029</p>
+        <article class="era-card">
+          <p class="era-label"><i class="maturity-dot dot-plan" aria-hidden="true"></i> 2029</p>
           <h3>Helianto</h3>
           <ul>
             <li>Helianto Condominium: vitrine no ar, GA planejado para <strong>30/12/2029</strong>.</li>
@@ -115,27 +208,78 @@
       </div>
     </section>
 
-    <section class="section-block">
-      <div class="cta-row">
-        <a class="btn-download-primary" href="download.html" style="width: auto;">Ver o que dá para baixar agora</a>
-        <a class="btn-ghost" href="mapa.html">Voltar ao mapa</a>
-      </div>
-    </section>
+    <div class="cta-row">
+      <a class="btn-download-primary" href="download.html"><i class="fas fa-download" aria-hidden="true"></i> Ver o que dá para baixar agora</a>
+      <a class="btn-ghost" href="mapa.html"><i class="fas fa-diagram-project" aria-hidden="true"></i> Voltar ao mapa</a>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-        <div>&copy; 2026 Cara Core Informática. CNPJ 23.969.028/0001-37.</div>
-        <div>
-          <a href="index.html">Negócio</a> ·
-          <a href="mapa.html">Mapa</a> ·
-          <a href="roadmap.html" style="color: var(--emerald-400);">Roadmap</a> ·
-          <a href="download.html">Catálogo</a>
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-5 mb-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center space-x-3 mb-3">
+            <img src="assets/brand/caracore-logo.svg" alt="" width="40" height="40" class="w-10 h-10 rounded-lg" aria-hidden="true">
+            <p class="text-white font-bold">Cara Core Informática</p>
+          </div>
+          <p class="text-sm text-gray-400 mb-3">
+            Engenharia B2B, Código Transparente no Ambiente do Cliente e Arquitetura Bunker Digital.
+          </p>
+          <p class="text-xs text-gray-500">
+            <strong>CNPJ:</strong> 23.969.028/0001-37<br>
+            Campo Largo / Curitiba — Paraná, Brasil
+          </p>
         </div>
+
+        <div>
+          <h3 class="text-white font-bold mb-3">Produtos principais</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV (Java)</a></li>
+            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV (Rust)</a></li>
+            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore CSO (Frotas)</a></li>
+            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore Hub</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold mb-3">Ecossistema</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://ink.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Ink Agenda</a></li>
+            <li><a href="https://ete.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Minerador ETE 4.0</a></li>
+            <li><a href="https://ru.caracore.com.br/bioreator.html" class="hover:text-white" target="_blank" rel="noopener">BioReator 4.0</a></li>
+            <li><a href="https://oidc.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Reino OIDC</a></li>
+            <li><a href="https://circuito.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Circuito Ferradura</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold mb-3">Canais de suporte</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:suporte@caracore.com.br" class="hover:text-white"><i class="fas fa-envelope"></i> suporte@caracore.com.br</a></li>
+            <li><a href="https://wa.me/5541999097797" class="hover:text-white" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +55 41 9 9909-7797</a></li>
+            <li><a href="https://t.me/chmulato" class="hover:text-white" target="_blank" rel="noopener"><i class="fab fa-telegram"></i> @chmulato</a></li>
+            <li><a href="https://wiki.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener"><i class="fas fa-book"></i> Documentação Wiki</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-gray-400">
+        <p>&copy; 2026 Cara Core Informática. Todos os direitos reservados.</p>
+        <p class="flex flex-wrap gap-x-3 gap-y-1">
+          <a href="index.html" class="hover:text-white">Negócio</a>
+          <span aria-hidden="true">·</span>
+          <a href="mapa.html" class="hover:text-white">Mapa</a>
+          <span aria-hidden="true">·</span>
+          <a href="roadmap.html" class="text-green-400">Roadmap</a>
+          <span aria-hidden="true">·</span>
+          <a href="download.html" class="hover:text-white">Catálogo</a>
+        </p>
       </div>
     </div>
   </footer>
-  <script src="assets/js/store.js"></script>
+
+  <!-- JS -->
+  <script src="assets/js/central-ui.js"></script>
 </body>
 </html>
