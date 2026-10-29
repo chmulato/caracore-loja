@@ -170,6 +170,34 @@ a[aria-label="Represente a Tecnologia Cara Core"] {
   font-size: 0.875rem;
 }
 
+/* Selos de status padronizados das lojas */
+.selo {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.selo::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: currentColor;
+  flex: 0 0 auto;
+}
+.selo-estavel { background: #ecfdf5; color: #065f46; border-color: #a7f3d0; }
+.selo-previa { background: #fffbeb; color: #92400e; border-color: #fcd34d; }
+.selo-piloto { background: #fff7ed; color: #9a3412; border-color: #fdba74; }
+
 /* Wiki-fiscal / consultoria helper boxes */
 .info-box {
   background: #e0f2fe;

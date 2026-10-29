@@ -360,6 +360,12 @@ html:not(.catalog-enhanced) .filter-panel { display: none; }
 .status-pilot { background: rgba(245, 158, 11, 0.14); color: #b45309; border-color: rgba(245, 158, 11, 0.35); }
 .status-saas { background: rgba(37, 99, 235, 0.12); color: #1d4ed8; border-color: rgba(37, 99, 235, 0.3); }
 .status-preview { background: rgba(99, 102, 241, 0.12); color: #4338ca; border-color: rgba(99, 102, 241, 0.3); }
+.status-previa { background: rgba(245, 158, 11, 0.14); color: #92400e; border-color: rgba(245, 158, 11, 0.38); }
+
+.product-card--featured {
+  border: 2px solid rgba(var(--accent-rgb), 0.45);
+  box-shadow: 0 18px 40px -20px rgba(15, 23, 42, 0.35);
+}
 
 .card-desc { margin: 0; font-size: 0.92rem; line-height: 1.6; color: var(--cc-ink-soft); }
 

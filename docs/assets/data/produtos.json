@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "atualizado": "2026-10-28",
+  "atualizado": "2026-10-29",
   "moeda": "BRL",
   "produtos": [
     {
       "ancora": "pdv-java",
-      "produto": "CaraCore PDV (Java)",
+      "produto": "CaraCore PDV 3.2.12",
       "versao": "v3.2.12-free",
-      "rotuloVersao": "v3.2.12-free · 15/10/2026",
+      "rotuloVersao": "v3.2.12-free · 15/10/2026 · Windows, Linux, macOS",
       "status": "estavel",
       "statusLabel": "Estável",
       "statusClasse": "status-free",
@@ -55,12 +55,12 @@
     },
     {
       "ancora": "pdv-v4",
-      "produto": "CaraCore PDV (Java) · v4",
+      "produto": "CaraCore PDV 4",
       "versao": "v4.0.0-rc6",
-      "rotuloVersao": "v4.0.0-rc6 · Windows x64",
+      "rotuloVersao": "v4.0.0-rc6 · 10/10/2026 · Windows x64",
       "status": "preview",
-      "statusLabel": "Pré-release",
-      "statusClasse": "status-pilot",
+      "statusLabel": "Prévia rc6",
+      "statusClasse": "status-previa",
       "plataformas": ["windows"],
       "loja": "https://pdv.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-pdv.html",
@@ -81,8 +81,10 @@
       ],
       "avisos": [
         "Somente para avaliação: não é a versão final.",
-        "Java 25 vem dentro do ZIP.",
-        "Windows 10/11 x64 com Microsoft Edge."
+        "Migração da 3.2 não suportada: não copie o banco da 3.2 para a v4.",
+        "Na v4 não há estorno de venda finalizada. Instale em pasta separada, só para teste.",
+        "Faça backup antes de qualquer teste.",
+        "Java 25 vem dentro do ZIP; Windows 10/11 x64 com Microsoft Edge."
       ]
     },
     {
