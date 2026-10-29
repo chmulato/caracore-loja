@@ -1141,6 +1141,24 @@
       <p style="font-size: 0.9rem;">Tente outro objetivo, ajuste a pesquisa ou revise os filtros técnicos.</p>
     </div>
 
+    <!-- AJUDA: VERIFICACAO DE INTEGRIDADE (destino do link SHA256 do menu) -->
+    <section class="integrity-help" id="ajuda-integridade" aria-labelledby="ajuda-integridade-title">
+      <h3 id="ajuda-integridade-title"><i class="fas fa-fingerprint" aria-hidden="true"></i> Como verificar o SHA256</h3>
+      <p>
+        Cada card do catálogo publica o SHA256 do arquivo. Baixe o pacote, calcule o hash no seu computador e compare com o valor publicado no card: se os dois forem iguais, o arquivo corresponde ao digest informado.
+      </p>
+
+      <h4><i class="fab fa-windows" aria-hidden="true"></i> Windows (PowerShell)</h4>
+      <div class="code-block">Get-FileHash -Algorithm SHA256 "C:\Caminho\arquivo.zip"</div>
+
+      <h4><i class="fab fa-linux" aria-hidden="true"></i> Linux / macOS (terminal Bash)</h4>
+      <div class="code-block">sha256sum arquivo.zip</div>
+
+      <p>
+        Os instaladores publicados hoje não têm assinatura digital. O SHA256 confere a integridade do download, não a origem do arquivo nem a segurança do conteúdo.
+      </p>
+    </section>
+
     <!-- BUNKER DIGITAL PHILOSOPHY -->
     <section class="bunker-section">
       <h3><i class="fas fa-shield-halved"></i> Por que o modelo Bunker Digital?</h3>

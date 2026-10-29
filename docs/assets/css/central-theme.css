@@ -697,6 +697,38 @@ html:not(.catalog-enhanced) .filter-panel { display: none; }
 .technical-details > summary:hover { color: var(--green); }
 .technical-details[open] > *:not(summary) { margin-top: 0.7rem; }
 
+/* ------------------------------------------------ ajuda de integridade */
+
+.integrity-help {
+  margin-top: 3rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background: var(--cc-surface);
+  border: 1px solid var(--cc-border);
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  scroll-margin-top: 6rem;
+}
+.integrity-help h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--cc-ink);
+}
+.integrity-help h3 i { color: var(--green); margin-right: 0.35rem; }
+.integrity-help h4 {
+  margin: 1.1rem 0 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cc-ink-soft);
+}
+.integrity-help h4 i { color: var(--cc-ink-muted); margin-right: 0.3rem; }
+.integrity-help p { margin: 0.6rem 0 1rem; font-size: 0.9rem; line-height: 1.6; color: var(--cc-ink-soft); }
+.integrity-help p:last-child { margin-bottom: 0; font-size: 0.8rem; color: var(--cc-ink-muted); }
+.integrity-help .code-block { margin: 0; }
+
 /* ------------------------------------------------ bunker / sem resultados */
 
 .bunker-section {
@@ -953,11 +985,13 @@ html[data-theme="dark"] .roadmap-catalog-link,
 html[data-theme="dark"] .modal-card,
 html[data-theme="dark"] .screen-schema,
 html[data-theme="dark"] #no-results-state,
-html[data-theme="dark"] .technical-details {
+html[data-theme="dark"] .technical-details,
+html[data-theme="dark"] .integrity-help {
   background: #111827;
   border-color: #1f2937;
 }
 html[data-theme="dark"] .sovereignty-banner { border-left-color: var(--green2); }
+html[data-theme="dark"] .integrity-help h3 i { color: var(--green2); }
 html[data-theme="dark"] .specs-box,
 html[data-theme="dark"] .checksum-box,
 html[data-theme="dark"] .bunker-item,
@@ -990,6 +1024,8 @@ html[data-theme="dark"] .sovereignty-banner p,
 html[data-theme="dark"] .core-product-card p,
 html[data-theme="dark"] .bunker-content p,
 html[data-theme="dark"] .bunker-section > p,
+html[data-theme="dark"] .integrity-help p,
+html[data-theme="dark"] .integrity-help h4,
 html[data-theme="dark"] .screen-schema figcaption,
 html[data-theme="dark"] .catalog-section-heading p,
 html[data-theme="dark"] .results-meta,
@@ -1012,6 +1048,8 @@ html[data-theme="dark"] .bunker-content h4,
 html[data-theme="dark"] .catalog-section-heading h2,
 html[data-theme="dark"] .modal-header h3,
 html[data-theme="dark"] #no-results-state h3,
+html[data-theme="dark"] .bunker-section h3,
+html[data-theme="dark"] .integrity-help h3,
 html[data-theme="dark"] .trust-metrics dd,
 html[data-theme="dark"] .spec-line strong { color: #f1f5f9; }
 html[data-theme="dark"] .hash-code,
