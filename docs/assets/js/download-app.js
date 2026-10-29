@@ -119,6 +119,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const catalogSections = organizeCatalog();
 
+  /* ------------------------------------------- catálogo a partir do JSON */
+  /* produtos.json é a fonte de versão, status, links e SHA256. O HTML de
+     cada card continua sendo o fallback quando o JSON não carrega. */
+  const CATALOG_DATA_URL = 'assets/data/produtos.json';
+
+  function hydrateProductCard(produto) {
+    const card = document.getElementById(produto.ancora);
+    if (!card) return;
+
+    const versionTag = card.querySelector('.version-tag');
+    if (versionTag && produto.rotuloVersao) versionTag.textContent = produto.rotuloVersao;
+
+    const badge = card.querySelector('.status-badge');
+    if (badge && produto.statusLabel) {
+      badge.textContent = produto.statusLabel;
+      if (produto.statusClasse) badge.className = 'status-badge ' + produto.statusClasse;
+    }
+
+    const downloads = Array.isArray(produto.downloads) ? produto.downloads : [];
+    const primary = downloads.find(item => item.principal) || downloads[0];
+    const primaryBtn = card.querySelector('.btn-download-primary');
+    if (primaryBtn && primary && primary.url) primaryBtn.setAttribute('href', primary.url);
+
+    const altButtons = Array.from(card.querySelectorAll('.btn-sub-dl'));
+    downloads.filter(item => item !== primary).forEach((download, index) => {
+      if (altButtons[index] && download.url) altButtons[index].setAttribute('href', download.url);
+    });
+
+    const hashes = Array.isArray(produto.sha256) ? produto.sha256 : [];
+    const hashCodes = Array.from(card.querySelectorAll('.hash-code'));
+    hashes.forEach((hash, index) => {
+      if (!hashCodes[index] || !hash.valor) return;
+      hashCodes[index].textContent = hash.valor;
+      const box = hashCodes[index].closest('.checksum-box');
+      const copyBtn = box ? box.querySelector('.btn-copy-hash') : null;
+      if (copyBtn) copyBtn.setAttribute('onclick', "copyHash('" + hash.valor + "', this)");
+    });
+  }
+
+  async function loadCatalogData() {
+    try {
+      const response = await fetch(CATALOG_DATA_URL, { cache: 'no-cache' });
+      if (!response.ok) return;
+      const data = await response.json();
+      (data.produtos || []).forEach(hydrateProductCard);
+      document.documentElement.classList.add('catalog-from-json');
+    } catch (err) { /* sem JSON: o HTML estático continua valendo */ }
+  }
+
+  loadCatalogData();
+
   /* ------------------------------------------------------------ filtrar */
   function filterCards() {
     let visible = 0;
