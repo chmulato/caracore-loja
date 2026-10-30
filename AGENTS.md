@@ -8,7 +8,7 @@
 > **Catálogo técnico:** `docs/download.html`  
 > **Mapa e roadmap:** `docs/mapa.html` e `docs/roadmap.html`  
 > **CNPJ:** 23.969.028/0001-37 — Cara Core Informática  
-> **Regra Mestre:** Seguir sempre o `AGENTS.md` global do ecossistema em `D:\onedrive\dev\AGENTS.md`.
+> **Regra Mestre:** Seguir sempre o `AGENTS.md` global do ecossistema em `caracore-site/AGENTS.md` + `caracore-site/docs/ECOSYSTEM_MEMORIA.md` (o antigo `D:\onedrive\dev\AGENTS.md` **não existe mais**).
 
 ---
 
