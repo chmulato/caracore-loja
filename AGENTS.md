@@ -16,7 +16,7 @@
 
 Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Cara Core Informática, sob a filosofia do **Bunker Digital**:
 - **Offline-First & Soberania de Dados:** Distribuição direta de binários com persistência local (SQLite/arquivos).
-- **Transparência Radical:** O catálogo usa os selos Estável, Pré-release, Piloto, Em breve e Acesso online (SaaS); exibe versões e checksums SHA256 publicados. Um piloto público não homologado deve ser claramente identificado como avaliação e não pronto para produção.
+- **Transparência Radical:** O catálogo usa os selos Estável, Pré-release, Piloto, Em breve e Acesso online (SaaS), mais **Versão anterior** e **Em pré-lançamento** para o PDV desde 29/10/2026; exibe versões e checksums SHA256 publicados. **Selo é status, data é build** — não colar data em selo de status. Um piloto público não homologado deve ser claramente identificado como avaliação e não pronto para produção.
 - **Branch Principal:** Sempre `master` tanto local quanto remotamente.
 
 ---
@@ -25,7 +25,7 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 
 | Produto | Canal / Versão | Status | Plataformas & Hashes | Loja do Produto |
 |---|---|---|---|---|
-| **PDV (Java)** | `v3.2.12-free` estável (atualização corretiva da linha 3.2.x; manutenção até 08/11/2026); pré-release publicada `v4.0.0-rc6` | Estável + Pré-release | Java Free: Windows/Linux/macOS ZIPs; RC6: Windows ZIP | https://pdv.caracore.com.br |
+| **PDV (Java)** | `v3.2.12-free` — **versão anterior**, ainda a indicada para operar (última da linha 3.2.x; manutenção até 08/11/2026); v4 **em pré-lançamento**, prévia pública `v4.0.0-rc6` | Versão anterior + Em pré-lançamento (o filtro do catálogo continua Estável/Piloto/Preview) | Java Free: Windows/Linux/macOS ZIPs; RC6: Windows ZIP | https://pdv.caracore.com.br |
 | **PDV (Rust)** | `v0.1.4` | Piloto | Windows ZIP | https://pdv-rust.caracore.com.br |
 | **CSO Gestão de Frotas** | Web SaaS | Acesso online (SaaS) | Acesso pelo navegador; sem instalador | https://cso-transp.caracore.com.br |
 | **CSO Transportes** | Desktop Bunker | Em breve (GA planejado 08/11/2028) | Sem download público | https://cso-transp.caracore.com.br |
@@ -41,7 +41,7 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 
 ## 3. Diretrizes Técnicas
 
-- **Validação da 3.2.12:** 19/19 testes focados em Java 25/H2 aprovados; CRC/estrutura dos três ZIPs e hashes dos cinco assets remotos conferidos. Suíte completa, smoke portátil SQLite/health/navegador, execução Linux/macOS e homologação operacional completa pendentes. Publicação estável/Latest autorizada explicitamente em 15/10/2026; não significa homologação completa. Fonte `hotfix/3.2.12-free` `72ace488aed4ee91001c60cf40a3934ddfe8faf1`.
+- **Validação da 3.2.12:** 19/19 testes focados em Java 25/H2 aprovados; CRC/estrutura dos três ZIPs e hashes dos cinco assets remotos conferidos. Suíte completa, smoke portátil SQLite/health/navegador, execução Linux/macOS e homologação operacional completa pendentes. Publicação autorizada explicitamente em 15/10/2026; não significa homologação completa. Desde 29/10/2026 o PDV é apresentado como **versão anterior, ainda a indicada para operar**. Fonte `hotfix/3.2.12-free` `72ace488aed4ee91001c60cf40a3934ddfe8faf1`.
 
 - **Página de Entrada:** `docs/index.html` apresenta o ecossistema para quem decide. `docs/download.html` permanece o catálogo técnico, com maturidade, caso de uso, versão e SHA256 antes do arquivo.
 - **Mapa:** `docs/mapa.html` organiza a casa por problema de negócio. Cada produto tem acesso e banco próprios.
@@ -49,6 +49,6 @@ Este repositório hospeda a **Central Unificada de Downloads** do ecossistema Ca
 - **Compatibilidade GitHub Pages:** Suporte tanto para publicação na raiz (`/`) quanto em (`/docs`).
 - **CNAME:** `download.caracore.com.br` no arquivo `CNAME` e `docs/CNAME`.
 - **Integridade:** Não inventar versões, integrações PIX no Free Java ou depoimentos fictícios.
-- **PDV — estado 15/10/2026:** Free `v3.2.12-free` é uma atualização corretiva da linha 3.2.x, estável/Latest e em manutenção restrita até 08/11/2026. Não desenvolver recursos na linha 3.2.x. A v4 segue pelo ciclo de RCs; a RC6 é pré-release pública para avaliação (Windows), e RC7 continua em QA local, sem download. GA somente após gates e aceites formais, sem data automática em 08/11. Retomada operacional: `caracore-pdv/docs/arquitetura/CONTINUIDADE_DESENVOLVIMENTO.md` e `docs/relatorio-rc7.md` na oficina.
+- **PDV — estado 29/10/2026 (estado B):** Free `v3.2.12-free` é a **versão anterior**, última da linha 3.2.x, ainda a indicada para operar e em manutenção restrita até 08/11/2026. Não desenvolver recursos na linha 3.2.x. A v4 está **em pré-lançamento**: a RC6 é a prévia pública para avaliação (Windows) e a RC7 continua em QA local, sem download. O selo do card e o texto dizem "versão anterior"; o filtro do catálogo continua em Estável/Piloto/Preview, e `docs/assets/data/produtos.json` é a fonte que o JS hidrata — editar só o HTML não muda a tela. GA somente após gates e aceites formais, sem data automática em 08/11. Retomada operacional: `caracore-pdv/docs/arquitetura/CONTINUIDADE_DESENVOLVIMENTO.md` e `docs/relatorio-rc7.md` na oficina.
 - **Hub:** o cartão vigente é a pré-release Windows `v2.1.0-rc1.7` (instalador `1563f1bd…0ba1`, ZIP `924af196…0b37e`, os mesmos SHA-256 publicados na release). O banco do produto é SQLite local (WAL). A release seguinte entra com outra tag e os SHA-256 dessa tag, no mesmo corte da loja `hub.caracore.com.br` e da matriz. A vitrine descreve a aplicação web 2.1 sobre Tomcat embutido no instalador, com SQLite local; `WAR` e "oficina" não entram no texto público (alinhamento de 20/10/2026, commit `d5295f0`).
 - **Seed:** o cartão no catálogo aponta para a pré-release candidata Windows `0.1.5`, com SHA-256 publicado, e mantém a `0.1.4` como release estável anterior. É um piloto público para avaliação, ainda não homologado nem pronto para produção; homologação independente permanece pendente. A API administrativa exige sessão ADMIN/CSRF e as rotas de integração usam token por licença; Host é validado globalmente, o horário de heartbeat usa UTC do servidor e a documentação OpenAPI funciona localmente sem CDN. Ao atualizar, preservar banco e chaves; os bancos 0.1.3/0.1.4 e assinaturas antigas continuam compatíveis. O Seed integra o ecossistema como ferramenta local complementar de gestão de clientes e licenças; cada produto mantém seu aplicativo e banco. Sem monitoramento remoto de sinais periódicos; Linux fica fora desta etapa; primeiro acesso `admin`/`admin`, nova senha de 12 a 128 caracteres com confirmação e chave de recuperação. O piloto não exige convite.
