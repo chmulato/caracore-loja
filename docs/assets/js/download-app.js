@@ -2,7 +2,7 @@
    CARA CORE INFORMÁTICA — CENTRAL DE DOWNLOADS (DOWNLOAD-APP.JS)
    Substitui store.js no padrão das lojas (Tailwind + portal-style.css).
    Mantém o contrato antigo: busca, chips de objetivo, filtro de maturidade,
-   filtro de sistema, cópia de SHA256, modal de integridade e tema claro/escuro.
+   filtro de sistema, cópia de SHA-256, modal de integridade e tema claro/escuro.
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,29 +27,44 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentOS = 'all';
   let searchQuery = '';
 
-  /* Grupos do catálogo. A ordem e os ids definem a leitura da página:
-     o que baixa agora, o que é para avaliar e o que só se acessa online. */
+  /* Grupos do catálogo, na ordem do catálogo canônico da matriz:
+     Núcleo · Produtos verticais · Educação · Infraestrutura · Em breve.
+     O rótulo da página é comercial; o id vem de catalog-data.js. */
   const catalogGroups = [
     {
-      id: 'available-downloads',
-      eyebrow: 'Para instalar',
-      title: 'Disponível para download',
-      description: 'Versões estáveis para instalar e usar agora.',
-      cards: ['pdv-java', 'ink', 'ete', 'oidc', 'circuito', 'bioreator40']
+      id: 'nucleo',
+      eyebrow: 'Núcleo',
+      title: 'Os produtos que conduzem a operação',
+      description: 'PDV, CSO e Hub: caixa, frota e encomendas com o próprio acesso.',
+      cards: ['pdv-java', 'pdv-v4', 'pdv-rust', 'cso-frotas', 'hub']
     },
     {
-      id: 'evaluation-previews',
-      eyebrow: 'Para avaliar',
-      title: 'Avaliação e preview',
-      description: 'Pilotos e pré-releases para avaliação; confira o status antes de instalar.',
-      cards: ['pdv-v4', 'pdv-rust', 'hub', 'caracore-seed']
+      id: 'produtos-verticais',
+      eyebrow: 'Produtos verticais',
+      title: 'Ferramentas de nicho',
+      description: 'Agenda, estação de tratamento e bioinsumos.',
+      cards: ['ink', 'ete', 'bioreator40']
     },
     {
-      id: 'online-products',
-      eyebrow: 'Para acessar',
-      title: 'Acesso online',
-      description: 'Serviços acessados pelo navegador, sem instalador para baixar.',
-      cards: ['cso-frotas']
+      id: 'educacao',
+      eyebrow: 'Educação',
+      title: 'Formação e estudo',
+      description: 'Lógica, identidade e leitura técnica.',
+      cards: ['circuito', 'oidc', 'rebeldia']
+    },
+    {
+      id: 'infraestrutura',
+      eyebrow: 'Infraestrutura',
+      title: 'Gestão local de licenças',
+      description: 'Ferramenta de apoio ao ecossistema, com banco próprio.',
+      cards: ['caracore-seed']
+    },
+    {
+      id: 'em-breve',
+      eyebrow: 'Em breve',
+      title: 'Sem arquivo publicado',
+      description: 'Itens em desenvolvimento. Nenhum botão de download, só o aviso de lançamento.',
+      cards: ['cso-transportes', 'helianto']
     }
   ];
 
@@ -120,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const catalogSections = organizeCatalog();
 
   /* ------------------------------------------- catálogo a partir do JSON */
-  /* produtos.json é a fonte de versão, status, links e SHA256. O HTML de
+  /* produtos.json é a fonte de versão, status, links e SHA-256. O HTML de
      cada card continua sendo o fallback quando o JSON não carrega. */
   const CATALOG_DATA_URL = 'assets/data/produtos.json';
 
@@ -131,10 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const versionTag = card.querySelector('.version-tag');
     if (versionTag && produto.rotuloVersao) versionTag.textContent = produto.rotuloVersao;
 
+    /* Selo sempre com o rótulo e o id do catálogo canônico. */
     const badge = card.querySelector('.status-badge');
-    if (badge && produto.statusLabel) {
-      badge.textContent = produto.statusLabel;
-      if (produto.statusClasse) badge.className = 'status-badge ' + produto.statusClasse;
+    const estagios = (window.CARACORE_CATALOG && window.CARACORE_CATALOG.estagios) || [];
+    const estagio = estagios.find(item => item.id === produto.estagio);
+    if (badge && estagio) {
+      badge.textContent = estagio.rotulo;
+      badge.className = 'status-badge status-' + estagio.id;
     }
 
     const downloads = Array.isArray(produto.downloads) ? produto.downloads : [];
@@ -243,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const initialMaturity = (location.hash || '').replace('#', '');
-  if (['estavel', 'piloto', 'preview', 'planejamento'].includes(initialMaturity)) {
+  if (['disponivel', 'beta', 'piloto', 'desenvolvimento'].includes(initialMaturity)) {
     currentMaturity = initialMaturity;
     maturityButtons.forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-maturity') === initialMaturity);
@@ -257,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* -------------------------------------------------- copiar SHA256 */
+  /* -------------------------------------------------- copiar SHA-256 */
   function showToast(text) {
     if (!toastEl) return;
     const textEl = toastEl.querySelector('.toast-text');
@@ -273,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fallbackCopy(hash);
     }
 
-    showToast('Hash SHA256 copiado com sucesso!');
+    showToast('Hash SHA-256 copiado com sucesso!');
 
     if (buttonEl) {
       const originalHtml = buttonEl.innerHTML;

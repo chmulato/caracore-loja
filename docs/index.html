@@ -8,7 +8,7 @@
   <meta name="author" content="Cara Core Informática">
   <link rel="canonical" href="https://download.caracore.com.br/">
   <meta property="og:title" content="Cara Core | Programas e downloads">
-  <meta property="og:description" content="Caixa, encomendas, frota e agenda. Dados no computador do cliente. Versão e SHA256 no catálogo técnico.">
+  <meta property="og:description" content="Caixa, encomendas, frota e agenda. Dados no computador do cliente. Versão e SHA-256 no catálogo técnico.">
   <meta property="og:url" content="https://download.caracore.com.br/">
   <meta property="og:type" content="website">
   <!-- Fonts & Icons -->
@@ -22,6 +22,24 @@
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
   <link rel="apple-touch-icon" href="assets/brand/caracore-logo.svg">
   <meta name="theme-color" content="#111827">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.caracore.com.br/#organization",
+    "name": "Cara Core Informática",
+    "url": "https://www.caracore.com.br/",
+    "logo": "https://download.caracore.com.br/assets/brand/caracore-logo.svg",
+    "taxID": "23.969.028/0001-37",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Campo Largo",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
 
   <!-- Tailwind + CSS: portal-style.css é o compartilhado das lojas;
        download-theme.css traz os tokens neutros desta central e
@@ -58,7 +76,7 @@
         <a href="index.html" class="flex items-center space-x-3">
           <img src="assets/brand/caracore-logo.svg" alt="Cara Core Informática" width="48" height="48" class="w-12 h-12 rounded-lg">
           <div>
-            <p class="text-xl font-bold text-gray-900">CaraCore Downloads</p>
+            <p class="text-xl font-bold text-gray-900">Cara Core · Central de Downloads</p>
             <p class="text-xs text-gray-600">Central de versões</p>
           </div>
         </a>
@@ -66,7 +84,7 @@
         <div class="central-nav" aria-label="Seções da central">
           <a href="download.html#catalogo" class="central-nav-link">Produtos</a>
           <a href="download.html#instalar" class="central-nav-link">Como instalar</a>
-          <a href="download.html#ajuda-integridade" class="central-nav-link">Verificar SHA256</a>
+          <a href="download.html#ajuda-integridade" class="central-nav-link">Verificar SHA-256</a>
           <a href="download.html#seguranca" class="central-nav-link">Segurança</a>
           <a href="https://wa.me/5541999097797" class="cta-link text-sm font-medium transition" target="_blank" rel="noopener">Falar no WhatsApp</a>
           <a href="download.html#catalogo" class="cta-btn text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition text-center">Ver produtos</a>
@@ -85,7 +103,7 @@
       <div id="mobile-menu" class="mobile-menu">
         <a href="download.html#catalogo">Produtos</a>
         <a href="download.html#instalar">Como instalar</a>
-        <a href="download.html#ajuda-integridade">Verificar SHA256</a>
+        <a href="download.html#ajuda-integridade">Verificar SHA-256</a>
         <a href="download.html#seguranca">Segurança</a>
         <a href="https://wa.me/5541999097797" rel="noopener">Falar no WhatsApp</a>
       </div>
@@ -99,19 +117,19 @@
       <div class="max-w-3xl mx-auto text-center">
         <p class="text-sm uppercase tracking-wide text-blue-100 mb-4">Cara Core Informática</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          Programas que rodam no computador da sua empresa, com versão e SHA256 publicados.
+          Programas que rodam no computador da sua empresa, com versão e SHA-256 publicados.
         </h1>
         <p class="text-lg md:text-xl text-blue-50 mb-8">
           O caixa, a agenda e os pacotes desktop guardam o banco no computador da empresa.
           O CSO Frotas é o acesso online. Cada produto tem versão, status e o próprio acesso.
-          O catálogo técnico entrega o arquivo com SHA256.
+          O catálogo técnico entrega o arquivo com SHA-256.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="download.html" class="hero-cta-primary">
-            <i class="fas fa-download" aria-hidden="true"></i> Abrir o catálogo técnico
+          <a href="download.html#catalogo" class="hero-cta-primary">
+            <i class="fas fa-download" aria-hidden="true"></i> Ver produtos
           </a>
-          <a href="mapa.html" class="hero-cta-secondary">
-            Ver o mapa
+          <a href="download.html#instalar" class="hero-cta-secondary">
+            Como instalar
           </a>
           <a href="https://wa.me/5541999097797" class="hero-cta-secondary" target="_blank" rel="noopener">
             Falar no WhatsApp
@@ -126,7 +144,7 @@
 
     <section class="page-card" id="resolve" aria-labelledby="resolve-title">
       <div class="catalog-section-heading">
-        <p class="catalog-eyebrow">O que a casa resolve</p>
+        <p class="catalog-eyebrow">O que a Cara Core resolve</p>
         <h2 id="resolve-title">Três produtos conduzem a operação</h2>
         <p>
           Três produtos conduzem a operação. O restante existe, com loja própria, e aparece com o status verdadeiro.
@@ -135,59 +153,78 @@
 
       <div class="branch-grid">
         <article class="branch-card">
-          <p class="card-label"><i class="maturity-dot dot-estavel" aria-hidden="true"></i> Caixa</p>
+          <p class="card-label"><i class="maturity-dot dot-disponivel" aria-hidden="true"></i> Caixa · Disponível</p>
           <h3>PDV no computador da loja</h3>
           <p>Frente de caixa para balcão e pequeno varejo. A 3.2.12-free é a versão anterior, ainda a indicada para operar, com homologação em andamento. A v4 está em pré-lançamento, com a prévia rc6 para Windows; a linha Rust é piloto para avaliação.</p>
           <ul>
             <li><a href="https://pdv.caracore.com.br/download.html">PDV Free 3.2.12</a> · download e instalação</li>
-            <li>SHA256 Windows: <code>6d7a50b0…45f7c0e2</code></li>
-            <li>SHA256 Linux/macOS: <code>795a3963…a99fd9c1</code> · mesmo ZIP; requer JDK 25 instalado (o Java não vem embutido)</li>
+            <li>SHA-256 Windows: <code>6d7a50b0…45f7c0e2</code></li>
+            <li>SHA-256 Linux/macOS: <code>795a3963…a99fd9c1</code> · mesmo ZIP; requer JDK 25 instalado (o Java não vem embutido)</li>
             <li><a href="download.html#pdv-v4">CaraCore PDV 4 · prévia rc6</a></li>
             <li><a href="download.html#pdv-rust">PDV Rust v0.1.4</a> · piloto</li>
           </ul>
         </article>
 
         <article class="branch-card">
-          <p class="card-label"><i class="maturity-dot dot-preview" aria-hidden="true"></i> Encomendas</p>
+          <p class="card-label"><i class="maturity-dot dot-beta" aria-hidden="true"></i> Encomendas · Beta (RC)</p>
           <h3>Hub para ponto de retirada (PUDO)</h3>
           <p>Pré-release Windows para Mercado Livre, Shopee e Temu. Estoque, etiqueta e retirada, com SQLite no computador. Os canais usam internet.</p>
           <ul>
-            <li><a href="download.html#hub">Hub v2.1.0-rc1.7</a> · pré-release</li>
-            <li>GA do instalador planejado para 06/04/2027</li>
+            <li><a href="download.html#hub">Hub v2.1.0-rc1.7</a> · Beta (RC)</li>
+            <li>GA do instalador previsto para 06/04/2027</li>
           </ul>
         </article>
 
         <article class="branch-card">
-          <p class="card-label"><i class="maturity-dot dot-estavel" aria-hidden="true"></i> Frota</p>
+          <p class="card-label"><i class="maturity-dot dot-disponivel" aria-hidden="true"></i> Frota · Disponível</p>
           <h3>CSO no navegador</h3>
           <p>Gestão de frota em produção: documentos, pneus, abastecimento, exame, infrações e custo por km. Gestão operacional, sem rastreador.</p>
           <ul>
-            <li><a href="download.html#cso-frotas">CSO Frotas</a> · em produção</li>
-            <li><a href="roadmap.html">CSO Transportes</a> · 08/11/2028</li>
+            <li><a href="download.html#cso-frotas">CSO Frotas</a> · acesso online</li>
+            <li><a href="download.html#cso-transportes">CSO Transportes</a> · Em desenvolvimento · 08/11/2028</li>
           </ul>
         </article>
 
         <article class="branch-card">
-          <p class="card-label"><i class="maturity-dot dot-estavel" aria-hidden="true"></i> No computador</p>
-          <h3>Agenda, estudo, formação e estações</h3>
-          <p>Ink guarda a agenda do estúdio no Windows. Reino OIDC é estudo pessoal de OAuth 2.1. Circuito é formação em lógica. Minerador cobre a estação de tratamento. O BioReator 4.0 Community 1.1.1 é a estação de bioinsumos.</p>
+          <p class="card-label"><i class="maturity-dot dot-disponivel" aria-hidden="true"></i> Produtos verticais · Disponível</p>
+          <h3>Agenda, estação e bioinsumos</h3>
+          <p>Ink guarda a agenda do estúdio no Windows. Minerador cobre a estação de tratamento. O BioReator 4.0 Community 1.1.1 é a estação de bioinsumos.</p>
           <ul>
             <li><a href="download.html#ink">Ink Agenda v2.0.1</a></li>
-            <li><a href="download.html#oidc">Reino OIDC v2.0.2-free</a></li>
-            <li><a href="download.html#circuito">Circuito Ferradura v2.0.24</a> · formação</li>
-            <li><a href="download.html#ete">Minerador ETE v1.2.3</a> · estação de tratamento</li>
-            <li><a href="download.html#bioreator40">BioReator 4.0 Community 1.1.1</a> · bioinsumos</li>
+            <li><a href="download.html#ete">Minerador ETE v1.2.3</a> · Windows, Linux e macOS</li>
+            <li><a href="download.html#bioreator40">BioReator 4.0 Community 1.1.1</a> · Windows</li>
           </ul>
         </article>
 
         <article class="branch-card">
-          <p class="card-label"><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Licenças · complemento do ecossistema</p>
+          <p class="card-label"><i class="maturity-dot dot-disponivel" aria-hidden="true"></i> Educação · Disponível</p>
+          <h3>Formação e estudo</h3>
+          <p>Circuito é formação em lógica. Reino OIDC é estudo pessoal de OAuth 2.1 e OpenID Connect. A Rebeldia da Mecatrônica é leitura online, sem arquivo para baixar.</p>
+          <ul>
+            <li><a href="download.html#circuito">Circuito Ferradura v2.0.24</a></li>
+            <li><a href="download.html#oidc">Reino OIDC v2.0.2-free</a></li>
+            <li><a href="download.html#rebeldia">A Rebeldia da Mecatrônica</a> · acesso online</li>
+          </ul>
+        </article>
+
+        <article class="branch-card">
+          <p class="card-label"><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Infraestrutura · Piloto</p>
           <h3>CaraCore Seed no computador da empresa</h3>
           <p>Ferramenta local para cadastrar clientes e administrar licenças de software. Cada produto Cara Core mantém seu próprio aplicativo e banco; o Seed não centraliza os dados do portfólio.</p>
           <ul>
-            <li><a href="download.html#caracore-seed">Seed 0.1.5</a> · pré-release candidata Windows x64</li>
+            <li><a href="download.html#caracore-seed">Seed 0.1.5</a> · candidata para avaliação Windows x64</li>
             <li>Piloto gratuito sob MIT; SQLite local e API protegida</li>
             <li>SHA-256 e estado de homologação no catálogo</li>
+          </ul>
+        </article>
+
+        <article class="branch-card">
+          <p class="card-label"><i class="maturity-dot dot-desenvolvimento" aria-hidden="true"></i> Em breve · Em desenvolvimento</p>
+          <h3>Ainda sem arquivo</h3>
+          <p>Dois itens têm data pública e vitrine no ar, mas nenhum instalador nesta central. O aviso de lançamento é o caminho.</p>
+          <ul>
+            <li><a href="download.html#cso-transportes">CSO Transportes</a> · GA previsto para 08/11/2028</li>
+            <li><a href="download.html#helianto">Helianto Condominium</a> · lançamento previsto para 30/12/2029</li>
           </ul>
         </article>
       </div>
@@ -196,30 +233,30 @@
     <section class="page-card" id="adotar" aria-labelledby="adotar-title">
       <div class="catalog-section-heading">
         <p class="catalog-eyebrow">O que já pode ser adotado</p>
-        <h2 id="adotar-title">Versão, SHA256 e ressalva antes do download</h2>
-        <p>Confira a versão, o SHA256 e as ressalvas de homologação antes de baixar.</p>
+        <h2 id="adotar-title">Versão, SHA-256 e ressalva antes do download</h2>
+        <p>Confira a versão, o SHA-256 e as ressalvas de homologação antes de baixar.</p>
       </div>
 
       <div class="info-grid">
         <a class="info-card" href="download.html#catalogo">
-          <p class="card-label"><i class="maturity-dot dot-estavel" aria-hidden="true"></i> Produção estável</p>
+          <p class="card-label"><i class="maturity-dot dot-disponivel" aria-hidden="true"></i> Disponível</p>
           <h3>Versões publicadas</h3>
-          <p>PDV Java Free, Ink Agenda, Minerador ETE, Circuito Ferradura, a edição Free do Reino OIDC e o BioReator 4.0 Community 1.1.1 constam neste catálogo com versão e SHA256. O arquivo de cada um sai da release publicada no GitHub. O CSO Frotas é acesso online, sem instalador.</p>
+          <p>PDV Java Free, Ink Agenda, Minerador ETE, Circuito Ferradura, a edição Free do Reino OIDC, o BioReator 4.0 Community 1.1.1 e A Rebeldia da Mecatrônica constam neste catálogo com versão e SHA-256. O CSO Frotas é acesso online, sem instalador.</p>
         </a>
         <a class="info-card" href="download.html#catalogo">
-          <p class="card-label"><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Piloto controlado</p>
-          <h3>Avaliação em Windows, com estado explícito</h3>
-          <p>PDV Rust v0.1.4: até 100 vendas na vida do piloto. CaraCore Seed v0.1.5: pré-release candidata para gestão local de licenças; homologação independente pendente.</p>
-        </a>
-        <a class="info-card" href="download.html#catalogo">
-          <p class="card-label"><i class="maturity-dot dot-preview" aria-hidden="true"></i> Preview tecnológico</p>
+          <p class="card-label"><i class="maturity-dot dot-beta" aria-hidden="true"></i> Beta (RC)</p>
           <h3>Pré-release para teste</h3>
-          <p>PDV Java v4.0.0-rc6 está em pré-lançamento; o Hub v2.1.0-rc1.7 segue em pré-release. A versão anterior do caixa é a 3.2.12-free, com homologação em andamento.</p>
+          <p>PDV Java v4.0.0-rc6 está em pré-lançamento; o Hub v2.1.0-rc1.7 segue em pré-release. GA só depois dos gates e aceites formais, sem data presumida.</p>
         </a>
-        <a class="info-card" href="roadmap.html">
-          <p class="card-label"><i class="maturity-dot dot-plan" aria-hidden="true"></i> Planejamento</p>
+        <a class="info-card" href="download.html#catalogo">
+          <p class="card-label"><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Piloto</p>
+          <h3>Avaliação em Windows, com estado explícito</h3>
+          <p>PDV Rust v0.1.4: até 100 vendas na vida do piloto. CaraCore Seed v0.1.5: candidata para gestão local de licenças; homologação independente pendente.</p>
+        </a>
+        <a class="info-card" href="download.html#em-breve">
+          <p class="card-label"><i class="maturity-dot dot-desenvolvimento" aria-hidden="true"></i> Em desenvolvimento</p>
           <h3>Data pública, sem arquivo</h3>
-          <p>CSO Transportes, com GA planejado para 08/11/2028.</p>
+          <p>CSO Transportes, com GA previsto para 08/11/2028, e Helianto Condominium, com lançamento previsto para 30/12/2029.</p>
         </a>
       </div>
     </section>
@@ -227,7 +264,7 @@
     <section class="page-card" id="decisao" aria-labelledby="decisao-title">
       <div class="catalog-section-heading">
         <p class="catalog-eyebrow">Para quem decide</p>
-        <h2 id="decisao-title">Quem é a casa, qual é o problema e o que você leva</h2>
+        <h2 id="decisao-title">Quem é a Cara Core, qual é o problema e o que você leva</h2>
       </div>
 
       <div class="info-grid">
@@ -237,7 +274,7 @@
         </article>
         <article class="info-card">
           <h3>O problema</h3>
-          <p>Venda, agenda e encomenda param quando dependem de um servidor de terceiro. O desenho da casa coloca o banco no computador em que a operação acontece.</p>
+          <p>Venda, agenda e encomenda param quando dependem de um servidor de terceiro. O desenho da Cara Core coloca o banco no computador em que a operação acontece.</p>
         </article>
         <article class="info-card">
           <h3>O que você leva</h3>
@@ -304,7 +341,7 @@
             <p class="text-white font-bold">Cara Core Informática</p>
           </div>
           <p class="text-sm text-gray-400 mb-3">
-            Engenharia B2B, Código Transparente no Ambiente do Cliente e Arquitetura Bunker Digital.
+            Alocação técnica dedicada ou consultoria por projeto — modelo B2B, código transparente no ambiente do cliente. Processos padronizados e gestão orientada a desempenho.
           </p>
           <p class="text-xs text-gray-500">
             <strong>CNPJ:</strong> 23.969.028/0001-37<br>
@@ -315,10 +352,10 @@
         <div>
           <h3 class="text-white font-bold mb-3">Produtos principais</h3>
           <ul class="space-y-2 text-sm">
-            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV (Java)</a></li>
-            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV (Rust)</a></li>
-            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore CSO (Frotas)</a></li>
-            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore Hub</a></li>
+            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core PDV (Java)</a></li>
+            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core PDV (Rust)</a></li>
+            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core CSO Frotas</a></li>
+            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core Hub</a></li>
           </ul>
         </div>
 
@@ -330,6 +367,9 @@
             <li><a href="https://ru.caracore.com.br/bioreator.html" class="hover:text-white" target="_blank" rel="noopener">BioReator 4.0</a></li>
             <li><a href="https://oidc.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Reino OIDC</a></li>
             <li><a href="https://circuito.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Circuito Ferradura</a></li>
+            <li><a href="https://eng.caracore.com.br/" class="hover:text-white" target="_blank" rel="noopener">A Rebeldia da Mecatrônica</a></li>
+            <li><a href="https://seed.caracore.com.br/" class="hover:text-white" target="_blank" rel="noopener">Cara Core Seed</a></li>
+            <li><a href="https://helianto.caracore.com.br/" class="hover:text-white" target="_blank" rel="noopener">Helianto</a></li>
           </ul>
         </div>
 

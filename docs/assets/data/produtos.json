@@ -1,16 +1,15 @@
 {
-  "schema": 1,
-  "atualizado": "2026-10-29",
+  "schema": 2,
+  "atualizado": "2026-10-30",
   "moeda": "BRL",
   "produtos": [
     {
       "ancora": "pdv-java",
-      "produto": "CaraCore PDV 3.2.12",
+      "produto": "CaraCore PDV Java 3.2.12",
       "versao": "v3.2.12-free",
       "rotuloVersao": "v3.2.12-free · 15/10/2026 · Windows, Linux, macOS",
-      "status": "estavel",
-      "statusLabel": "Versão anterior",
-      "statusClasse": "status-free",
+      "estagio": "disponivel",
+      "categoria": "nucleo",
       "plataformas": ["windows", "linux", "macos"],
       "loja": "https://pdv.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-pdv.html",
@@ -39,17 +38,18 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 (Windows)",
+          "rotulo": "SHA-256 (Windows)",
           "valor": "6d7a50b0acf2a05620a090eebdd48f049a1dd5599ccb6c40c419c38145f7c0e2"
         },
         {
-          "rotulo": "SHA256 (Linux e macOS: mesmo ZIP; requer JDK 25 instalado — o Java não vem embutido)",
+          "rotulo": "SHA-256 (Linux e macOS: mesmo ZIP; requer JDK 25 instalado — o Java não vem embutido)",
           "valor": "795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1"
         }
       ],
       "avisos": [
-        "Sem assinatura digital nos três ZIPs.",
+        "Versão anterior, última da linha 3.2.x, ainda a indicada para operar; manutenção de transição até 08/11/2026.",
         "Homologação em andamento; ressalvas publicadas na wiki do PDV.",
+        "Sem assinatura digital nos três ZIPs.",
         "Requer JDK 25 instalado: o Java não vem embutido."
       ]
     },
@@ -58,9 +58,8 @@
       "produto": "CaraCore PDV 4",
       "versao": "v4.0.0-rc6",
       "rotuloVersao": "v4.0.0-rc6 · 10/10/2026 · Windows x64",
-      "status": "preview",
-      "statusLabel": "Em pré-lançamento",
-      "statusClasse": "status-previa",
+      "estagio": "beta",
+      "categoria": "nucleo",
       "plataformas": ["windows"],
       "loja": "https://pdv.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-pdv.html",
@@ -75,26 +74,25 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 (Windows x64)",
+          "rotulo": "SHA-256 (Windows x64)",
           "valor": "0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325"
         }
       ],
       "avisos": [
-        "Somente para avaliação: não é a versão final.",
+        "Prévia pública para avaliação; GA somente após gates e aceites formais, sem data presumida.",
+        "A RC7 segue em QA local, sem download publicado.",
         "Migração da 3.2 não suportada: não copie o banco da 3.2 para a v4.",
         "Na v4 não há estorno de venda finalizada. Instale em pasta separada, só para teste.",
-        "Faça backup antes de qualquer teste.",
         "Java 25 vem dentro do ZIP; Windows 10/11 x64 com Microsoft Edge."
       ]
     },
     {
       "ancora": "pdv-rust",
-      "produto": "CaraCore PDV (Rust)",
+      "produto": "CaraCore PDV Rust",
       "versao": "v0.1.4",
-      "rotuloVersao": "v0.1.4 · Piloto Windows",
-      "status": "piloto",
-      "statusLabel": "Piloto",
-      "statusClasse": "status-pilot",
+      "rotuloVersao": "v0.1.4 · Windows",
+      "estagio": "piloto",
+      "categoria": "nucleo",
       "plataformas": ["windows"],
       "loja": "https://pdv-rust.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-pdv-rust.html",
@@ -109,7 +107,7 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 (Windows ZIP)",
+          "rotulo": "SHA-256 (Windows ZIP)",
           "valor": "7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37"
         }
       ],
@@ -121,11 +119,10 @@
     {
       "ancora": "cso-frotas",
       "produto": "CaraCore CSO Frotas",
-      "versao": "FRO 24/24",
-      "rotuloVersao": "Produção Ativa · Web SaaS",
-      "status": "estavel",
-      "statusLabel": "Acesso online (SaaS)",
-      "statusClasse": "status-saas",
+      "versao": "Frotas em produção",
+      "rotuloVersao": "Acesso online · Web SaaS",
+      "estagio": "disponivel",
+      "categoria": "nucleo",
       "plataformas": ["web"],
       "loja": "https://cso-transp.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-cso.html",
@@ -152,13 +149,37 @@
       ]
     },
     {
+      "ancora": "cso-transportes",
+      "produto": "CaraCore CSO Transportes",
+      "versao": "GA 08/11/2028",
+      "rotuloVersao": "GA previsto 08/11/2028 · vitrine online",
+      "estagio": "desenvolvimento",
+      "categoria": "nucleo",
+      "plataformas": ["web"],
+      "loja": "https://cso-transp.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-cso.html",
+      "downloads": [
+        {
+          "rotulo": "Quero ser avisado",
+          "plataforma": "web",
+          "principal": true,
+          "url": "https://cso-transp.caracore.com.br",
+          "sha256": null
+        }
+      ],
+      "sha256": [],
+      "avisos": [
+        "Em desenvolvimento: sem arquivo nesta central e sem contratação antecipada.",
+        "O Transportes integra a solução CSO, com a vitrine em cso-transp.caracore.com.br."
+      ]
+    },
+    {
       "ancora": "hub",
       "produto": "CaraCore Hub",
       "versao": "v2.1.0-rc1.7",
       "rotuloVersao": "v2.1.0-rc1.7 · Windows x64 · sem assinatura digital",
-      "status": "preview",
-      "statusLabel": "Pré-release",
-      "statusClasse": "status-pilot",
+      "estagio": "beta",
+      "categoria": "nucleo",
       "plataformas": ["windows"],
       "loja": "https://hub.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-hub.html",
@@ -180,11 +201,11 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.exe)",
+          "rotulo": "SHA-256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.exe)",
           "valor": "1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1"
         },
         {
-          "rotulo": "SHA256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.zip)",
+          "rotulo": "SHA-256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.zip)",
           "valor": "924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e"
         }
       ],
@@ -196,12 +217,11 @@
     },
     {
       "ancora": "ink",
-      "produto": "Ink Agenda Desktop",
+      "produto": "CaraCore Ink Agenda",
       "versao": "v2.0.1",
-      "rotuloVersao": "v2.0.1 · Estável",
-      "status": "estavel",
-      "statusLabel": "Estável",
-      "statusClasse": "status-free",
+      "rotuloVersao": "v2.0.1 · Windows",
+      "estagio": "disponivel",
+      "categoria": "satelite",
       "plataformas": ["windows"],
       "loja": "https://ink.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-ink.html",
@@ -223,11 +243,11 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 (Windows ZIP)",
+          "rotulo": "SHA-256 (Windows ZIP)",
           "valor": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
         },
         {
-          "rotulo": "SHA256 (Windows instalador EXE)",
+          "rotulo": "SHA-256 (Windows instalador EXE)",
           "valor": "49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b"
         }
       ],
@@ -240,10 +260,9 @@
       "ancora": "ete",
       "produto": "Minerador ETE 4.0",
       "versao": "v1.2.3",
-      "rotuloVersao": "v1.2.3",
-      "status": "estavel",
-      "statusLabel": "Estável",
-      "statusClasse": "status-free",
+      "rotuloVersao": "v1.2.3 · Windows, Linux, macOS",
+      "estagio": "disponivel",
+      "categoria": "satelite",
       "plataformas": ["windows", "linux", "macos"],
       "loja": "https://ete.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-minerador.html",
@@ -279,19 +298,19 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 (Windows EXE)",
+          "rotulo": "SHA-256 (Windows EXE)",
           "valor": "20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791"
         },
         {
-          "rotulo": "SHA256 (Windows ZIP)",
+          "rotulo": "SHA-256 (Windows ZIP)",
           "valor": "00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc"
         },
         {
-          "rotulo": "SHA256 (Linux x86_64)",
+          "rotulo": "SHA-256 (Linux x86_64)",
           "valor": "5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f"
         },
         {
-          "rotulo": "SHA256 (macOS universal)",
+          "rotulo": "SHA-256 (macOS universal)",
           "valor": "9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc"
         }
       ],
@@ -300,76 +319,12 @@
       ]
     },
     {
-      "ancora": "oidc",
-      "produto": "Reino OIDC",
-      "versao": "v2.0.2-free",
-      "rotuloVersao": "v2.0.2-free · OAuth 2.1",
-      "status": "estavel",
-      "statusLabel": "Edição Free",
-      "statusClasse": "status-free",
-      "plataformas": ["windows"],
-      "loja": "https://oidc.caracore.com.br",
-      "wiki": "https://wiki.caracore.com.br/projeto-reino.html",
-      "downloads": [
-        {
-          "rotulo": "Windows (2.0.2)",
-          "plataforma": "windows",
-          "principal": true,
-          "url": "https://github.com/chmulato/caracore-oidc-releases/releases/download/v2.0.2-free/ReinoOIDC-2.0.2-free.exe",
-          "sha256": "d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc"
-        }
-      ],
-      "sha256": [
-        {
-          "rotulo": "SHA256 (Windows EXE)",
-          "valor": "d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc"
-        }
-      ],
-      "avisos": [
-        "Três Eras gratuitas para estudo pessoal.",
-        "Edição paga em desenvolvimento; sem pagamento nesta etapa.",
-        "Sem SLA, certificação ou consultoria."
-      ]
-    },
-    {
-      "ancora": "circuito",
-      "produto": "Circuito Ferradura",
-      "versao": "v2.0.24",
-      "rotuloVersao": "v2.0.24 · Windows, macOS e HTML",
-      "status": "estavel",
-      "statusLabel": "Estável",
-      "statusClasse": "status-free",
-      "plataformas": ["windows"],
-      "loja": "https://circuito.caracore.com.br",
-      "wiki": "https://wiki.caracore.com.br/projeto-python.html",
-      "downloads": [
-        {
-          "rotulo": "Windows (.EXE)",
-          "plataforma": "windows",
-          "principal": true,
-          "url": "https://github.com/chmulato/caracore-circuito-releases/releases/download/v2.0.24/CircuitoFerradura.exe",
-          "sha256": "eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12"
-        }
-      ],
-      "sha256": [
-        {
-          "rotulo": "SHA256 publicado (Windows EXE)",
-          "valor": "eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12"
-        }
-      ],
-      "avisos": [
-        "Executável Windows sem assinatura digital.",
-        "Pacotes macOS e HTML ficam na loja do produto."
-      ]
-    },
-    {
       "ancora": "bioreator40",
       "produto": "BioReator 4.0",
       "versao": "1.1.1",
       "rotuloVersao": "Community 1.1.1 · Windows",
-      "status": "estavel",
-      "statusLabel": "Community",
-      "statusClasse": "status-free",
+      "estagio": "disponivel",
+      "categoria": "satelite",
       "plataformas": ["windows"],
       "loja": "https://ru.caracore.com.br/bioreator.html",
       "wiki": "https://wiki.caracore.com.br/projeto-bioreator.html",
@@ -391,15 +346,15 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA256 do MSI",
+          "rotulo": "SHA-256 do MSI",
           "valor": "6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21"
         },
         {
-          "rotulo": "SHA256 do ZIP",
+          "rotulo": "SHA-256 do ZIP",
           "valor": "b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7"
         },
         {
-          "rotulo": "SHA256 do EXE dentro do ZIP",
+          "rotulo": "SHA-256 do EXE dentro do ZIP",
           "valor": "88eb22c17b547ded71aed275021bfbbd4121b171cbaba4373dfdca96c11a609a"
         }
       ],
@@ -410,13 +365,99 @@
       ]
     },
     {
+      "ancora": "oidc",
+      "produto": "Reino OIDC",
+      "versao": "v2.0.2-free",
+      "rotuloVersao": "v2.0.2-free · OAuth 2.1",
+      "estagio": "disponivel",
+      "categoria": "educacao",
+      "plataformas": ["windows"],
+      "loja": "https://oidc.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-reino.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (2.0.2)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-oidc-releases/releases/download/v2.0.2-free/ReinoOIDC-2.0.2-free.exe",
+          "sha256": "d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA-256 (Windows EXE)",
+          "valor": "d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc"
+        }
+      ],
+      "avisos": [
+        "Três Eras gratuitas para estudo pessoal.",
+        "Edição paga em desenvolvimento; sem pagamento nesta etapa.",
+        "Sem SLA, certificação ou consultoria."
+      ]
+    },
+    {
+      "ancora": "circuito",
+      "produto": "Circuito Ferradura",
+      "versao": "v2.0.24",
+      "rotuloVersao": "v2.0.24 · Windows, macOS e HTML",
+      "estagio": "disponivel",
+      "categoria": "educacao",
+      "plataformas": ["windows", "macos", "web"],
+      "loja": "https://circuito.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/projeto-python.html",
+      "downloads": [
+        {
+          "rotulo": "Windows (.EXE)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-circuito-releases/releases/download/v2.0.24/CircuitoFerradura.exe",
+          "sha256": "eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA-256 publicado (Windows EXE)",
+          "valor": "eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12"
+        }
+      ],
+      "avisos": [
+        "Executável Windows sem assinatura digital.",
+        "Pacotes macOS e HTML ficam na loja do produto."
+      ]
+    },
+    {
+      "ancora": "rebeldia",
+      "produto": "A Rebeldia da Mecatrônica",
+      "versao": "Livro publicado",
+      "rotuloVersao": "Livro publicado · leitura online",
+      "estagio": "disponivel",
+      "categoria": "educacao",
+      "plataformas": ["web"],
+      "loja": "https://eng.caracore.com.br/",
+      "wiki": "https://wiki.caracore.com.br",
+      "downloads": [
+        {
+          "rotulo": "Acesso online",
+          "plataforma": "web",
+          "principal": true,
+          "url": "https://eng.caracore.com.br/",
+          "sha256": null
+        }
+      ],
+      "sha256": [],
+      "avisos": [
+        "Romance instrutivo de tecnologia e sociedade: 13 capítulos e 3 apêndices.",
+        "Leitura online e PDF abertos; o app Universo Rebeldia está em piloto.",
+        "Produto educacional da Cara Core Informática; não consome a cota de Agent."
+      ]
+    },
+    {
       "ancora": "caracore-seed",
       "produto": "CaraCore Seed",
       "versao": "0.1.5",
-      "rotuloVersao": "Pré-release candidata 0.1.5 · Windows x64",
-      "status": "piloto",
-      "statusLabel": "Piloto · avaliação",
-      "statusClasse": "status-pilot",
+      "rotuloVersao": "0.1.5 · Windows x64",
+      "estagio": "piloto",
+      "categoria": "institucional",
       "plataformas": ["windows"],
       "loja": "https://seed.caracore.com.br/",
       "wiki": "https://wiki.caracore.com.br/projeto-seed.html",
@@ -436,9 +477,35 @@
         }
       ],
       "avisos": [
-        "Versão experimental: não homologada nem pronta para produção.",
+        "Piloto público para avaliação: não homologado nem pronto para produção.",
         "Instalador unsigned. Não desative SmartScreen, Defender ou outras proteções.",
         "Ao atualizar, preserve banco e chaves; licenças antigas podem pedir rotação do token."
+      ]
+    },
+    {
+      "ancora": "helianto",
+      "produto": "Helianto Condominium",
+      "versao": "GA 30/12/2029",
+      "rotuloVersao": "Lançamento previsto para 30/12/2029 · vitrine online",
+      "estagio": "desenvolvimento",
+      "categoria": "garagem",
+      "plataformas": ["web"],
+      "loja": "https://helianto.caracore.com.br/",
+      "wiki": "https://wiki.caracore.com.br",
+      "downloads": [
+        {
+          "rotulo": "Quero ser avisado",
+          "plataforma": "web",
+          "principal": true,
+          "url": "https://helianto.caracore.com.br/",
+          "sha256": null
+        }
+      ],
+      "sha256": [],
+      "avisos": [
+        "Em desenvolvimento: vitrine no ar, sem instalador e sem contratação antecipada.",
+        "Os arquivos de infraestrutura do projeto não são download do produto.",
+        "Data de lançamento, não de disponibilidade."
       ]
     }
   ]

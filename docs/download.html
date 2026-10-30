@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produtos e downloads | Cara Core Informática</title>
-  <meta name="description" content="Encontre o produto Cara Core para sua necessidade: baixe versões estáveis, avalie previews ou acesse serviços online.">
+  <meta name="description" content="Encontre o produto Cara Core para sua necessidade: baixe versões disponíveis, avalie betas e pilotos ou acesse serviços online.">
   <meta name="author" content="Cara Core Informática">
   <link rel="canonical" href="https://download.caracore.com.br/download.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Central de Downloads | Cara Core Informática">
-  <meta property="og:description" content="Escolha por necessidade: baixe produtos estáveis, avalie previews ou acesse serviços online da Cara Core.">
+  <meta property="og:description" content="Escolha por necessidade: baixe produtos disponíveis, avalie betas e pilotos ou acesse serviços online da Cara Core.">
   <meta property="og:url" content="https://download.caracore.com.br/download.html">
   <meta property="og:type" content="website">
 
@@ -43,6 +43,51 @@
       }
     } catch (err) { /* file:// com storage bloqueado: segue no claro */ }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.caracore.com.br/#organization",
+        "name": "Cara Core Informática",
+        "url": "https://www.caracore.com.br/",
+        "logo": "https://download.caracore.com.br/assets/brand/caracore-logo.svg",
+        "taxID": "23.969.028/0001-37",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Campo Largo",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Produtos Cara Core",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 14,
+        "publisher": { "@id": "https://www.caracore.com.br/#organization" },
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "CaraCore PDV Java 3.2.12", "url": "https://pdv.caracore.com.br/" },
+          { "@type": "ListItem", "position": 2, "name": "CaraCore PDV 4", "url": "https://pdv.caracore.com.br/" },
+          { "@type": "ListItem", "position": 3, "name": "CaraCore PDV Rust", "url": "https://pdv-rust.caracore.com.br/" },
+          { "@type": "ListItem", "position": 4, "name": "CaraCore CSO Frotas", "url": "https://cso-transp.caracore.com.br/" },
+          { "@type": "ListItem", "position": 5, "name": "CaraCore CSO Transportes", "url": "https://cso-transp.caracore.com.br/" },
+          { "@type": "ListItem", "position": 6, "name": "CaraCore Hub", "url": "https://hub.caracore.com.br/" },
+          { "@type": "ListItem", "position": 7, "name": "CaraCore Ink Agenda", "url": "https://ink.caracore.com.br/" },
+          { "@type": "ListItem", "position": 8, "name": "Minerador ETE 4.0", "url": "https://ete.caracore.com.br/" },
+          { "@type": "ListItem", "position": 9, "name": "BioReator 4.0", "url": "https://ru.caracore.com.br/bioreator.html" },
+          { "@type": "ListItem", "position": 10, "name": "Reino OIDC", "url": "https://oidc.caracore.com.br/" },
+          { "@type": "ListItem", "position": 11, "name": "Circuito Ferradura", "url": "https://circuito.caracore.com.br/" },
+          { "@type": "ListItem", "position": 12, "name": "A Rebeldia da Mecatrônica", "url": "https://eng.caracore.com.br/" },
+          { "@type": "ListItem", "position": 13, "name": "CaraCore Seed", "url": "https://seed.caracore.com.br/" },
+          { "@type": "ListItem", "position": 14, "name": "Helianto Condominium", "url": "https://helianto.caracore.com.br/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="smooth-scroll bg-gray-50">
 
@@ -61,7 +106,7 @@
         <a href="index.html" class="flex items-center space-x-3">
           <img src="assets/brand/caracore-logo.svg" alt="Cara Core Informática" width="48" height="48" class="w-12 h-12 rounded-lg">
           <div>
-            <p class="text-xl font-bold text-gray-900">CaraCore Downloads</p>
+            <p class="text-xl font-bold text-gray-900">Cara Core · Central de Downloads</p>
             <p class="text-xs text-gray-600">Central de versões</p>
           </div>
         </a>
@@ -69,7 +114,7 @@
         <div class="central-nav" aria-label="Seções da central">
           <a href="#catalogo" class="central-nav-link">Produtos</a>
           <a href="#instalar" class="central-nav-link">Como instalar</a>
-          <a href="#ajuda-integridade" class="central-nav-link">Verificar SHA256</a>
+          <a href="#ajuda-integridade" class="central-nav-link">Verificar SHA-256</a>
           <a href="#seguranca" class="central-nav-link">Segurança</a>
           <a href="https://wa.me/5541999097797" class="cta-link text-sm font-medium transition" target="_blank" rel="noopener">Falar no WhatsApp</a>
           <a href="#catalogo" class="cta-btn text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition text-center">Ver produtos</a>
@@ -88,7 +133,7 @@
       <div id="mobile-menu" class="mobile-menu">
         <a href="#catalogo">Produtos</a>
         <a href="#instalar">Como instalar</a>
-        <a href="#ajuda-integridade">Verificar SHA256</a>
+        <a href="#ajuda-integridade">Verificar SHA-256</a>
         <a href="#seguranca">Segurança</a>
         <a href="https://wa.me/5541999097797" rel="noopener">Falar no WhatsApp</a>
       </div>
@@ -101,17 +146,21 @@
       <div class="max-w-3xl mx-auto text-center">
         <p class="text-sm uppercase tracking-wide text-blue-100 mb-4">Produtos e downloads Cara Core</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-          Programas que rodam no computador da sua empresa, com versão e SHA256 publicados.
+          Programas que rodam no computador da sua empresa, com versão e SHA-256 publicados.
         </h1>
         <p class="text-lg md:text-xl text-blue-50 mb-8">
-          Comece pelo que você precisa fazer. Produtos estáveis, pilotos e previews estão separados; informações técnicas ficam disponíveis em cada card.
+          Comece pelo que você precisa fazer. Cada card mostra o estágio do produto:
+          Disponível, Beta (RC), Piloto ou Em desenvolvimento. Versão, SHA-256 e ressalvas ficam no próprio card.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="#pdv-java" class="hero-cta-primary">
-            <i class="fas fa-download"></i> Baixar Free do PDV
+          <a href="#catalogo" class="hero-cta-primary">
+            <i class="fas fa-box-open" aria-hidden="true"></i> Ver produtos
           </a>
-          <a href="#catalogo" class="hero-cta-secondary">
-            Ver catálogo completo
+          <a href="#instalar" class="hero-cta-secondary">
+            Como instalar
+          </a>
+          <a href="https://wa.me/5541999097797" class="hero-cta-secondary" target="_blank" rel="noopener">
+            Falar no WhatsApp
           </a>
         </div>
       </div>
@@ -121,8 +170,8 @@
   <!-- MAIN CONTENT -->
   <main id="conteudo" class="page-shell">
 
-    <section class="sovereignty-banner" aria-label="Diferencial da casa">
-      <p class="sovereignty-kicker">Diferencial da casa</p>
+    <section class="sovereignty-banner" aria-label="Diferencial da Cara Core">
+      <p class="sovereignty-kicker">Diferencial Cara Core</p>
       <h2>O banco fica no computador de quem opera</h2>
       <p>
         Caixa, agenda e os pacotes desktop guardam o banco no computador do cliente.
@@ -138,43 +187,54 @@
     <section class="page-card status-ladder" aria-labelledby="status-title">
       <div class="catalog-section-heading">
         <p class="catalog-eyebrow">Como ler o catálogo</p>
-        <h2 id="status-title">Três status, três expectativas</h2>
-        <p>O selo de cada card diz o que esperar do arquivo antes de baixar.</p>
+        <h2 id="status-title">Quatro estágios, quatro expectativas</h2>
+        <p>O selo de cada card usa a mesma legenda do ecossistema Cara Core e diz o que esperar do arquivo antes de baixar.</p>
       </div>
 
       <div class="info-grid">
-        <article class="info-card" id="estavel">
-          <p class="card-label"><i class="maturity-dot dot-estavel" aria-hidden="true"></i> Estável</p>
+        <article class="info-card" id="disponivel">
+          <p class="card-label"><i class="maturity-dot dot-disponivel" aria-hidden="true"></i> Disponível</p>
           <h3>Publicado para uso</h3>
-          <p>Versão liberada e mantida pela casa. O SHA256 do arquivo está no card, com a ressalva de homologação quando existe.</p>
+          <p>Release pública com download ou acesso ativo na loja do produto. O SHA-256 do arquivo fica no card, com a ressalva de homologação quando existe.</p>
           <ul>
-            <li><a href="#pdv-java">CaraCore PDV 3.2.12</a> · versão anterior, ainda a indicada para operar</li>
-            <li><a href="#ink">Ink Agenda v2.0.1</a></li>
+            <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, ainda a indicada para operar</li>
+            <li><a href="#ink">CaraCore Ink Agenda v2.0.1</a></li>
             <li><a href="#ete">Minerador ETE v1.2.3</a></li>
             <li><a href="#oidc">Reino OIDC v2.0.2-free</a></li>
             <li><a href="#circuito">Circuito Ferradura v2.0.24</a></li>
             <li><a href="#bioreator40">BioReator 4.0 Community 1.1.1</a></li>
-            <li><a href="#cso-frotas">CSO Frotas</a> · acesso online, sem instalador</li>
+            <li><a href="#rebeldia">A Rebeldia da Mecatrônica</a> · acesso online</li>
+            <li><a href="#cso-frotas">CaraCore CSO Frotas</a> · acesso online, sem instalador</li>
+          </ul>
+        </article>
+
+        <article class="info-card" id="beta">
+          <p class="card-label"><i class="maturity-dot dot-beta" aria-hidden="true"></i> Beta (RC)</p>
+          <h3>Beta em ciclo de RC</h3>
+          <p>Versão Beta (RC) pública em ciclo de RC. GA só depois dos gates e aceites formais, sem data presumida.</p>
+          <ul>
+            <li><a href="#pdv-v4">CaraCore PDV 4</a> · prévia pública rc6; a RC7 segue em QA local</li>
+            <li><a href="#hub">CaraCore Hub v2.1.0-rc1.7</a></li>
           </ul>
         </article>
 
         <article class="info-card" id="piloto">
           <p class="card-label"><i class="maturity-dot dot-piloto" aria-hidden="true"></i> Piloto</p>
           <h3>Avaliação com limite</h3>
-          <p>Versão publicada para avaliação, com limite declarado e sem promessa de produção.</p>
+          <p>Edição piloto pública, com limite declarado e homologação parcial. Não é GA.</p>
           <ul>
-            <li><a href="#pdv-rust">PDV Rust v0.1.4</a> · 100 vendas na vida do piloto</li>
-            <li><a href="#caracore-seed">CaraCore Seed 0.1.5</a> · pré-release candidata; homologação independente pendente</li>
+            <li><a href="#pdv-rust">CaraCore PDV Rust v0.1.4</a> · 100 vendas na vida do piloto</li>
+            <li><a href="#caracore-seed">CaraCore Seed 0.1.5</a> · homologação independente pendente</li>
           </ul>
         </article>
 
-        <article class="info-card" id="preview">
-          <p class="card-label"><i class="maturity-dot dot-preview" aria-hidden="true"></i> Preview</p>
-          <h3>Pré-release que ainda muda</h3>
-          <p>Prévia de uma linha em desenvolvimento. Serve para teste; a versão de produção continua sendo a 3.2.12-free, versão anterior e ainda a indicada para operar.</p>
+        <article class="info-card" id="desenvolvimento">
+          <p class="card-label"><i class="maturity-dot dot-desenvolvimento" aria-hidden="true"></i> Em desenvolvimento</p>
+          <h3>Data pública, sem arquivo</h3>
+          <p>Em construção ou na Garagem. Sem contratação antecipada e sem instalador publicado.</p>
           <ul>
-            <li><a href="#pdv-v4">CaraCore PDV 4</a></li>
-            <li><a href="#hub">CaraCore Hub v2.1.0-rc1.7</a></li>
+            <li><a href="#cso-transportes">CaraCore CSO Transportes</a> · GA previsto 08/11/2028</li>
+            <li><a href="#helianto">Helianto Condominium</a> · lançamento previsto 30/12/2029</li>
           </ul>
         </article>
       </div>
@@ -187,19 +247,19 @@
       </div>
       <div class="core-products-grid">
         <article class="core-product-card core-product-card--featured">
-          <span class="core-product-status">Versão anterior · indicada para operar</span>
+          <span class="core-product-status">Disponível · versão anterior, ainda indicada para operar</span>
           <h3>PDV Java</h3>
           <p>Frente de caixa local para varejo e balcão.</p>
           <a href="#pdv-java" class="core-product-link">Baixar Free (até 100 vendas finalizadas/mês) <i class="fas fa-arrow-down"></i></a>
         </article>
         <article class="core-product-card">
-          <span class="core-product-status">Preview Windows</span>
+          <span class="core-product-status">Beta (RC) · Windows</span>
           <h3>CaraCore Hub</h3>
           <p>Gestão logística interna de um ponto de retirada (PUDO): recebe a encomenda no balcão, define a posição de guarda e confere a retirada, volume por volume. Os canais desta edição são Mercado Livre, Shopee e Temu.</p>
-          <a href="#hub" class="core-product-link">Ver preview <i class="fas fa-arrow-down"></i></a>
+          <a href="#hub" class="core-product-link">Ver o Hub <i class="fas fa-arrow-down"></i></a>
         </article>
         <article class="core-product-card">
-          <span class="core-product-status">Acesso online</span>
+          <span class="core-product-status">Disponível · acesso online</span>
           <h3>CSO Frotas</h3>
           <p>Gestão operacional de frotas pelo navegador.</p>
           <a href="https://cso.caracore.com.br/login" class="core-product-link" target="_blank" rel="noopener">Entrar no CSO <i class="fas fa-arrow-up-right-from-square"></i></a>
@@ -234,11 +294,12 @@
             <option value="macos">macOS</option>
             <option value="web">Web / SaaS</option>
           </select>
-          <div class="maturity-row" aria-label="Filtrar por maturidade">
+          <div class="maturity-row" aria-label="Filtrar por estágio">
             <button type="button" class="maturity-btn active" data-maturity="all">Todas</button>
-            <button type="button" class="maturity-btn" data-maturity="estavel"><i class="maturity-dot dot-estavel"></i> Estável</button>
+            <button type="button" class="maturity-btn" data-maturity="disponivel"><i class="maturity-dot dot-disponivel"></i> Disponível</button>
+            <button type="button" class="maturity-btn" data-maturity="beta"><i class="maturity-dot dot-beta"></i> Beta (RC)</button>
             <button type="button" class="maturity-btn" data-maturity="piloto"><i class="maturity-dot dot-piloto"></i> Piloto</button>
-            <button type="button" class="maturity-btn" data-maturity="preview"><i class="maturity-dot dot-preview"></i> Preview</button>
+            <button type="button" class="maturity-btn" data-maturity="desenvolvimento"><i class="maturity-dot dot-desenvolvimento"></i> Em desenvolvimento</button>
           </div>
         </div>
       </details>
@@ -256,7 +317,7 @@
                data-title="CaraCore PDV 3.2.12 Caixa Balcão" 
                data-category="pdv" 
                data-platforms="windows linux macos" 
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-goal="vender"
                data-tags="pdv java caixa balcao vendas sqlite free app web local recibo digital varejo offline">
         <div class="card-top">
@@ -265,15 +326,15 @@
               <i class="fas fa-cash-register"></i>
             </div>
             <div class="product-titles">
-              <h3>CaraCore PDV 3.2.12</h3>
+              <h3>CaraCore PDV Java 3.2.12</h3>
               <span class="version-tag">v3.2.12-free · 15/10/2026 · Windows, Linux, macOS</span>
             </div>
           </div>
-          <span class="status-badge status-free">Versão anterior</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
-          Frente de caixa para varejo e balcão. A venda acontece no navegador, com os dados no computador da loja.
+          Frente de caixa para varejo e balcão. A venda acontece no navegador, com os dados no computador da loja. É a versão anterior, última da linha 3.2.x, ainda a indicada para operar, com manutenção de transição até 08/11/2026 e homologação em andamento.
         </p>
         <ul class="use-case">
           <li>Balcão e pequeno varejo</li>
@@ -282,8 +343,8 @@
           <li>Recibo digital sem valor fiscal</li>
           <li>Requer JDK 25 instalado</li>
           <li>Homologação em andamento · <a href="https://pdv.caracore.com.br/wiki-release-v3-2-12-free.html#validacao">ressalvas</a></li>
-          <li>SHA256 Windows: <code>6d7a50b0…45f7c0e2</code></li>
-          <li>SHA256 Linux/macOS: <code>795a3963…a99fd9c1</code> · mesmo ZIP para Linux e macOS (conteúdo idêntico, mesmo SHA256)</li>
+          <li>SHA-256 Windows: <code>6d7a50b0…45f7c0e2</code></li>
+          <li>SHA-256 Linux/macOS: <code>795a3963…a99fd9c1</code> · mesmo ZIP para Linux e macOS (conteúdo idêntico, mesmo SHA-256)</li>
         </ul>
         <figure class="screen-schema">
           <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Frente de caixa</div>
@@ -297,7 +358,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v3.2.12-free</dd></div>
           <div><dt>Atualização</dt><dd>15/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Versão anterior; homologação em andamento</dd></div>
+          <div><dt>Status</dt><dd>Disponível · versão anterior; homologação em andamento</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
           <div><dt>Plataforma</dt><dd>Windows, Linux, macOS</dd></div>
         </dl>
@@ -328,26 +389,26 @@
 
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows)</span>
+              <span class="hash-label">SHA-256 (Windows)</span>
               <span class="hash-code">6d7a50b0acf2a05620a090eebdd48f049a1dd5599ccb6c40c419c38145f7c0e2</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('6d7a50b0acf2a05620a090eebdd48f049a1dd5599ccb6c40c419c38145f7c0e2', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('6d7a50b0acf2a05620a090eebdd48f049a1dd5599ccb6c40c419c38145f7c0e2', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Linux e macOS: mesmo ZIP; requer JDK 25 instalado — o Java não vem embutido)</span>
+              <span class="hash-label">SHA-256 (Linux e macOS: mesmo ZIP; requer JDK 25 instalado — o Java não vem embutido)</span>
               <span class="hash-code">795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('795a396318da61d1bd45dcfe816879d2184706f1c7849f1cd2ad98baa99fd9c1', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
         </div>
 
         <div class="card-links-sub">
-          <a href="https://pdv.caracore.com.br/download.html" class="card-link-item"><i class="fas fa-download"></i> Instalação e SHA256</a>
+          <a href="https://pdv.caracore.com.br/download.html" class="card-link-item"><i class="fas fa-download"></i> Instalação e SHA-256</a>
           <a href="https://pdv.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do PDV</a>
           <a href="https://wiki.caracore.com.br/projeto-pdv.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Manual na Wiki</a>
         </div>
@@ -355,12 +416,12 @@
 
       <!-- 2. PDV JAVA V4 PRÉ-RELEASE -->
       <article class="product-card" id="pdv-v4"
-               data-title="CaraCore PDV 4 prévia rc6"
+               data-title="CaraCore PDV 4 beta rc6"
                data-category="pdv"
                data-platforms="windows"
-               data-maturity="preview"
+               data-maturity="beta"
                data-goal="vender"
-               data-tags="pdv java qute rc6 preview pre-release teste windows">
+               data-tags="pdv java qute rc6 beta pre-release teste windows">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-pdv-java">
@@ -371,11 +432,11 @@
               <span class="version-tag">v4.0.0-rc6 · 10/10/2026 · Windows x64</span>
             </div>
           </div>
-          <span class="status-badge status-previa">Em pré-lançamento</span>
+          <span class="status-badge status-beta">Beta (RC)</span>
         </div>
 
         <p class="card-desc">
-          PDV v4 em pré-lançamento, para avaliação no Windows. A versão anterior é a 3.2.12-free, em manutenção de transição até 08/11/2026 e ainda a indicada para operar.
+          Prévia pública da linha v4 para avaliação no Windows. A RC7 segue em QA local, sem download. A versão anterior é a 3.2.12-free, em manutenção de transição até 08/11/2026 e ainda a indicada para operar. O GA da v4 só acontece depois dos gates e aceites formais.
         </p>
         <ul class="use-case">
           <li>Avaliação da linha v4</li>
@@ -384,7 +445,7 @@
           <li>Banco em ./data no pacote</li>
         </ul>
         <figure class="screen-schema">
-          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Pré-release v4</div>
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Beta (RC) v4</div>
           <div class="schema-body" aria-hidden="true">
             <div class="schema-line">Launcher Edge · modo aplicativo</div>
             <div class="schema-total">Caixa Qute</div>
@@ -395,13 +456,14 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v4.0.0-rc6</dd></div>
           <div><dt>Atualização</dt><dd>10/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Em pré-lançamento · prévia rc6</dd></div>
+          <div><dt>Status</dt><dd>Beta (RC) · prévia pública rc6</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
           <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
         </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Somente para avaliação, não é a versão final. Não precisa instalar Java: ele vem dentro do ZIP.</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>08/11/2026 encerra a manutenção da 3.2.12, não define o GA da v4.</span></div>
           <div class="spec-line"><i class="fas fa-ban"></i> <span><strong>Migração da 3.2 não suportada.</strong> Não copie o banco da 3.2 para a v4.</span></div>
           <div class="spec-line"><i class="fas fa-rotate-left"></i> <span>Na v4 não há estorno de venda finalizada. Instale em pasta separada, só para teste; sua operação continua na 3.2.12.</span></div>
           <div class="spec-line"><i class="fas fa-database"></i> <span>Faça backup antes de qualquer teste.</span></div>
@@ -409,15 +471,15 @@
 
         <div class="card-actions">
           <a href="https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-rc6/CaraCore-PDV-4.0.0-rc6-qute-portable-windows-x64.zip" class="btn-download-primary" title="Baixar a pré-release do PDV Java para Windows">
-            <i class="fab fa-windows"></i> Baixar pré-release Windows x64 (.ZIP)
+            <i class="fab fa-windows"></i> Baixar beta Windows x64 (.ZIP)
           </a>
 
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows x64)</span>
+              <span class="hash-label">SHA-256 (Windows x64)</span>
               <span class="hash-code">0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325', this)" title="Copiar SHA256 completo da RC6">
+            <button class="btn-copy-hash" onclick="copyHash('0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325', this)" title="Copiar SHA-256 completo da RC6">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -443,11 +505,11 @@
               <i class="fas fa-bolt"></i>
             </div>
             <div class="product-titles">
-              <h3>CaraCore PDV (Rust)</h3>
-              <span class="version-tag">v0.1.4 · Piloto Windows</span>
+              <h3>CaraCore PDV Rust</h3>
+              <span class="version-tag">v0.1.4 · Windows</span>
             </div>
           </div>
-          <span class="status-badge status-pilot">Piloto</span>
+          <span class="status-badge status-piloto">Piloto</span>
         </div>
 
         <p class="card-desc">
@@ -488,10 +550,10 @@
 
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows ZIP)</span>
+              <span class="hash-label">SHA-256 (Windows ZIP)</span>
               <span class="hash-code">7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('7d9cf69879eef8e12fd4972fcc3aaa5dc494df8630fa8554797bf47a98233a37', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -508,7 +570,7 @@
                data-title="CaraCore CSO Gestão de Frotas Transporte" 
                data-category="frota" 
                data-platforms="web" 
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-goal="frota"
                data-tags="cso frota frotas transportes veiculos manutencao abastecimento custos saas km documentos pneus">
         <div class="card-top">
@@ -518,10 +580,10 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore CSO Frotas</h3>
-              <span class="version-tag">Produção Ativa · Web SaaS</span>
+              <span class="version-tag">Acesso online · Web SaaS</span>
             </div>
           </div>
-          <span class="status-badge status-saas">Acesso online (SaaS)</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
@@ -545,7 +607,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>FRO 24/24</dd></div>
           <div><dt>Atualização</dt><dd>06/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Em produção</dd></div>
+          <div><dt>Status</dt><dd>Disponível · em produção</dd></div>
           <div><dt>Linguagem</dt><dd>Java 21</dd></div>
           <div><dt>Plataforma</dt><dd>Navegador</dd></div>
         </dl>
@@ -573,12 +635,65 @@
         </div>
       </article>
 
+      <!-- CSO TRANSPORTES — EM DESENVOLVIMENTO -->
+      <article class="product-card" id="cso-transportes"
+               data-title="CaraCore CSO Transportes"
+               data-category="frota"
+               data-platforms="web"
+               data-maturity="desenvolvimento"
+               data-goal="frota"
+               data-tags="cso transportes transportadora frete operacao logistica em breve 2028">
+        <div class="card-top">
+          <div class="product-identity">
+            <div class="product-icon-wrap icon-cso">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class="product-titles">
+              <h3>CaraCore CSO Transportes</h3>
+              <span class="version-tag">GA previsto 08/11/2028 · vitrine online</span>
+            </div>
+          </div>
+          <span class="status-badge status-desenvolvimento">Em desenvolvimento</span>
+        </div>
+
+        <p class="card-desc">
+          Aplicação do CSO para operação de transporte, em desenvolvimento. A vitrine está no ar; não há instalador nesta central nem contratação antecipada.
+        </p>
+        <ul class="use-case">
+          <li>Operação de transporte</li>
+          <li>Integra a solução CSO, ao lado do Frotas</li>
+          <li>Sem arquivo nesta central</li>
+        </ul>
+        <dl class="trust-metrics">
+          <div><dt>Status</dt><dd>Em desenvolvimento</dd></div>
+          <div><dt>Previsão</dt><dd>GA 08/11/2028</dd></div>
+          <div><dt>Plataforma</dt><dd>Web (vitrine)</dd></div>
+          <div><dt>Download</dt><dd>Sem arquivo publicado</dd></div>
+        </dl>
+
+        <div class="specs-box">
+          <div class="spec-line"><i class="fas fa-clock"></i> <span>Data pública de GA; o produto não está disponível para instalação hoje.</span></div>
+          <div class="spec-line"><i class="fas fa-diagram-project"></i> <span>Duas aplicações, uma solução: Frotas no ar e Transportes em desenvolvimento.</span></div>
+        </div>
+
+        <div class="card-actions">
+          <a href="https://cso-transp.caracore.com.br" class="btn-download-primary" target="_blank" rel="noopener" title="Acompanhar o CSO Transportes na vitrine">
+            <i class="fas fa-bell"></i> Quero ser avisado
+          </a>
+        </div>
+
+        <div class="card-links-sub">
+          <a href="https://cso-transp.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Vitrine do CSO</a>
+          <a href="https://wiki.caracore.com.br/projeto-cso.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
+        </div>
+      </article>
+
       <!-- CARACORE HUB -->
       <article class="product-card" id="hub" 
                data-title="CaraCore Hub Encomendas Ponto de Retirada PUDO v2.1.0-rc1.7" 
                data-category="encomendas" 
                data-platforms="windows"
-               data-maturity="preview"
+               data-maturity="beta"
                data-goal="encomendas"
                data-tags="hub encomendas pudo ponto de retirada balcao shopee mercado livre temu logistica pacotes rc1.7 windows pre-release nsis zip free suporte recorrente 79,90">
         <div class="card-top">
@@ -591,11 +706,11 @@
               <span class="version-tag">v2.1.0-rc1.7 · Windows x64 · sem assinatura digital</span>
             </div>
           </div>
-          <span class="status-badge status-pilot">Pré-release</span>
+          <span class="status-badge status-beta">Beta (RC)</span>
         </div>
 
         <p class="card-desc">
-          Pré-release Windows para pontos de retirada (PUDOs): recebe a encomenda no balcão, guarda por posição e confere a retirada, volume por volume. Os canais desta edição são Mercado Livre, Shopee e Temu. O banco fica no computador. O GA planejado do instalador é 06/04/2027. O produto é Free; o suporte opcional tem pagamento recorrente de R$ 79,90 por mês, com primeira resposta em até 24 horas.
+          Versão Beta (RC) para Windows em pontos de retirada (PUDOs): recebe a encomenda no balcão, guarda por posição e confere a retirada, volume por volume. Os canais desta edição são Mercado Livre, Shopee e Temu. O banco fica no computador. O GA previsto do instalador é 06/04/2027. O produto é Free; o suporte opcional tem pagamento recorrente de R$ 79,90 por mês, com primeira resposta em até 24 horas.
         </p>
         <ul class="use-case">
           <li>Recebimento e conferência no balcão</li>
@@ -615,7 +730,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v2.1.0-rc1.7</dd></div>
           <div><dt>Atualização</dt><dd>27/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Pré-release</dd></div>
+          <div><dt>Status</dt><dd>Beta (RC)</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
           <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
         </dl>
@@ -627,21 +742,21 @@
           <div class="spec-line"><i class="fab fa-windows"></i> <span>Só Windows x64. Mac e Linux não entram nesta versão.</span></div>
           <div class="spec-line"><i class="fas fa-box"></i> <span><strong>Instalador · EXE</strong> — CaraCore.Hub-2.1.0-rc1.7-win-x64.exe — 274.162.562 bytes</span></div>
           <div class="spec-line"><i class="fas fa-file-archive"></i> <span><strong>ZIP da mesma edição</strong> — CaraCore.Hub-2.1.0-rc1.7-win-x64.zip — 324.502.796 bytes</span></div>
-          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>GA do instalador planejado para <strong>06/04/2027</strong>.</span></div>
-          <div class="spec-line"><i class="fas fa-credit-card"></i> <span>Free: o produto não tem licença mensal. O suporte opcional tem pagamento recorrente de <strong>R$ 79,90/mês</strong>, a partir do GA, com <strong>primeira resposta em até 24 horas</strong>, e cobre a operação e as integrações. Sem o suporte, a configuração dos canais de encomenda fica por conta da loja. A pré-release é de avaliação e não é cobrada.</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>GA do instalador previsto para <strong>06/04/2027</strong>.</span></div>
+          <div class="spec-line"><i class="fas fa-credit-card"></i> <span>Free: o produto não tem licença mensal. O suporte opcional tem pagamento recorrente de <strong>R$ 79,90/mês</strong>, a partir do GA, com <strong>primeira resposta em até 24 horas</strong>, e cobre a operação e as integrações. Sem o suporte, a configuração dos canais de encomenda fica por conta da loja. A versão Beta (RC) é de avaliação e não é cobrada.</span></div>
         </div>
 
         <div class="card-actions">
           <a href="https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.7/CaraCore.Hub-2.1.0-rc1.7-win-x64.exe" class="btn-download-primary" title="Baixar a pré-release do CaraCore Hub para Windows">
-            <i class="fab fa-windows"></i> Baixar pré-release Windows x64 (.EXE)
+            <i class="fab fa-windows"></i> Baixar beta Windows x64 (.EXE)
           </a>
 
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.exe)</span>
+              <span class="hash-label">SHA-256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.exe)</span>
               <span class="hash-code">1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1', this)" title="Copiar SHA256 do instalador">
+            <button class="btn-copy-hash" onclick="copyHash('1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1', this)" title="Copiar SHA-256 do instalador">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -652,10 +767,10 @@
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.zip)</span>
+              <span class="hash-label">SHA-256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.zip)</span>
               <span class="hash-code">924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e', this)" title="Copiar SHA256 do ZIP">
+            <button class="btn-copy-hash" onclick="copyHash('924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e', this)" title="Copiar SHA-256 do ZIP">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -674,7 +789,7 @@
                data-title="Ink Agenda Desktop Criptografia" 
                data-category="bunker" 
                data-platforms="windows"
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-goal="agenda"
                data-tags="ink agenda tarefas notas criptografia offline bunker javafx estudio financeiro">
         <div class="card-top">
@@ -683,11 +798,11 @@
               <i class="fas fa-calendar-days"></i>
             </div>
             <div class="product-titles">
-              <h3>Ink Agenda Desktop</h3>
-              <span class="version-tag">v2.0.1 · Estável</span>
+              <h3>CaraCore Ink Agenda</h3>
+              <span class="version-tag">v2.0.1 · Windows</span>
             </div>
           </div>
-          <span class="status-badge status-free">Estável</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
@@ -711,7 +826,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v2.0.1</dd></div>
           <div><dt>Atualização</dt><dd>07/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Status</dt><dd>Disponível</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
           <div><dt>Plataforma</dt><dd>Windows</dd></div>
         </dl>
@@ -734,19 +849,19 @@
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows ZIP)</span>
+              <span class="hash-label">SHA-256 (Windows ZIP)</span>
               <span class="hash-code">3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows instalador EXE)</span>
+              <span class="hash-label">SHA-256 (Windows instalador EXE)</span>
               <span class="hash-code">49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -763,7 +878,7 @@
                data-title="Minerador ETE 4.0 Efluentes Quimica" 
                data-category="engenharia" 
                data-platforms="windows linux macos" 
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-goal="estudar"
                data-tags="ete minerador efluentes quimica tratamento dados ambiental ouro python estacao">
         <div class="card-top">
@@ -773,10 +888,10 @@
             </div>
             <div class="product-titles">
               <h3>Minerador ETE 4.0</h3>
-              <span class="version-tag">v1.2.3</span>
+              <span class="version-tag">v1.2.3 · Windows, Linux, macOS</span>
             </div>
           </div>
-          <span class="status-badge status-free">Estável</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
@@ -797,7 +912,7 @@
         </figure>
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v1.2.3</dd></div>
-          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Status</dt><dd>Disponível</dd></div>
           <div><dt>Linguagem</dt><dd>Python</dd></div>
           <div><dt>Plataforma</dt><dd>Windows, Linux, macOS</dd></div>
         </dl>
@@ -825,37 +940,37 @@
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows EXE)</span>
+              <span class="hash-label">SHA-256 (Windows EXE)</span>
               <span class="hash-code">20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('20645ab524ea0fa5579fa8f3b89f4b729a1fd32e9bd97c7cc6845cf1993ba791', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows ZIP)</span>
+              <span class="hash-label">SHA-256 (Windows ZIP)</span>
               <span class="hash-code">00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('00386f965404d285ecaf19290a45bb9873a0aaa9d4bc476f51a250c7deba64dc', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Linux x86_64)</span>
+              <span class="hash-label">SHA-256 (Linux x86_64)</span>
               <span class="hash-code">5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('5c7f2584910a653cc48d94e5c217e6c2a07af0074c1c4c6f5d9745100d0c2d1f', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (macOS universal)</span>
+              <span class="hash-label">SHA-256 (macOS universal)</span>
               <span class="hash-code">9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('9c090954b64d063353d643b9da5e97cd51d19bdb4b1767516711fd79d63d88bc', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -872,7 +987,7 @@
                data-title="Reino OIDC OAuth 2.1 Identidade" 
                data-category="bunker" 
                data-platforms="windows"
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-goal="estudar"
                data-tags="oidc oauth autenticacao identidade estudo bunker seguranca eras">
         <div class="card-top">
@@ -885,7 +1000,7 @@
               <span class="version-tag">v2.0.2-free · OAuth 2.1</span>
             </div>
           </div>
-          <span class="status-badge status-free">Edição Free</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
@@ -908,7 +1023,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v2.0.2-free</dd></div>
           <div><dt>Atualização</dt><dd>08/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Edição Free</dd></div>
+          <div><dt>Status</dt><dd>Disponível · edição Free</dd></div>
           <div><dt>Escopo</dt><dd>Estudo pessoal</dd></div>
           <div><dt>Plataforma</dt><dd>Windows</dd></div>
         </dl>
@@ -925,10 +1040,10 @@
           </a>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 (Windows EXE)</span>
+              <span class="hash-label">SHA-256 (Windows EXE)</span>
               <span class="hash-code">d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('d5c6121e921dedab678b056129653870ebb6fbfa28a75b12074f3d4fbc131bcc', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -945,7 +1060,7 @@
       <article class="product-card" id="circuito" 
                data-title="Circuito Ferradura Logica Educacao" 
                data-category="formacao" 
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-platforms="windows"
                data-goal="estudar"
                data-tags="circuito ferradura educacao logica python computacao formacao curso">
@@ -959,7 +1074,7 @@
               <span class="version-tag">v2.0.24 · Windows, macOS e HTML</span>
             </div>
           </div>
-          <span class="status-badge status-free">Estável</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
@@ -981,7 +1096,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v2.0.24</dd></div>
           <div><dt>Atualização</dt><dd>08/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Estável</dd></div>
+          <div><dt>Status</dt><dd>Disponível</dd></div>
           <div><dt>Linguagem</dt><dd>Python</dd></div>
           <div><dt>Plataforma</dt><dd>Windows nesta central</dd></div>
         </dl>
@@ -997,10 +1112,10 @@
           </a>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 publicado (Windows EXE)</span>
+              <span class="hash-label">SHA-256 publicado (Windows EXE)</span>
               <span class="hash-code">eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -1014,12 +1129,65 @@
         </div>
       </article>
 
+      <!-- A REBELDIA DA MECATRÔNICA — EDUCAÇÃO -->
+      <article class="product-card" id="rebeldia"
+               data-title="A Rebeldia da Mecatrônica livro"
+               data-category="formacao"
+               data-platforms="web"
+               data-maturity="disponivel"
+               data-goal="estudar"
+               data-tags="livro rebeldia mecatronica educacao tecnologia sociedade leitura pdf universo">
+        <div class="card-top">
+          <div class="product-identity">
+            <div class="product-icon-wrap icon-circuito">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="product-titles">
+              <h3>A Rebeldia da Mecatrônica</h3>
+              <span class="version-tag">Livro publicado · leitura online</span>
+            </div>
+          </div>
+          <span class="status-badge status-disponivel">Disponível</span>
+        </div>
+
+        <p class="card-desc">
+          Romance instrutivo de tecnologia e sociedade: 13 capítulos e 3 apêndices. Leitura online e PDF abertos; o app Universo Rebeldia, do mesmo produto, está em piloto.
+        </p>
+        <ul class="use-case">
+          <li>Leitura online e PDF</li>
+          <li>Material didático de tecnologia e sociedade</li>
+          <li>App de estudo em piloto</li>
+        </ul>
+        <dl class="trust-metrics">
+          <div><dt>Status</dt><dd>Disponível</dd></div>
+          <div><dt>Formato</dt><dd>Livro e leitura online</dd></div>
+          <div><dt>Plataforma</dt><dd>Web</dd></div>
+          <div><dt>Download</dt><dd>Sem arquivo nesta central</dd></div>
+        </dl>
+
+        <div class="specs-box">
+          <div class="spec-line"><i class="fas fa-book-open"></i> <span><strong>Produto educacional:</strong> livro e app de estudo do mesmo produto, publicado pela Cara Core Informática.</span></div>
+          <div class="spec-line"><i class="fas fa-circle-info"></i> <span>O livro é leitura aberta; o app de estudo segue em piloto.</span></div>
+        </div>
+
+        <div class="card-actions">
+          <a href="https://eng.caracore.com.br/" class="btn-download-primary" target="_blank" rel="noopener" title="Ler A Rebeldia da Mecatrônica online">
+            <i class="fas fa-arrow-up-right-from-square"></i> Acesso online
+          </a>
+        </div>
+
+        <div class="card-links-sub">
+          <a href="https://eng.caracore.com.br/" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book-open"></i> Site do livro</a>
+          <a href="https://www.caracore.com.br/portfolio.html#rebeldia-mecatronica" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-briefcase"></i> Portfólio</a>
+        </div>
+      </article>
+
       <!-- 11. BIOREATOR 4.0 -->
       <article class="product-card" id="bioreator40"
                data-title="BioReator 4.0 bioinsumos fermentacao"
                data-category="engenharia"
                data-platforms="windows"
-               data-maturity="estavel"
+               data-maturity="disponivel"
                data-goal="estudar"
                data-tags="bioreator bioinsumos fermentacao ru community windows 1.1.1">
         <div class="card-top">
@@ -1032,7 +1200,7 @@
               <span class="version-tag">Community 1.1.1 · Windows</span>
             </div>
           </div>
-          <span class="status-badge status-free">Community</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
@@ -1057,7 +1225,7 @@
           <div><dt>Release</dt><dd>bioreator-1.1.1</dd></div>
           <div><dt>Atualização</dt><dd>13/10/2026</dd></div>
           <div><dt>Versão</dt><dd>1.1.1</dd></div>
-          <div><dt>Status</dt><dd>Community publicada</dd></div>
+          <div><dt>Status</dt><dd>Disponível · Community 1.1.1</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
           <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
         </dl>
@@ -1079,28 +1247,28 @@
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 do MSI</span>
+              <span class="hash-label">SHA-256 do MSI</span>
               <span class="hash-code">6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('6eb0dd01006304d78c74f185345711bc8d4e135b03443d2ab583379338b04b21', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 do ZIP</span>
+              <span class="hash-label">SHA-256 do ZIP</span>
               <span class="hash-code">b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('b36d18a0fae828f359db3c2a6509ad519849e560487d0ebbfaa3c3c85e09e1d7', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
-              <span class="hash-label">SHA256 do EXE dentro do ZIP</span>
+              <span class="hash-label">SHA-256 do EXE dentro do ZIP</span>
               <span class="hash-code">88eb22c17b547ded71aed275021bfbbd4121b171cbaba4373dfdca96c11a609a</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('88eb22c17b547ded71aed275021bfbbd4121b171cbaba4373dfdca96c11a609a', this)" title="Copiar SHA256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('88eb22c17b547ded71aed275021bfbbd4121b171cbaba4373dfdca96c11a609a', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
@@ -1129,14 +1297,14 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore Seed</h3>
-              <span class="version-tag">Pré-release candidata 0.1.5 · Windows x64</span>
+              <span class="version-tag">0.1.5 · Windows x64</span>
             </div>
           </div>
-          <span class="status-badge status-pilot">Piloto · avaliação</span>
+          <span class="status-badge status-piloto">Piloto</span>
         </div>
 
         <p class="card-desc">
-          Ferramenta complementar do ecossistema Cara Core para gestão local de clientes e licenças. Cada produto mantém seu próprio aplicativo e banco. A pré-release candidata Windows está disponível para avaliação, mas ainda aguarda homologação independente.
+          Ferramenta de infraestrutura do ecossistema Cara Core para gestão local de clientes e licenças. Cada produto mantém seu próprio aplicativo e banco. O piloto público Windows está disponível para avaliação, mas ainda aguarda homologação independente.
         </p>
         <ul class="use-case">
           <li>Piloto gratuito sob MIT; sem checkout ou pagamento real</li>
@@ -1145,7 +1313,7 @@
           <li>Linux fica fora desta etapa</li>
         </ul>
         <dl class="trust-metrics">
-          <div><dt>Versão candidata</dt><dd>0.1.5 · pré-release</dd></div>
+          <div><dt>Versão</dt><dd>0.1.5</dd></div>
           <div><dt>Status</dt><dd>Piloto público; homologação independente pendente</dd></div>
           <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
           <div><dt>Licença</dt><dd>MIT</dd></div>
@@ -1162,7 +1330,7 @@
 
         <div class="card-actions">
           <a href="https://github.com/chmulato/caracore-seed-releases/releases/download/v0.1.5/caracore-seed-0.1.5-windows-x64.exe" class="btn-download-primary" target="_blank" rel="noopener" title="Baixar a pré-release candidata CaraCore Seed 0.1.5 para avaliação">
-            <i class="fas fa-download"></i> Baixar pré-release Windows (.EXE)
+            <i class="fas fa-download"></i> Baixar piloto Windows (.EXE)
           </a>
         </div>
         <div class="card-links-sub">
@@ -1173,9 +1341,62 @@
         </div>
       </article>
 
+      <!-- HELIANTO — EM DESENVOLVIMENTO -->
+      <article class="product-card" id="helianto"
+               data-title="Helianto Condominium SaaS condominial"
+               data-category="condominio"
+               data-platforms="web"
+               data-maturity="desenvolvimento"
+               data-goal="condominio"
+               data-tags="helianto condominio condominial moradores boletos sindico saas 2029 em breve">
+        <div class="card-top">
+          <div class="product-identity">
+            <div class="product-icon-wrap icon-hub">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="product-titles">
+              <h3>Helianto Condominium</h3>
+              <span class="version-tag">Lançamento previsto para 30/12/2029 · vitrine online</span>
+            </div>
+          </div>
+          <span class="status-badge status-desenvolvimento">Em desenvolvimento</span>
+        </div>
+
+        <p class="card-desc">
+          SaaS condominial em desenvolvimento: moradores, boletos e baixa de pagamentos em uma central digital para síndico e morador. A vitrine está no ar; não há instalador nesta central nem contratação antecipada.
+        </p>
+        <ul class="use-case">
+          <li>Gestão de condomínios</li>
+          <li>Moradores, boletos e baixa de pagamentos</li>
+          <li>Sem arquivo nesta central</li>
+        </ul>
+        <dl class="trust-metrics">
+          <div><dt>Status</dt><dd>Em desenvolvimento</dd></div>
+          <div><dt>Previsão</dt><dd>Lançamento 30/12/2029</dd></div>
+          <div><dt>Plataforma</dt><dd>Web (vitrine)</dd></div>
+          <div><dt>Download</dt><dd>Sem arquivo publicado</dd></div>
+        </dl>
+
+        <div class="specs-box">
+          <div class="spec-line"><i class="fas fa-clock"></i> <span>Data de lançamento, não de disponibilidade.</span></div>
+          <div class="spec-line"><i class="fas fa-circle-info"></i> <span>Os arquivos de infraestrutura do projeto não são download do produto.</span></div>
+        </div>
+
+        <div class="card-actions">
+          <a href="https://helianto.caracore.com.br/" class="btn-download-primary" target="_blank" rel="noopener" title="Quero ser avisado do lançamento do Helianto">
+            <i class="fas fa-bell"></i> Quero ser avisado do lançamento
+          </a>
+        </div>
+
+        <div class="card-links-sub">
+          <a href="https://helianto.caracore.com.br/" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Vitrine do Helianto</a>
+          <a href="https://wiki.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
+        </div>
+      </article>
+
     </section>
 
-    <p class="roadmap-catalog-link">O CSO Transportes e outros itens planejados não estão disponíveis para instalação. Consulte o <a href="roadmap.html">roadmap de próximos lançamentos</a>.</p>
+    <p class="roadmap-catalog-link">O CSO Transportes e o Helianto seguem em desenvolvimento e não têm arquivo nesta central. Consulte o <a href="roadmap.html">roadmap de próximos lançamentos</a>.</p>
 
     <!-- NO RESULTS FALLBACK -->
     <div id="no-results-state" style="display: none;">
@@ -1188,12 +1409,12 @@
     <section class="integrity-help" id="instalar" aria-labelledby="instalar-title">
       <h3 id="instalar-title"><i class="fas fa-download" aria-hidden="true"></i> Como instalar</h3>
       <p>
-        Escolha o card pelo status e confira o SHA256 antes de abrir o arquivo. O caminho é o mesmo para todos os produtos desktop.
+        Escolha o card pelo status e confira o SHA-256 antes de abrir o arquivo. O caminho é o mesmo para todos os produtos desktop.
       </p>
       <ol class="install-steps">
-        <li>Abra o card do produto e leia o status: estável, piloto ou preview.</li>
+        <li>Abra o card do produto e leia o estágio: Disponível, Beta (RC), Piloto ou Em desenvolvimento.</li>
         <li>Baixe o pacote da plataforma em que você vai usar.</li>
-        <li>Confira o SHA256 do arquivo baixado com as instruções de <a href="#ajuda-integridade">verificação de integridade</a>.</li>
+        <li>Confira o SHA-256 do arquivo baixado com as instruções de <a href="#ajuda-integridade">verificação de integridade</a>.</li>
         <li>Extraia o ZIP ou execute o instalador em uma pasta com permissão de escrita. Quando o card exigir JDK 25, instale o Java antes de abrir.</li>
         <li>Produto de acesso online, como o CSO Frotas, não tem instalador: entre pelo navegador com a conta da empresa.</li>
       </ol>
@@ -1202,11 +1423,11 @@
       </p>
     </section>
 
-    <!-- AJUDA: VERIFICACAO DE INTEGRIDADE (destino do link SHA256 do menu) -->
+    <!-- AJUDA: VERIFICACAO DE INTEGRIDADE (destino do link SHA-256 do menu) -->
     <section class="integrity-help" id="ajuda-integridade" aria-labelledby="ajuda-integridade-title">
-      <h3 id="ajuda-integridade-title"><i class="fas fa-fingerprint" aria-hidden="true"></i> Como verificar o SHA256</h3>
+      <h3 id="ajuda-integridade-title"><i class="fas fa-fingerprint" aria-hidden="true"></i> Como verificar o SHA-256</h3>
       <p>
-        Cada card do catálogo publica o SHA256 do arquivo. Baixe o pacote, calcule o hash no seu computador e compare com o valor publicado no card: se os dois forem iguais, o arquivo corresponde ao digest informado.
+        Cada card do catálogo publica o SHA-256 do arquivo. Baixe o pacote, calcule o hash no seu computador e compare com o valor publicado no card: se os dois forem iguais, o arquivo corresponde ao digest informado.
       </p>
 
       <h4><i class="fab fa-windows" aria-hidden="true"></i> Windows (PowerShell)</h4>
@@ -1219,7 +1440,7 @@
       <div class="code-block">sha256sum arquivo.zip</div>
 
       <p>
-        Os instaladores publicados hoje não têm assinatura digital. O SHA256 confere a integridade do download, não a origem do arquivo nem a segurança do conteúdo.
+        Os instaladores publicados hoje não têm assinatura digital. O SHA-256 confere a integridade do download, não a origem do arquivo nem a segurança do conteúdo.
       </p>
     </section>
 
@@ -1259,7 +1480,7 @@
           <div class="bunker-icon"><i class="fas fa-fingerprint"></i></div>
           <div class="bunker-content">
             <h4>Integridade verificável</h4>
-            <p>Nenhum instalador desta central tem assinatura digital hoje. Cada card publica o SHA256, e a verificação mostra como conferir no Windows, no Linux e no macOS, sem pedir para desativar SmartScreen ou antivírus.</p>
+            <p>Nenhum instalador desta central tem assinatura digital hoje. Cada card publica o SHA-256, e a verificação mostra como conferir no Windows, no Linux e no macOS, sem pedir para desativar SmartScreen ou antivírus.</p>
           </div>
         </div>
       </div>
@@ -1271,7 +1492,7 @@
   <div id="integrity-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 id="modal-title"><i class="fas fa-fingerprint"></i> Verificação de Integridade SHA256</h3>
+        <h3 id="modal-title"><i class="fas fa-fingerprint"></i> Verificação de Integridade SHA-256</h3>
         <button id="close-integrity-modal" class="modal-close" aria-label="Fechar modal"><i class="fas fa-times"></i></button>
       </div>
       <div class="modal-body">
@@ -1289,7 +1510,7 @@
         <div class="code-block">sha256sum arquivo.zip</div>
 
         <p>
-          Se o hash calculado for igual ao SHA256 publicado, o arquivo corresponde ao digest informado. Isso não substitui a conferência da origem nem uma avaliação de segurança.
+          Se o hash calculado for igual ao SHA-256 publicado, o arquivo corresponde ao digest informado. Isso não substitui a conferência da origem nem uma avaliação de segurança.
         </p>
       </div>
     </div>
@@ -1298,7 +1519,7 @@
   <!-- TOAST FEEDBACK -->
   <div id="toast-msg" class="toast-msg">
     <i class="fas fa-check-circle"></i>
-    <span class="toast-text">Hash SHA256 copiado!</span>
+    <span class="toast-text">Hash SHA-256 copiado!</span>
   </div>
 
   <!-- FOOTER -->
@@ -1311,7 +1532,7 @@
             <p class="text-white font-bold">Cara Core Informática</p>
           </div>
           <p class="text-sm text-gray-400 mb-3">
-            Engenharia B2B, Código Transparente no Ambiente do Cliente e Arquitetura Bunker Digital.
+            Alocação técnica dedicada ou consultoria por projeto — modelo B2B, código transparente no ambiente do cliente. Processos padronizados e gestão orientada a desempenho.
           </p>
           <p class="text-xs text-gray-500">
             <strong>CNPJ:</strong> 23.969.028/0001-37<br>
@@ -1322,10 +1543,10 @@
         <div>
           <h3 class="text-white font-bold mb-3">Produtos principais</h3>
           <ul class="space-y-2 text-sm">
-            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV (Java)</a></li>
-            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV (Rust)</a></li>
-            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore CSO (Frotas)</a></li>
-            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore Hub</a></li>
+            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core PDV (Java)</a></li>
+            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core PDV (Rust)</a></li>
+            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core CSO Frotas</a></li>
+            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core Hub</a></li>
           </ul>
         </div>
 
@@ -1337,6 +1558,9 @@
             <li><a href="https://ru.caracore.com.br/bioreator.html" class="hover:text-white" target="_blank" rel="noopener">BioReator 4.0</a></li>
             <li><a href="https://oidc.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Reino OIDC</a></li>
             <li><a href="https://circuito.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Circuito Ferradura</a></li>
+            <li><a href="https://eng.caracore.com.br/" class="hover:text-white" target="_blank" rel="noopener">A Rebeldia da Mecatrônica</a></li>
+            <li><a href="https://seed.caracore.com.br/" class="hover:text-white" target="_blank" rel="noopener">Cara Core Seed</a></li>
+            <li><a href="https://helianto.caracore.com.br/" class="hover:text-white" target="_blank" rel="noopener">Helianto</a></li>
           </ul>
         </div>
 
@@ -1367,6 +1591,7 @@
   </footer>
 
   <!-- JS -->
+  <script src="assets/js/catalog-data.js"></script>
   <script src="assets/js/download-app.js"></script>
 </body>
 </html>
