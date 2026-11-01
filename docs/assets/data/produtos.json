@@ -56,8 +56,8 @@
     {
       "ancora": "pdv-v4",
       "produto": "CaraCore PDV 4",
-      "versao": "v4.0.0-rc6",
-      "rotuloVersao": "v4.0.0-rc6 · 10/10/2026 · Windows x64",
+      "versao": "v4.0.0-candidato-20261031",
+      "rotuloVersao": "v4.0.0-candidato-20261031 · 31/10/2026 · Windows x64",
       "estagio": "beta",
       "categoria": "nucleo",
       "plataformas": ["windows"],
@@ -68,19 +68,20 @@
           "rotulo": "Windows x64 (.ZIP)",
           "plataforma": "windows",
           "principal": true,
-          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-rc6/CaraCore-PDV-4.0.0-rc6-qute-portable-windows-x64.zip",
-          "sha256": "0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325"
+          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-candidato-20261031/CaraCore-PDV-4.0.0-qute-portable-windows-x64.zip",
+          "sha256": "0c2003b0f99a75328f7ebe632fc20b07cb5834a3f75b6f0e97ccfb7aef83434d"
         }
       ],
       "sha256": [
         {
           "rotulo": "SHA-256 (Windows x64)",
-          "valor": "0c00b24b33b3c365fd1f24ec173bfa4e35bedf1946b2df4151035250780d5325"
+          "valor": "0c2003b0f99a75328f7ebe632fc20b07cb5834a3f75b6f0e97ccfb7aef83434d"
         }
       ],
       "avisos": [
-        "Prévia pública para avaliação; GA somente após gates e aceites formais, sem data presumida.",
-        "A RC7 segue em QA local, sem download publicado.",
+        "Prévia pública (build candidata de 31/10/2026); GA somente após gates e aceites formais, sem data presumida.",
+        "A RC7 segue como rota aprovada do Gate E, ainda sem tag publicada.",
+        "T032 e a matriz M01–M11 foram medidos em ff400efd, não neste pacote; o SCA segue não medido.",
         "Migração da 3.2 não suportada: não copie o banco da 3.2 para a v4.",
         "Na v4 não há estorno de venda finalizada. Instale em pasta separada, só para teste.",
         "Java 25 vem dentro do ZIP; Windows 10/11 x64 com Microsoft Edge."
