@@ -22,7 +22,7 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 2. **CaraCore PDV (Rust):** `v0.1.4` piloto Windows (ZIP).
 3. **CaraCore CSO Frotas:** Gestão de frotas com acesso online (SaaS); sem download.
 4. **CaraCore CSO Transportes:** Em desenvolvimento; GA previsto para 08/11/2028; sem download público.
-5. **CaraCore Hub:** `v2.1.0-rc1.7` pré-release Windows x64, instalador NSIS e ZIP, sem assinatura digital (SHA-256 do instalador `1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1` e do ZIP `924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e`); produto Free, com suporte opcional e pagamento recorrente de R$ 79,90/mês a partir do GA previsto para 06/04/2027.
+5. **CaraCore Hub:** `v2.1.0-rc1.8` pré-release Windows x64 em ZIP portátil, sem instalador NSIS e sem assinatura digital (SHA-256 `3c4e61b2e192fece6667ccfbc79d735f3fad7ce8542e50c492b9ef24a9743334`); produto Free, com suporte opcional e pagamento recorrente de R$ 79,90/mês a partir do GA previsto para 06/04/2027.
 6. **Ink Agenda:** `v2.0.1` Disponível para Windows (ZIP e instalador).
 7. **Minerador ETE 4.0:** `v1.2.3` Disponível para Windows, Linux e macOS.
 8. **Reino OIDC:** `v2.0.2-free` para Windows. As três Eras são gratuitas para estudo pessoal, sem certificado digital. A edição paga está em desenvolvimento; a loja não combina PIX nesta etapa. Dúvidas e relatos são bem-vindos, sem SLA. Sem certificação nem consultoria. A página de download oferece só `v2.0.2-free`. `v2.0.1-free` e `v2.0.0` ficam no histórico.

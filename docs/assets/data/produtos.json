@@ -176,8 +176,8 @@
     {
       "ancora": "hub",
       "produto": "CaraCore Hub",
-      "versao": "v2.1.0-rc1.7",
-      "rotuloVersao": "v2.1.0-rc1.7 · Windows x64 · sem assinatura digital",
+      "versao": "v2.1.0-rc1.8",
+      "rotuloVersao": "v2.1.0-rc1.8 · Windows x64 · sem assinatura digital",
       "estagio": "beta",
       "categoria": "nucleo",
       "plataformas": ["windows"],
@@ -185,33 +185,23 @@
       "wiki": "https://wiki.caracore.com.br/projeto-hub.html",
       "downloads": [
         {
-          "rotulo": "Windows x64 (.EXE)",
+          "rotulo": "ZIP portátil (Windows x64)",
           "plataforma": "windows",
           "principal": true,
-          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.7/CaraCore.Hub-2.1.0-rc1.7-win-x64.exe",
-          "sha256": "1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1"
-        },
-        {
-          "rotulo": "ZIP sem instalador",
-          "plataforma": "windows",
-          "principal": false,
-          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.7/CaraCore.Hub-2.1.0-rc1.7-win-x64.zip",
-          "sha256": "924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e"
+          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.8/CaraCore-Hub-2.1.0-rc1.8-windows-x64.zip",
+          "sha256": "3c4e61b2e192fece6667ccfbc79d735f3fad7ce8542e50c492b9ef24a9743334"
         }
       ],
       "sha256": [
         {
-          "rotulo": "SHA-256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.exe)",
-          "valor": "1563f1bd343b0044f9a64dd9bb7d3a1604761ee7f1e2354e8663b693cb310ba1"
-        },
-        {
-          "rotulo": "SHA-256 (CaraCore.Hub-2.1.0-rc1.7-win-x64.zip)",
-          "valor": "924af1960ccda606e4b3979ff36741f7e78228f8f77c396ccb985878b940b37e"
+          "rotulo": "SHA-256 (CaraCore-Hub-2.1.0-rc1.8-windows-x64.zip)",
+          "valor": "3c4e61b2e192fece6667ccfbc79d735f3fad7ce8542e50c492b9ef24a9743334"
         }
       ],
       "avisos": [
         "Pré-release; GA do instalador planejado para 06/04/2027.",
-        "Instalador e ZIP sem assinatura digital. Não desative SmartScreen, Defender ou antivírus.",
+        "Esta build é ZIP portátil, sem assinatura digital; não há instalador NSIS.",
+        "Não desative SmartScreen, Defender ou antivírus.",
         "Free: suporte opcional de R$ 79,90/mês a partir do GA."
       ]
     },
