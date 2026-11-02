@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "atualizado": "2026-10-30",
+  "atualizado": "2026-11-01",
   "moeda": "BRL",
   "produtos": [
     {
@@ -209,23 +209,37 @@
     {
       "ancora": "ink",
       "produto": "CaraCore Ink Agenda",
-      "versao": "v2.0.1",
-      "rotuloVersao": "v2.0.1 · Windows",
-      "estagio": "disponivel",
+      "versao": "v2.0.2",
+      "rotuloVersao": "v2.0.2 · prerelease para homologação · sem assinatura",
+      "estagio": "beta",
       "categoria": "satelite",
       "plataformas": ["windows"],
       "loja": "https://ink.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-ink.html",
       "downloads": [
         {
-          "rotulo": "Windows (.ZIP)",
+          "rotulo": "Candidata para homologação — Windows (.ZIP)",
           "plataforma": "windows",
           "principal": true,
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/AgendaInk-2.0.2-windows.zip",
+          "sha256": "ab66a21bb39ab597757374ac1b4e280c1129171de54b71f36bacfe90e9171a94"
+        },
+        {
+          "rotulo": "Candidata para homologação — Instalador Windows (.EXE)",
+          "plataforma": "windows",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/AgendaInk-2.0.2-windows-setup.exe",
+          "sha256": "f9dde7c521dd64c39ee5dfa3c62bdb8c09f000bf7083c34e15fe47bc0a6cfa54"
+        },
+        {
+          "rotulo": "Versão estável v2.0.1 — Windows (.ZIP)",
+          "plataforma": "windows",
+          "principal": false,
           "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows.zip",
           "sha256": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
         },
         {
-          "rotulo": "Instalador Windows (.EXE)",
+          "rotulo": "Versão estável v2.0.1 — Instalador Windows (.EXE)",
           "plataforma": "windows",
           "principal": false,
           "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows-setup.exe",
@@ -234,17 +248,27 @@
       ],
       "sha256": [
         {
-          "rotulo": "SHA-256 (Windows ZIP)",
+          "rotulo": "SHA-256 (candidata v2.0.2 Windows ZIP)",
+          "valor": "ab66a21bb39ab597757374ac1b4e280c1129171de54b71f36bacfe90e9171a94"
+        },
+        {
+          "rotulo": "SHA-256 (candidata v2.0.2 instalador EXE)",
+          "valor": "f9dde7c521dd64c39ee5dfa3c62bdb8c09f000bf7083c34e15fe47bc0a6cfa54"
+        },
+        {
+          "rotulo": "SHA-256 (estável v2.0.1 Windows ZIP)",
           "valor": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
         },
         {
-          "rotulo": "SHA-256 (Windows instalador EXE)",
+          "rotulo": "SHA-256 (estável v2.0.1 instalador EXE)",
           "valor": "49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b"
         }
       ],
       "avisos": [
         "Dados no próprio Windows; backup .inkbak protegido por senha.",
-        "Java 25 e JavaFX no pacote Windows."
+        "Java 25 e JavaFX no pacote Windows.",
+        "A v2.0.2 é prerelease para homologação, não é versão estável e não tem assinatura digital; SmartScreen/antivírus pode avisar ou bloquear.",
+        "A v2.0.1 continua sendo a versão estável/Latest para uso regular."
       ]
     },
     {
