@@ -23,7 +23,7 @@ Manter um catálogo transparente de downloads publicados, acessos online e itens
 3. **CaraCore CSO Frotas:** Gestão de frotas com acesso online (SaaS); sem download.
 4. **CaraCore CSO Transportes:** Em desenvolvimento; GA previsto para 08/11/2028; sem download público.
 5. **CaraCore Hub:** `v2.1.0-rc1.8` pré-release Windows x64 em ZIP portátil, sem instalador NSIS e sem assinatura digital (SHA-256 `3c4e61b2e192fece6667ccfbc79d735f3fad7ce8542e50c492b9ef24a9743334`); produto Free, com suporte opcional e pagamento recorrente de R$ 79,90/mês a partir do GA previsto para 06/04/2027.
-6. **Ink Agenda:** `v2.0.4` Disponível para Windows (ZIP e instalador) e Linux (`.deb`); macOS sem instalador, PWA em roadmap.
+6. **Ink Agenda:** `v2.1.0` publicada em 03/11/2026, Disponível para Windows (ZIP e instalador) e Linux (`.deb`); um executável, três perfis (Tatuagem, Odontologia e Beleza); sem assinatura digital; bases 2.0.1 a 2.0.4 migram automaticamente. macOS sem instalador, PWA em roadmap (não antes de 2028).
 7. **Minerador ETE 4.0:** `v1.2.3` Disponível para Windows, Linux e macOS.
 8. **Reino OIDC:** `v2.0.2-free` para Windows. As três Eras são gratuitas para estudo pessoal, sem certificado digital. A edição paga está em desenvolvimento; a loja não combina PIX nesta etapa. Dúvidas e relatos são bem-vindos, sem SLA. Sem certificação nem consultoria. A página de download oferece só `v2.0.2-free`. `v2.0.1-free` e `v2.0.0` ficam no histórico.
 9. **Circuito Ferradura:** `v2.0.24` na loja e na release. Executável Windows sem assinatura digital; pacotes Windows, macOS e HTML offline. SHA-256 do EXE `eca7027c08d062f1fcbfb529092db53e5f30a3766d286ec448089c2f8734aa12`. `v2.0.23` fica no histórico.
