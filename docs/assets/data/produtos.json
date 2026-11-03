@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "atualizado": "2026-11-01",
+  "atualizado": "2026-11-02",
   "moeda": "BRL",
   "produtos": [
     {
@@ -209,66 +209,55 @@
     {
       "ancora": "ink",
       "produto": "CaraCore Ink Agenda",
-      "versao": "v2.0.2",
-      "rotuloVersao": "v2.0.2 · prerelease para homologação · sem assinatura",
-      "estagio": "beta",
+      "versao": "v2.0.4",
+      "rotuloVersao": "v2.0.4 · 02/11/2026 · Windows e Linux · sem assinatura",
+      "estagio": "disponivel",
       "categoria": "satelite",
-      "plataformas": ["windows"],
+      "plataformas": ["windows", "linux"],
       "loja": "https://ink.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-ink.html",
       "downloads": [
         {
-          "rotulo": "Candidata para homologação — Windows (.ZIP)",
+          "rotulo": "Windows (.ZIP portátil)",
           "plataforma": "windows",
           "principal": true,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/AgendaInk-2.0.2-windows.zip",
-          "sha256": "ab66a21bb39ab597757374ac1b4e280c1129171de54b71f36bacfe90e9171a94"
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.4/AgendaInk-2.0.4-windows.zip",
+          "sha256": "7849d462625dbb356900d6e7f97a54c491d634ad5ac9b7cee9a6c8f3ee3e6fd3"
         },
         {
-          "rotulo": "Candidata para homologação — Instalador Windows (.EXE)",
+          "rotulo": "Instalador Windows (.EXE)",
           "plataforma": "windows",
           "principal": false,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.2/AgendaInk-2.0.2-windows-setup.exe",
-          "sha256": "f9dde7c521dd64c39ee5dfa3c62bdb8c09f000bf7083c34e15fe47bc0a6cfa54"
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.4/AgendaInk-2.0.4-windows-setup.exe",
+          "sha256": "5ea79dac30719ef11150e2f5de09d340b697f967918524ae12761c07051ebd1c"
         },
         {
-          "rotulo": "Versão estável v2.0.1 — Windows (.ZIP)",
-          "plataforma": "windows",
+          "rotulo": "Linux (.DEB)",
+          "plataforma": "linux",
           "principal": false,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows.zip",
-          "sha256": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
-        },
-        {
-          "rotulo": "Versão estável v2.0.1 — Instalador Windows (.EXE)",
-          "plataforma": "windows",
-          "principal": false,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows-setup.exe",
-          "sha256": "49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b"
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.4/agenda-ink-2.0.4-linux.deb",
+          "sha256": "30eee2bda5972decf8805855e002010e6a80978a74c259f5b61e57f3d9dfc941"
         }
       ],
       "sha256": [
         {
-          "rotulo": "SHA-256 (candidata v2.0.2 Windows ZIP)",
-          "valor": "ab66a21bb39ab597757374ac1b4e280c1129171de54b71f36bacfe90e9171a94"
+          "rotulo": "SHA-256 (v2.0.4 Windows ZIP)",
+          "valor": "7849d462625dbb356900d6e7f97a54c491d634ad5ac9b7cee9a6c8f3ee3e6fd3"
         },
         {
-          "rotulo": "SHA-256 (candidata v2.0.2 instalador EXE)",
-          "valor": "f9dde7c521dd64c39ee5dfa3c62bdb8c09f000bf7083c34e15fe47bc0a6cfa54"
+          "rotulo": "SHA-256 (v2.0.4 instalador EXE)",
+          "valor": "5ea79dac30719ef11150e2f5de09d340b697f967918524ae12761c07051ebd1c"
         },
         {
-          "rotulo": "SHA-256 (estável v2.0.1 Windows ZIP)",
-          "valor": "3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3"
-        },
-        {
-          "rotulo": "SHA-256 (estável v2.0.1 instalador EXE)",
-          "valor": "49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b"
+          "rotulo": "SHA-256 (v2.0.4 Linux DEB)",
+          "valor": "30eee2bda5972decf8805855e002010e6a80978a74c259f5b61e57f3d9dfc941"
         }
       ],
       "avisos": [
-        "Dados no próprio Windows; backup .inkbak protegido por senha.",
+        "Dados no próprio computador; backup .inkbak protegido por senha.",
         "Java 25 e JavaFX no pacote Windows.",
-        "A v2.0.2 é prerelease para homologação, não é versão estável e não tem assinatura digital; SmartScreen/antivírus pode avisar ou bloquear.",
-        "A v2.0.1 continua sendo a versão estável/Latest para uso regular."
+        "A v2.0.4 não tem assinatura digital; SmartScreen/antivírus pode avisar ou bloquear.",
+        "macOS não tem instalador nesta versão; a linha 3.0 atenderá pelo navegador, não antes de 2028."
       ]
     },
     {

@@ -198,7 +198,7 @@
           <p>Release pública com download ou acesso ativo na loja do produto. O SHA-256 do arquivo fica no card, com a ressalva de homologação quando existe.</p>
           <ul>
             <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, ainda a indicada para operar</li>
-            <li><a href="#ink">CaraCore Ink Agenda v2.0.1</a></li>
+            <li><a href="#ink">CaraCore Ink Agenda v2.0.4</a></li>
             <li><a href="#ete">Minerador ETE v1.2.3</a></li>
             <li><a href="#oidc">Reino OIDC v2.0.2-free</a></li>
             <li><a href="#circuito">Circuito Ferradura v2.0.24</a></li>
@@ -774,7 +774,7 @@
       <article class="product-card" id="ink" 
                data-title="Ink Agenda Desktop Criptografia" 
                data-category="bunker" 
-               data-platforms="windows"
+               data-platforms="windows linux"
                data-maturity="disponivel"
                data-goal="agenda"
                data-tags="ink agenda tarefas notas criptografia offline bunker javafx estudio financeiro">
@@ -785,14 +785,14 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore Ink Agenda</h3>
-              <span class="version-tag">v2.0.1 · Windows</span>
+              <span class="version-tag">v2.0.4 · Windows e Linux</span>
             </div>
           </div>
           <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
-          Agenda e gestão financeira do estúdio no Windows. Os registros ficam no computador, com backup local protegido por senha.
+          Agenda e gestão financeira do estúdio no Windows e no Linux. Os registros ficam no computador, com backup local protegido por senha.
         </p>
         <ul class="use-case">
           <li>Agenda do estúdio</li>
@@ -810,44 +810,56 @@
           <figcaption>Esquema do papel do produto. A vitrine está em <a href="https://ink.caracore.com.br" target="_blank" rel="noopener">ink.caracore.com.br</a>.</figcaption>
         </figure>
         <dl class="trust-metrics">
-          <div><dt>Versão</dt><dd>v2.0.1</dd></div>
-          <div><dt>Atualização</dt><dd>07/10/2026</dd></div>
+          <div><dt>Versão</dt><dd>v2.0.4</dd></div>
+          <div><dt>Atualização</dt><dd>02/11/2026</dd></div>
           <div><dt>Status</dt><dd>Disponível</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25</dd></div>
-          <div><dt>Plataforma</dt><dd>Windows</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows e Linux</dd></div>
         </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-shield"></i> <span><strong>Privacidade:</strong> Dados armazenados localmente</span></div>
           <div class="spec-line"><i class="fab fa-java"></i> <span>Construído em Java 25 moderno e JavaFX</span></div>
           <div class="spec-line"><i class="fas fa-box-archive"></i> <span>Backup <code>.inkbak</code> com senha e backup automático no computador</span></div>
-          <div class="spec-line"><i class="fab fa-windows"></i> <span>Downloads publicados: ZIP e instalador Windows</span></div>
+          <div class="spec-line"><i class="fab fa-windows"></i> <span>Downloads publicados: ZIP e instalador Windows; pacote .deb Linux</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows.zip" class="btn-download-primary" title="Baixar Ink Agenda Windows ZIP">
+          <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.4/AgendaInk-2.0.4-windows.zip" class="btn-download-primary" title="Baixar Ink Agenda Windows ZIP">
             <i class="fab fa-windows"></i> Baixar Windows (.ZIP)
           </a>
           <div class="btn-alt-downloads">
-            <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.1/AgendaInk-2.0.1-windows-setup.exe" class="btn-sub-dl" title="Baixar instalador Ink Agenda Windows">
+            <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.4/AgendaInk-2.0.4-windows-setup.exe" class="btn-sub-dl" title="Baixar instalador Ink Agenda Windows">
               <i class="fas fa-download"></i> Instalador Windows (.EXE)
+            </a>
+            <a href="https://github.com/chmulato/caracore-ink-releases/releases/download/v2.0.4/agenda-ink-2.0.4-linux.deb" class="btn-sub-dl" title="Baixar pacote Ink Agenda Linux">
+              <i class="fab fa-linux"></i> Linux (.DEB)
             </a>
           </div>
           <div class="checksum-box">
             <div>
               <span class="hash-label">SHA-256 (Windows ZIP)</span>
-              <span class="hash-code">3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3</span>
+              <span class="hash-code">7849d462625dbb356900d6e7f97a54c491d634ad5ac9b7cee9a6c8f3ee3e6fd3</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('3118eac8fafdfa5cc4d3e341969d0cd205d5a29caabbe069e12d7b956a994ff3', this)" title="Copiar SHA-256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('7849d462625dbb356900d6e7f97a54c491d634ad5ac9b7cee9a6c8f3ee3e6fd3', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
           <div class="checksum-box">
             <div>
               <span class="hash-label">SHA-256 (Windows instalador EXE)</span>
-              <span class="hash-code">49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b</span>
+              <span class="hash-code">5ea79dac30719ef11150e2f5de09d340b697f967918524ae12761c07051ebd1c</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('49bdd76a10ab97b7902e47b8c393c638ef90ea6b490874224a9734a802f90a6b', this)" title="Copiar SHA-256 completo">
+            <button class="btn-copy-hash" onclick="copyHash('5ea79dac30719ef11150e2f5de09d340b697f967918524ae12761c07051ebd1c', this)" title="Copiar SHA-256 completo">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="checksum-box">
+            <div>
+              <span class="hash-label">SHA-256 (Linux DEB)</span>
+              <span class="hash-code">30eee2bda5972decf8805855e002010e6a80978a74c259f5b61e57f3d9dfc941</span>
+            </div>
+            <button class="btn-copy-hash" onclick="copyHash('30eee2bda5972decf8805855e002010e6a80978a74c259f5b61e57f3d9dfc941', this)" title="Copiar SHA-256 completo">
               <i class="fas fa-copy"></i>
             </button>
           </div>
