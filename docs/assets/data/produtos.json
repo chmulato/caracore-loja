@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "atualizado": "2026-11-03",
+  "atualizado": "2026-11-04",
   "moeda": "BRL",
   "produtos": [
     {
@@ -209,8 +209,8 @@
     {
       "ancora": "ink",
       "produto": "CaraCore Ink Agenda",
-      "versao": "v2.1.0",
-      "rotuloVersao": "v2.1.0 · 03/11/2026 · Windows e Linux · 3 perfis · sem assinatura",
+      "versao": "v2.2.1",
+      "rotuloVersao": "v2.2.1 · 04/11/2026 · Windows e Linux · 3 perfis e equipe · sem assinatura",
       "estagio": "disponivel",
       "categoria": "satelite",
       "plataformas": ["windows", "linux"],
@@ -221,43 +221,45 @@
           "rotulo": "Windows (.ZIP portátil)",
           "plataforma": "windows",
           "principal": true,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/AgendaInk-2.1.0-windows.zip",
-          "sha256": "4e8b66667d875561ba6ee67295724a15c70051928256423a316f8e89055e2551"
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.2.1/AgendaInk-2.2.1-windows.zip",
+          "sha256": "4baf257d5136bb497f93c2927ec8ec536af91c853219bb71d0abe6e1deef98b1"
         },
         {
           "rotulo": "Instalador Windows (.EXE)",
           "plataforma": "windows",
           "principal": false,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/AgendaInk-2.1.0-windows-setup.exe",
-          "sha256": "81fd338fdc3ae8dbcb406ced7bcbb9a54fb05a447c28d999c6c5482a1aed4dbd"
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.2.1/AgendaInk-2.2.1-windows-setup.exe",
+          "sha256": "39eafa4af39a439cf5c905ad08d4f552fd6cfbe1ef98f54b4c937bfc270c124b"
         },
         {
           "rotulo": "Linux (.DEB)",
           "plataforma": "linux",
           "principal": false,
-          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.1.0/agenda-ink-2.1.0-linux.deb",
-          "sha256": "58c0d3f0024c9b4ef06fd727283439490325a6dca053a5d93e000169f870bf18"
+          "url": "https://github.com/chmulato/caracore-ink-releases/releases/download/v2.2.1/agenda-ink-2.2.1-linux.deb",
+          "sha256": "1b89bb7655bf504ab6e19c702e70d78e32683ef3b7653cbfe8227d1f841cef14"
         }
       ],
       "sha256": [
         {
-          "rotulo": "SHA-256 (v2.1.0 Windows ZIP)",
-          "valor": "4e8b66667d875561ba6ee67295724a15c70051928256423a316f8e89055e2551"
+          "rotulo": "SHA-256 (v2.2.1 Windows ZIP)",
+          "valor": "4baf257d5136bb497f93c2927ec8ec536af91c853219bb71d0abe6e1deef98b1"
         },
         {
-          "rotulo": "SHA-256 (v2.1.0 instalador EXE)",
-          "valor": "81fd338fdc3ae8dbcb406ced7bcbb9a54fb05a447c28d999c6c5482a1aed4dbd"
+          "rotulo": "SHA-256 (v2.2.1 instalador EXE)",
+          "valor": "39eafa4af39a439cf5c905ad08d4f552fd6cfbe1ef98f54b4c937bfc270c124b"
         },
         {
-          "rotulo": "SHA-256 (v2.1.0 Linux DEB)",
-          "valor": "58c0d3f0024c9b4ef06fd727283439490325a6dca053a5d93e000169f870bf18"
+          "rotulo": "SHA-256 (v2.2.1 Linux DEB)",
+          "valor": "1b89bb7655bf504ab6e19c702e70d78e32683ef3b7653cbfe8227d1f841cef14"
         }
       ],
       "avisos": [
         "Dados no próprio computador; backup .inkbak protegido por senha.",
         "Um executável, três perfis: Tatuagem, Odontologia e Beleza (troca sem reinstalar).",
+        "Equipe com papéis Administrador, Agenda e Financeiro; mensagem por WhatsApp ou Telegram com envio do operador.",
         "Java 25 e JavaFX no pacote Windows.",
-        "A v2.1.0 não tem assinatura digital; SmartScreen/antivírus pode avisar ou bloquear.",
+        "A v2.2.1 não tem assinatura digital; SmartScreen/antivírus pode avisar ou bloquear.",
+        "Quem está na 2.1.0 ou 2.2.0 baixa a 2.2.1 por aqui uma vez: o botão de atualização dessas versões falhava.",
         "macOS não tem instalador nesta versão; a linha 3.0 atenderá pelo navegador, não antes de 2028."
       ]
     },
