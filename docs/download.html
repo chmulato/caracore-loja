@@ -198,6 +198,7 @@
           <p>Release pública com download ou acesso ativo na loja do produto. O SHA-256 do arquivo fica no card, com a ressalva de homologação quando existe.</p>
           <ul>
             <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, ainda a indicada para operar</li>
+            <li><a href="#pdv-v4">CaraCore PDV 4 v4.0.0</a> · publicada em 06/11/2026; lançamento em 08/11/2026</li>
             <li><a href="#ink">CaraCore Ink Agenda v2.2.1</a></li>
             <li><a href="#ete">Minerador ETE v1.2.3</a></li>
             <li><a href="#oidc">Reino OIDC v2.0.2-free</a></li>
@@ -213,7 +214,6 @@
           <h3>Beta em ciclo de RC</h3>
           <p>Versão Beta (RC) pública em ciclo de RC. GA só depois dos gates e aceites formais, sem data presumida.</p>
           <ul>
-            <li><a href="#pdv-v4">CaraCore PDV 4</a> · prévia pública candidata 31/10; a RC7 segue como rota aprovada, sem tag</li>
             <li><a href="#hub">CaraCore Hub v2.1.0-rc1.8</a></li>
           </ul>
         </article>
@@ -414,14 +414,14 @@
         </div>
       </article>
 
-      <!-- 2. PDV JAVA V4 PRÉ-RELEASE -->
+      <!-- 2. PDV JAVA V4 (GA) -->
       <article class="product-card" id="pdv-v4"
-               data-title="CaraCore PDV 4 beta candidato 20261031"
+               data-title="CaraCore PDV 4 v4.0.0 GA"
                data-category="pdv"
                data-platforms="windows"
-               data-maturity="beta"
+               data-maturity="disponivel"
                data-goal="vender"
-               data-tags="pdv java qute candidato 20261031 beta pre-release teste windows">
+               data-tags="pdv java qute 4.0.0 ga lancamento windows caixa balcao">
         <div class="card-top">
           <div class="product-identity">
             <div class="product-icon-wrap icon-pdv-java">
@@ -429,23 +429,23 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore PDV 4</h3>
-              <span class="version-tag">v4.0.0-candidato-20261031 · 31/10/2026 · Windows x64</span>
+              <span class="version-tag">v4.0.0 · 06/11/2026 · Windows x64</span>
             </div>
           </div>
-          <span class="status-badge status-beta">Beta (RC)</span>
+          <span class="status-badge status-disponivel">Disponível</span>
         </div>
 
         <p class="card-desc">
-          Prévia pública da linha v4 para avaliação no Windows — build candidata de 31/10/2026. A RC7 segue como rota aprovada do Gate E, ainda sem tag publicada. A versão anterior é a 3.2.12-free, em manutenção de transição até 08/11/2026 e ainda a indicada para operar. O GA da v4 só acontece depois dos gates e aceites formais.
+          Versão 4 da frente de caixa, publicada em 06/11/2026 com lançamento em 08/11/2026. Windows 10/11 x64 com Java embutido no pacote. O banco da 3.2.12 é migrado na primeira abertura. A 3.2.12-free continua disponível como versão anterior, com manutenção de transição até 08/11/2026.
         </p>
         <ul class="use-case">
-          <li>Avaliação da linha v4</li>
-          <li>Até 100 vendas finalizadas no mês civil; no teto, novas vendas ficam bloqueadas até o mês seguinte</li>
-          <li>Windows 10/11 x64 com Microsoft Edge</li>
+          <li>Balcão e pequeno varejo, com os dados no computador da loja</li>
+          <li>Free: 100 vendas finalizadas/mês civil, 100 produtos, 1 operador, 4 vendedores, 1 loja; no teto, novas vendas ficam bloqueadas</li>
+          <li>Windows 10/11 x64 com Microsoft Edge; Java vem no ZIP</li>
           <li>Banco em ./data no pacote</li>
         </ul>
         <figure class="screen-schema">
-          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> Beta (RC) v4</div>
+          <div class="schema-chrome" aria-hidden="true"><span></span><span></span><span></span> v4 · caixa</div>
           <div class="schema-body" aria-hidden="true">
             <div class="schema-line">Launcher Edge · modo aplicativo</div>
             <div class="schema-total">Caixa Qute</div>
@@ -454,39 +454,40 @@
           <figcaption>Esquema do pacote. O roteiro de homologação está em <a href="https://pdv.caracore.com.br/homologacao-v4.html" target="_blank" rel="noopener">homologacao-v4</a>.</figcaption>
         </figure>
         <dl class="trust-metrics">
-          <div><dt>Versão</dt><dd>v4.0.0-candidato-20261031</dd></div>
-          <div><dt>Atualização</dt><dd>31/10/2026</dd></div>
-          <div><dt>Status</dt><dd>Beta (RC) · prévia pública candidata</dd></div>
-          <div><dt>Linguagem</dt><dd>Java 25</dd></div>
+          <div><dt>Versão</dt><dd>v4.0.0</dd></div>
+          <div><dt>Atualização</dt><dd>06/11/2026</dd></div>
+          <div><dt>Status</dt><dd>Disponível · lançamento em 08/11/2026</dd></div>
+          <div><dt>Linguagem</dt><dd>Java 25 (embutido)</dd></div>
           <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
         </dl>
 
         <div class="specs-box">
-          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Somente para avaliação, não é a versão final. Não precisa instalar Java: ele vem dentro do ZIP.</span></div>
-          <div class="spec-line"><i class="fas fa-clipboard-check"></i> <span>T032 e a matriz M01–M11 foram medidos em <code>ff400efd</code>, não neste pacote; o SCA segue não medido.</span></div>
-          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>08/11/2026 encerra a manutenção da 3.2.12, não define o GA da v4.</span></div>
-          <div class="spec-line"><i class="fas fa-ban"></i> <span><strong>Migração da 3.2 não suportada.</strong> Não copie o banco da 3.2 para a v4.</span></div>
-          <div class="spec-line"><i class="fas fa-rotate-left"></i> <span>Na v4 não há estorno de venda finalizada. Instale em pasta separada, só para teste; sua operação continua na 3.2.12.</span></div>
-          <div class="spec-line"><i class="fas fa-database"></i> <span>Faça backup antes de qualquer teste.</span></div>
+          <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Não precisa instalar Java: ele vem dentro do ZIP. Sem assinatura Authenticode — o aviso "editor desconhecido" do Windows é esperado.</span></div>
+          <div class="spec-line"><i class="fas fa-clipboard-check"></i> <span>T032 17/17, matriz de homologação com 11 itens medidos e 11 aprovados (a medição de desempenho, M11, não foi feita), "banco 3.2.12 migrado" 9/9 e sonda de promessas 20 aprovadas, 0 reprovadas, 1 não coberta, 0 bloqueadas — tudo medido neste ZIP (<code>9557e0b1…</code>), em 06/11/2026. SCA por OSV datado de 06/11/2026 (275 pacotes, 1 achado alto triado por byte); NVD não medido.</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>Lançamento anunciado para 08/11/2026. A 3.2.12-free é a versão anterior e recebe manutenção de transição até a mesma data.</span></div>
+          <div class="spec-line"><i class="fas fa-database"></i> <span><strong>Backup antes de migrar.</strong> Copie o banco da 3.2.12 (<code>%APPDATA%\caracore\caracore-pdv.db</code>) para <code>data\caracore-pdv.db</code> na pasta da v4 <strong>antes da primeira abertura</strong>; o esquema sobe de 047 para 052 e não volta atrás.</span></div>
+          <div class="spec-line"><i class="fas fa-rotate-left"></i> <span>Venda finalizada não pode ser cancelada nem editada nesta versão. Numa loja migrada da 3.2.12 não existe estorno de venda paga.</span></div>
+          <div class="spec-line"><i class="fas fa-circle-info"></i> <span>A atualização é avisada no dashboard e baixada pelo próprio app, conferida por SHA-256. A aplicação do pacote é manual: feche o PDV, extraia o ZIP e copie sobre a instalação, mantendo a pasta <code>data</code>.</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-candidato-20261031/CaraCore-PDV-4.0.0-qute-portable-windows-x64.zip" class="btn-download-primary" title="Baixar a build candidata do PDV Java para Windows">
-            <i class="fab fa-windows"></i> Baixar beta Windows x64 (.ZIP)
+          <a href="https://github.com/chmulato/caracore-pdv4-releases/releases/download/v4.0.0/CaraCore-PDV-4.0.0-qute-portable-windows-x64.zip" class="btn-download-primary" title="Baixar o PDV Java v4.0.0 para Windows">
+            <i class="fab fa-windows"></i> Baixar v4.0.0 Windows x64 (.ZIP)
           </a>
 
           <div class="checksum-box">
             <div>
               <span class="hash-label">SHA-256 (Windows x64)</span>
-              <span class="hash-code">0c2003b0f99a75328f7ebe632fc20b07cb5834a3f75b6f0e97ccfb7aef83434d</span>
+              <span class="hash-code">9557e0b16d77a85e0bb68971eb0e8710356977261337a8c1c05593e893d81eac</span>
             </div>
-            <button class="btn-copy-hash" onclick="copyHash('0c2003b0f99a75328f7ebe632fc20b07cb5834a3f75b6f0e97ccfb7aef83434d', this)" title="Copiar SHA-256 completo da candidata">
+            <button class="btn-copy-hash" onclick="copyHash('9557e0b16d77a85e0bb68971eb0e8710356977261337a8c1c05593e893d81eac', this)" title="Copiar SHA-256 completo da v4.0.0">
               <i class="fas fa-copy"></i>
             </button>
           </div>
         </div>
 
         <div class="card-links-sub">
+          <a href="https://github.com/chmulato/caracore-pdv4-releases/releases/download/v4.0.0/SHA256SUMS.txt" class="card-link-item" target="_blank" rel="noopener" title="Lista de hashes publicada com duas assinaturas Ed25519"><i class="fas fa-file-shield"></i> SHA256SUMS.txt</a>
           <a href="https://pdv.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do PDV</a>
           <a href="https://wiki.caracore.com.br/projeto-pdv.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Wiki</a>
         </div>
