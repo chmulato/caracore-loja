@@ -197,8 +197,8 @@
           <h3>Publicado para uso</h3>
           <p>Release pública com download ou acesso ativo na loja do produto. O SHA-256 do arquivo fica no card, com a ressalva de homologação quando existe.</p>
           <ul>
-            <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, ainda a indicada para operar</li>
-            <li><a href="#pdv-v4">CaraCore PDV 4 v4.0.0</a> · publicada em 06/11/2026; lançamento em 08/11/2026</li>
+            <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, com os pacotes ainda disponíveis</li>
+            <li><a href="#pdv-v4">CaraCore PDV 4 v4.0.0</a> · lançada em 08/11/2026</li>
             <li><a href="#ink">CaraCore Ink Agenda v2.2.1</a></li>
             <li><a href="#ete">Minerador ETE v1.2.3</a></li>
             <li><a href="#oidc">Reino OIDC v2.0.2-free</a></li>
@@ -334,7 +334,7 @@
         </div>
 
         <p class="card-desc">
-          Frente de caixa para varejo e balcão. A venda acontece no navegador, com os dados no computador da loja. É a versão anterior, última da linha 3.2.x, ainda a indicada para operar, com manutenção de transição até 08/11/2026 e homologação em andamento.
+          Frente de caixa para varejo e balcão. A venda acontece no navegador, com os dados no computador da loja. É a versão anterior, última da linha 3.2.x, com manutenção de transição encerrada em 08/11/2026.
         </p>
         <ul class="use-case">
           <li>Balcão e pequeno varejo</li>
@@ -436,7 +436,7 @@
         </div>
 
         <p class="card-desc">
-          Versão 4 da frente de caixa, publicada em 06/11/2026 com lançamento em 08/11/2026. Windows 10/11 x64 com Java embutido no pacote. O banco da 3.2.12 é migrado na primeira abertura. A 3.2.12-free continua disponível como versão anterior, com manutenção de transição até 08/11/2026.
+          Versão 4 da frente de caixa, lançada em 08/11/2026. Windows 10/11 x64 com Java embutido no pacote. O banco da 3.2.12 é migrado na primeira abertura. A 3.2.12-free continua disponível como versão anterior, com manutenção de transição encerrada em 08/11/2026.
         </p>
         <ul class="use-case">
           <li>Balcão e pequeno varejo, com os dados no computador da loja</li>
@@ -456,7 +456,7 @@
         <dl class="trust-metrics">
           <div><dt>Versão</dt><dd>v4.0.0</dd></div>
           <div><dt>Atualização</dt><dd>06/11/2026</dd></div>
-          <div><dt>Status</dt><dd>Disponível · lançamento em 08/11/2026</dd></div>
+          <div><dt>Status</dt><dd>Disponível desde 08/11/2026</dd></div>
           <div><dt>Linguagem</dt><dd>Java 25 (embutido)</dd></div>
           <div><dt>Plataforma</dt><dd>Windows x64</dd></div>
         </dl>
@@ -464,7 +464,7 @@
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Não precisa instalar Java: ele vem dentro do ZIP. Sem assinatura Authenticode — o aviso "editor desconhecido" do Windows é esperado.</span></div>
           <div class="spec-line"><i class="fas fa-clipboard-check"></i> <span>T032 17/17, matriz de homologação com 11 itens medidos e 11 aprovados (a medição de desempenho, M11, não foi feita), "banco 3.2.12 migrado" 9/9 e sonda de promessas 20 aprovadas, 0 reprovadas, 1 não coberta, 0 bloqueadas — tudo medido neste ZIP (<code>9557e0b1…</code>), em 06/11/2026. SCA por OSV datado de 06/11/2026 (275 pacotes, 1 achado alto triado por byte); NVD não medido.</span></div>
-          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>Lançamento anunciado para 08/11/2026. A 3.2.12-free é a versão anterior e recebe manutenção de transição até a mesma data.</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>Lançada em 08/11/2026. A 3.2.12-free é a versão anterior, com manutenção de transição encerrada na mesma data.</span></div>
           <div class="spec-line"><i class="fas fa-database"></i> <span><strong>Backup antes de migrar.</strong> Copie o banco da 3.2.12 (<code>%APPDATA%\caracore\caracore-pdv.db</code>) para <code>data\caracore-pdv.db</code> na pasta da v4 <strong>antes da primeira abertura</strong>; o esquema sobe de 047 para 052 e não volta atrás.</span></div>
           <div class="spec-line"><i class="fas fa-rotate-left"></i> <span>Venda finalizada não pode ser cancelada nem editada nesta versão. Numa loja migrada da 3.2.12 não existe estorno de venda paga.</span></div>
           <div class="spec-line"><i class="fas fa-circle-info"></i> <span>A atualização é avisada no dashboard e baixada pelo próprio app, conferida por SHA-256. A aplicação do pacote é manual: feche o PDV, extraia o ZIP e copie sobre a instalação, mantendo a pasta <code>data</code>.</span></div>
