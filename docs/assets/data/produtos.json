@@ -177,8 +177,8 @@
     {
       "ancora": "hub",
       "produto": "CaraCore Hub",
-      "versao": "v2.1.0-rc1.8",
-      "rotuloVersao": "v2.1.0-rc1.8 · Windows x64 · sem assinatura digital",
+      "versao": "v2.1.0-rc1.10",
+      "rotuloVersao": "v2.1.0-rc1.10 · Windows x64 · sem assinatura digital",
       "estagio": "beta",
       "categoria": "nucleo",
       "plataformas": ["windows"],
@@ -189,14 +189,14 @@
           "rotulo": "ZIP portátil (Windows x64)",
           "plataforma": "windows",
           "principal": true,
-          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.8/CaraCore-Hub-2.1.0-rc1.8-windows-x64.zip",
-          "sha256": "3c4e61b2e192fece6667ccfbc79d735f3fad7ce8542e50c492b9ef24a9743334"
+          "url": "https://github.com/chmulato/caracore-hub-releases/releases/download/v2.1.0-rc1.10/CaraCore-Hub-2.1.0-rc1.10-windows-x64.zip",
+          "sha256": "0b18fbcf3af02d53a341ac5b83af9132a0ef201e698585160f332d3ad8bdae00"
         }
       ],
       "sha256": [
         {
-          "rotulo": "SHA-256 (CaraCore-Hub-2.1.0-rc1.8-windows-x64.zip)",
-          "valor": "3c4e61b2e192fece6667ccfbc79d735f3fad7ce8542e50c492b9ef24a9743334"
+          "rotulo": "SHA-256 (CaraCore-Hub-2.1.0-rc1.10-windows-x64.zip)",
+          "valor": "0b18fbcf3af02d53a341ac5b83af9132a0ef201e698585160f332d3ad8bdae00"
         }
       ],
       "avisos": [
