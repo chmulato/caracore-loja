@@ -69,13 +69,13 @@
         "numberOfItems": 14,
         "publisher": { "@id": "https://www.caracore.com.br/#organization" },
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "CaraCore PDV Java 3.2.12", "url": "https://pdv.caracore.com.br/" },
-          { "@type": "ListItem", "position": 2, "name": "CaraCore PDV 4", "url": "https://pdv.caracore.com.br/" },
-          { "@type": "ListItem", "position": 3, "name": "CaraCore PDV Rust", "url": "https://pdv-rust.caracore.com.br/" },
-          { "@type": "ListItem", "position": 4, "name": "CaraCore CSO Frotas", "url": "https://cso-transp.caracore.com.br/" },
-          { "@type": "ListItem", "position": 5, "name": "CaraCore CSO Transportes", "url": "https://cso-transp.caracore.com.br/" },
-          { "@type": "ListItem", "position": 6, "name": "CaraCore Hub", "url": "https://hub.caracore.com.br/" },
-          { "@type": "ListItem", "position": 7, "name": "CaraCore Ink Agenda", "url": "https://ink.caracore.com.br/" },
+          { "@type": "ListItem", "position": 1, "name": "CaraCore PDV 4", "url": "https://pdv.caracore.com.br/" },
+          { "@type": "ListItem", "position": 2, "name": "CaraCore Hub", "url": "https://hub.caracore.com.br/" },
+          { "@type": "ListItem", "position": 3, "name": "CaraCore CSO Frotas", "url": "https://cso-transp.caracore.com.br/" },
+          { "@type": "ListItem", "position": 4, "name": "CaraCore Ink Agenda", "url": "https://ink.caracore.com.br/" },
+          { "@type": "ListItem", "position": 5, "name": "CaraCore PDV Java 3.2.12", "url": "https://pdv.caracore.com.br/" },
+          { "@type": "ListItem", "position": 6, "name": "CaraCore PDV Rust", "url": "https://pdv-rust.caracore.com.br/" },
+          { "@type": "ListItem", "position": 7, "name": "CaraCore CSO Transportes", "url": "https://cso-transp.caracore.com.br/" },
           { "@type": "ListItem", "position": 8, "name": "Minerador ETE 4.0", "url": "https://ete.caracore.com.br/" },
           { "@type": "ListItem", "position": 9, "name": "BioReator 4.0", "url": "https://ru.caracore.com.br/bioreator.html" },
           { "@type": "ListItem", "position": 10, "name": "Reino OIDC", "url": "https://oidc.caracore.com.br/" },
@@ -197,15 +197,15 @@
           <h3>Publicado para uso</h3>
           <p>Release pública com download ou acesso ativo na loja do produto. O SHA-256 do arquivo fica no card, com a ressalva de homologação quando existe.</p>
           <ul>
+            <li><a href="#pdv-v4">CaraCore PDV 4 v4.0.0</a> · lançada em 08/11/2026 · Windows x64</li>
             <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, com os pacotes ainda disponíveis</li>
-            <li><a href="#pdv-v4">CaraCore PDV 4 v4.0.0</a> · lançada em 08/11/2026</li>
-            <li><a href="#ink">CaraCore Ink Agenda v2.2.1</a></li>
+            <li><a href="#cso-frotas">CaraCore CSO Frotas</a> · acesso online, sem instalador</li>
+            <li><a href="#ink">CaraCore Ink Agenda v2.2.1</a> · Windows e Linux</li>
             <li><a href="#ete">Minerador ETE v1.2.3</a></li>
             <li><a href="#oidc">Reino OIDC v2.0.2-free</a></li>
             <li><a href="#circuito">Circuito Ferradura v2.0.24</a></li>
             <li><a href="#bioreator40">BioReator 4.0 Community 1.1.1</a></li>
             <li><a href="#rebeldia">A Rebeldia da Mecatrônica</a> · acesso online</li>
-            <li><a href="#cso-frotas">CaraCore CSO Frotas</a> · acesso online, sem instalador</li>
           </ul>
         </article>
 
@@ -244,13 +244,14 @@
       <div class="catalog-section-heading">
         <p class="catalog-eyebrow">Produtos principais</p>
         <h2 id="core-products-title">Comece por aqui</h2>
+        <p>Quatro produtos conduzem a operação. Os demais aparecem no catálogo como complementos.</p>
       </div>
       <div class="core-products-grid">
         <article class="core-product-card core-product-card--featured">
-          <span class="core-product-status">Disponível · versão anterior, ainda indicada para operar</span>
-          <h3>PDV Java</h3>
-          <p>Frente de caixa local para varejo e balcão.</p>
-          <a href="#pdv-java" class="core-product-link">Baixar Free (até 100 vendas finalizadas/mês) <i class="fas fa-arrow-down"></i></a>
+          <span class="core-product-status">Disponível desde 08/11/2026 · Windows x64</span>
+          <h3>CaraCore PDV 4</h3>
+          <p>Frente de caixa local para varejo e balcão, com Java embutido e migração do banco da 3.2.12.</p>
+          <a href="#pdv-v4" class="core-product-link">Baixar a v4.0.0 <i class="fas fa-arrow-down"></i></a>
         </article>
         <article class="core-product-card">
           <span class="core-product-status">Beta (RC) · Windows</span>
@@ -263,6 +264,12 @@
           <h3>CSO Frotas</h3>
           <p>Gestão operacional de frotas pelo navegador.</p>
           <a href="https://cso.caracore.com.br/login" class="core-product-link" target="_blank" rel="noopener">Entrar no CSO <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </article>
+        <article class="core-product-card">
+          <span class="core-product-status">Disponível · Windows e Linux</span>
+          <h3>Ink Agenda</h3>
+          <p>Agenda e financeiro de estúdios, consultórios e espaços de beleza, com equipe e os dados no computador.</p>
+          <a href="#ink" class="core-product-link">Baixar o Ink <i class="fas fa-arrow-down"></i></a>
         </article>
       </div>
     </section>
@@ -313,7 +320,7 @@
     <section class="products-grid" id="products-catalog">
 
       <!-- 1. PDV JAVA FREE -->
-      <article class="product-card product-card--featured" id="pdv-java" 
+      <article class="product-card" id="pdv-java" 
                data-title="CaraCore PDV 3.2.12 Caixa Balcão" 
                data-category="pdv" 
                data-platforms="windows linux macos" 
@@ -415,7 +422,7 @@
       </article>
 
       <!-- 2. PDV JAVA V4 (GA) -->
-      <article class="product-card" id="pdv-v4"
+      <article class="product-card product-card--featured" id="pdv-v4"
                data-title="CaraCore PDV 4 v4.0.0 GA"
                data-category="pdv"
                data-platforms="windows"
@@ -743,6 +750,7 @@
           <div class="spec-line"><i class="fas fa-cube"></i> <span>Canais: Mercado Livre, Shopee e Temu. Amazon e B2W não têm conector nesta edição. As integrações precisam de internet e das credenciais do canal.</span></div>
           <div class="spec-line"><i class="fab fa-windows"></i> <span>Só Windows x64. Mac e Linux não entram nesta versão.</span></div>
           <div class="spec-line"><i class="fas fa-file-archive"></i> <span><strong>ZIP portátil</strong> — CaraCore-Hub-2.1.0-rc1.10-windows-x64.zip — 228.354.977 bytes</span></div>
+          <div class="spec-line"><i class="fas fa-clipboard-check"></i> <span>O aceite formal de QA desta build está pendente: a rc1.10 é pré-release de avaliação, não homologada.</span></div>
           <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>GA do instalador previsto para <strong>06/04/2027</strong>.</span></div>
           <div class="spec-line"><i class="fas fa-credit-card"></i> <span>Free: o produto não tem licença mensal. O suporte opcional tem pagamento recorrente de <strong>R$ 79,90/mês</strong>, a partir do GA, com <strong>primeira resposta em até 24 horas</strong>, e cobre a operação e as integrações. Sem o suporte, a configuração dos canais de encomenda fica por conta da loja. A versão Beta (RC) é de avaliação e não é cobrada.</span></div>
         </div>
@@ -786,7 +794,7 @@
             </div>
             <div class="product-titles">
               <h3>CaraCore Ink Agenda</h3>
-              <span class="version-tag">v2.2.1 · Windows e Linux</span>
+              <span class="version-tag">v2.2.1 · 04/11/2026 · Windows e Linux</span>
             </div>
           </div>
           <span class="status-badge status-disponivel">Disponível</span>
@@ -826,6 +834,7 @@
           <div class="spec-line"><i class="fas fa-box-archive"></i> <span>Backup <code>.inkbak</code> com senha e backup automático no computador</span></div>
           <div class="spec-line"><i class="fas fa-users"></i> <span>Equipe com papéis (Administrador, Agenda e Financeiro) e mensagem por WhatsApp ou Telegram — o app abre a conversa e o operador envia</span></div>
           <div class="spec-line"><i class="fas fa-arrows-rotate"></i> <span>Atualização pelo próprio app desde a 2.2.1, com manifesto assinado e SHA-256 conferido</span></div>
+          <div class="spec-line"><i class="fas fa-calendar-check"></i> <span>Próxima atualização do Desktop, a <strong>2.3.0</strong>, planejada para 29/01/2027; o conteúdo dela ainda não está publicado.</span></div>
           <div class="spec-line"><i class="fab fa-windows"></i> <span>Downloads publicados: ZIP e instalador Windows; pacote .deb Linux</span></div>
         </div>
 
@@ -1546,17 +1555,17 @@
         <div>
           <h3 class="text-white font-bold mb-3">Produtos principais</h3>
           <ul class="space-y-2 text-sm">
-            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core PDV (Java)</a></li>
-            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core PDV (Rust)</a></li>
-            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core CSO Frotas</a></li>
-            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Cara Core Hub</a></li>
+            <li><a href="https://pdv.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore PDV 4</a></li>
+            <li><a href="https://hub.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore Hub</a></li>
+            <li><a href="https://cso-transp.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore CSO Frotas</a></li>
+            <li><a href="https://ink.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">CaraCore Ink Agenda</a></li>
           </ul>
         </div>
 
         <div>
           <h3 class="text-white font-bold mb-3">Ecossistema</h3>
           <ul class="space-y-2 text-sm">
-            <li><a href="https://ink.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Ink Agenda</a></li>
+            <li><a href="https://pdv-rust.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">PDV Rust (piloto)</a></li>
             <li><a href="https://ete.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Minerador ETE 4.0</a></li>
             <li><a href="https://ru.caracore.com.br/bioreator.html" class="hover:text-white" target="_blank" rel="noopener">BioReator 4.0</a></li>
             <li><a href="https://oidc.caracore.com.br" class="hover:text-white" target="_blank" rel="noopener">Reino OIDC</a></li>

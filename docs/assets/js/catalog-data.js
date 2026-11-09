@@ -22,7 +22,7 @@
   'use strict';
 
   var CATALOGO = {
-    atualizadoEm: '30/10/2026',
+    atualizadoEm: '09/11/2026',
 
     /**
      * Quatro estágios canônicos. Toda página da matriz usa estes rótulos.
@@ -51,11 +51,11 @@
     ],
 
     /**
-     * Categorias comerciais. Núcleo = PDV, CSO e Hub (produtos principais);
-     * os demais são complementos do ecossistema.
+     * Categorias comerciais. Núcleo = PDV, CSO, Hub e Ink Agenda (produtos
+     * principais); os demais são complementos do ecossistema.
      */
     categorias: [
-      { id: 'nucleo', rotulo: 'Núcleo', descricao: 'PDV, CSO e Hub — os produtos principais.' },
+      { id: 'nucleo', rotulo: 'Núcleo', descricao: 'PDV, CSO, Hub e Ink Agenda — os produtos principais.' },
       { id: 'satelite', rotulo: 'Satélite', descricao: 'Verticais próprias que complementam o núcleo.' },
       { id: 'educacao', rotulo: 'Educação', descricao: 'Formação, estudo e critério técnico.' },
       { id: 'institucional', rotulo: 'Institucional', descricao: 'Identidade, licenciamento e ferramentas internas.' },
@@ -68,8 +68,8 @@
         nome: 'CaraCore PDV Java',
         categoria: 'nucleo',
         estagio: 'disponivel',
-        versao: 'v3.2.12-free (versão anterior) · v4.0.0-candidato-20261031 (pré-lançamento)',
-        detalhe: 'A 3.2.12-free é a versão anterior, última da linha 3.2.x, em manutenção de transição até 08/11/2026; a v4 está em pré-lançamento, com GA somente após gates e aceites formais.',
+        versao: 'v4.0.0 (lançada em 08/11/2026) · v3.2.12-free (versão anterior)',
+        detalhe: 'A v4.0.0 é a versão indicada para operar desde 08/11/2026, para Windows x64, com o banco da 3.2.12 migrado na primeira abertura; a 3.2.12-free é a versão anterior, última da linha 3.2.x, com manutenção encerrada em 08/11/2026.',
         free: 'Até 100 vendas/mês, 100 produtos, 1 operador, 4 vendedores e 1 loja.',
         pago: 'Premium: sem teto de vendas, produtos e operadores.',
         preco: 'R$ 79,90/mês',
@@ -77,12 +77,12 @@
         loja: 'pdv.caracore.com.br',
         url: 'https://pdv.caracore.com.br/',
         portfolio: 'portfolio.html#caracore-pdv',
-        nota: 'Aplicação web local (localhost:8080/login). Não inclui PIX integrado nem NF-e/NFC-e no plano Free.'
+        nota: 'Aplicação web local: na v4 o launcher abre no Edge e o banco fica em ./data; na 3.2.12, o navegador em localhost:8080/login. Não inclui PIX integrado nem NF-e/NFC-e no plano Free.'
       },
       {
         id: 'pdv-rust',
         nome: 'CaraCore PDV Rust (piloto)',
-        categoria: 'nucleo',
+        categoria: 'satelite',
         estagio: 'piloto',
         versao: 'v0.1.4',
         detalhe: 'Piloto Windows; linha independente da Java, nenhuma substitui a outra.',
@@ -130,10 +130,10 @@
       {
         id: 'ink',
         nome: 'CaraCore Ink Agenda',
-        categoria: 'satelite',
+        categoria: 'nucleo',
         estagio: 'disponivel',
         versao: 'v2.2.1',
-        detalhe: 'Desktop Windows e Linux desde 04/11/2026, metamórfico com os perfis Tatuagem, Odontologia e Beleza, equipe com papéis e mensagem por WhatsApp ou Telegram; PWA em roadmap, não antes de 2028.',
+        detalhe: 'Desktop Windows e Linux desde 04/11/2026, metamórfico com os perfis Tatuagem, Odontologia e Beleza, equipe com papéis e mensagem por WhatsApp ou Telegram; a próxima atualização do Desktop, a 2.3.0, está planejada para 29/01/2027; PWA em roadmap, não antes de 2028.',
         free: 'Sem edição gratuita publicada.',
         pago: 'Licença do Desktop v2.x.',
         preco: 'conferir na loja',
@@ -294,7 +294,7 @@
      */
     notas: [
       'Marca: "Cara Core Informática" nomeia a empresa; "CaraCore" é prefixo de produto (CaraCore PDV, CaraCore Hub, CaraCore CSO, CaraCore Seed), como nos instaladores e nas lojas.',
-      'Duas linhas PDV, dois nomes: "CaraCore PDV Java" (web local, versão anterior) e "CaraCore PDV Rust (piloto)" (desktop). Nenhuma substitui a outra.',
+      'Duas linhas PDV, dois nomes: "CaraCore PDV Java" (web local; v4.0.0 atual e 3.2.12-free anterior) e "CaraCore PDV Rust (piloto)" (desktop). Nenhuma substitui a outra.',
       'Produto educacional e oferta institucional: "Reino OIDC" ensina identidade e login; "Área 51" licencia identidade e acesso institucional.',
       '"Área 51" do catálogo é o produto em area51.caracore.com.br; a área restrita do site (secure/) é outro destino.',
       '"Minerador 4.0" é o único nome público; "ETE" descreve o domínio de aplicação e não é um segundo produto.',

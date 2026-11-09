@@ -1,13 +1,13 @@
 {
   "schema": 2,
-  "atualizado": "2026-11-04",
+  "atualizado": "2026-11-09",
   "moeda": "BRL",
   "produtos": [
     {
       "ancora": "pdv-java",
       "produto": "CaraCore PDV Java 3.2.12",
       "versao": "v3.2.12-free",
-      "rotuloVersao": "v3.2.12-free · 15/10/2026 · Windows, Linux, macOS",
+      "rotuloVersao": "v3.2.12-free · 15/10/2026 · Windows, Linux, macOS · versão anterior",
       "estagio": "disponivel",
       "categoria": "nucleo",
       "plataformas": ["windows", "linux", "macos"],
@@ -47,7 +47,8 @@
         }
       ],
       "avisos": [
-        "Versão anterior, última da linha 3.2.x, ainda a indicada para operar; manutenção de transição até 08/11/2026.",
+        "Versão anterior, última da linha 3.2.x, com os pacotes ainda disponíveis; manutenção de transição encerrada em 08/11/2026.",
+        "A versão indicada para operar hoje é a v4.0.0, para Windows x64.",
         "Homologação em andamento; ressalvas publicadas na wiki do PDV.",
         "Sem assinatura digital nos três ZIPs.",
         "Requer JDK 25 instalado: o Java não vem embutido."
@@ -56,9 +57,9 @@
     {
       "ancora": "pdv-v4",
       "produto": "CaraCore PDV 4",
-      "versao": "v4.0.0-candidato-20261031",
-      "rotuloVersao": "v4.0.0-candidato-20261031 · 31/10/2026 · Windows x64",
-      "estagio": "beta",
+      "versao": "v4.0.0",
+      "rotuloVersao": "v4.0.0 · 06/11/2026 · Windows x64 · lançada em 08/11/2026",
+      "estagio": "disponivel",
       "categoria": "nucleo",
       "plataformas": ["windows"],
       "loja": "https://pdv.caracore.com.br",
@@ -68,22 +69,23 @@
           "rotulo": "Windows x64 (.ZIP)",
           "plataforma": "windows",
           "principal": true,
-          "url": "https://github.com/chmulato/caracore-pdv-releases/releases/download/v4.0.0-candidato-20261031/CaraCore-PDV-4.0.0-qute-portable-windows-x64.zip",
-          "sha256": "0c2003b0f99a75328f7ebe632fc20b07cb5834a3f75b6f0e97ccfb7aef83434d"
+          "url": "https://github.com/chmulato/caracore-pdv4-releases/releases/download/v4.0.0/CaraCore-PDV-4.0.0-qute-portable-windows-x64.zip",
+          "sha256": "9557e0b16d77a85e0bb68971eb0e8710356977261337a8c1c05593e893d81eac"
         }
       ],
       "sha256": [
         {
           "rotulo": "SHA-256 (Windows x64)",
-          "valor": "0c2003b0f99a75328f7ebe632fc20b07cb5834a3f75b6f0e97ccfb7aef83434d"
+          "valor": "9557e0b16d77a85e0bb68971eb0e8710356977261337a8c1c05593e893d81eac"
         }
       ],
       "avisos": [
-        "Prévia pública (build candidata de 31/10/2026); GA somente após gates e aceites formais, sem data presumida.",
-        "A RC7 segue como rota aprovada do Gate E, ainda sem tag publicada.",
-        "T032 e a matriz M01–M11 foram medidos em ff400efd, não neste pacote; o SCA segue não medido.",
-        "Migração da 3.2 não suportada: não copie o banco da 3.2 para a v4.",
-        "Na v4 não há estorno de venda finalizada. Instale em pasta separada, só para teste.",
+        "Lançada em 08/11/2026; a 3.2.12-free é a versão anterior, com manutenção de transição encerrada na mesma data.",
+        "Backup antes de migrar: copie %APPDATA%\\caracore\\caracore-pdv.db para data\\caracore-pdv.db na pasta da v4 antes da primeira abertura; o esquema sobe de 047 para 052 e não volta atrás.",
+        "T032 17/17, matriz 11/11 (a medição de desempenho, M11, não foi feita), banco 3.2.12 migrado 9/9 e sonda de promessas 20 aprovadas, 0 reprovadas, 1 não coberta, 0 bloqueadas — medidos neste ZIP em 06/11/2026. SCA por OSV de 06/11/2026 (275 pacotes, 1 achado alto triado por byte); NVD não medido.",
+        "Sem assinatura Authenticode; o SHA256SUMS.txt tem duas assinaturas Ed25519. Não desative SmartScreen, Defender ou antivírus.",
+        "Venda finalizada não pode ser cancelada nem editada; numa loja migrada da 3.2.12 não existe estorno de venda paga.",
+        "A atualização é avisada no dashboard e baixada pelo próprio app; a aplicação do pacote é manual.",
         "Java 25 vem dentro do ZIP; Windows 10/11 x64 com Microsoft Edge."
       ]
     },
@@ -152,8 +154,8 @@
     {
       "ancora": "cso-transportes",
       "produto": "CaraCore CSO Transportes",
-      "versao": "GA 08/11/2028",
-      "rotuloVersao": "GA previsto 08/11/2028 · vitrine online",
+      "versao": "Planejado para 08/11/2028",
+      "rotuloVersao": "GA planejado para 08/11/2028 · vitrine online",
       "estagio": "desenvolvimento",
       "categoria": "nucleo",
       "plataformas": ["web"],
@@ -201,6 +203,7 @@
       ],
       "avisos": [
         "Pré-release; GA do instalador planejado para 06/04/2027.",
+        "O aceite formal de QA da rc1.10 está pendente: esta build não é homologada.",
         "Esta build é ZIP portátil, sem assinatura digital; não há instalador NSIS.",
         "Não desative SmartScreen, Defender ou antivírus.",
         "Free: suporte opcional de R$ 79,90/mês a partir do GA."
@@ -212,7 +215,7 @@
       "versao": "v2.2.1",
       "rotuloVersao": "v2.2.1 · 04/11/2026 · Windows e Linux · 3 perfis e equipe · sem assinatura",
       "estagio": "disponivel",
-      "categoria": "satelite",
+      "categoria": "nucleo",
       "plataformas": ["windows", "linux"],
       "loja": "https://ink.caracore.com.br",
       "wiki": "https://wiki.caracore.com.br/projeto-ink.html",
@@ -260,6 +263,7 @@
         "Java 25 e JavaFX no pacote Windows.",
         "A v2.2.1 não tem assinatura digital; SmartScreen/antivírus pode avisar ou bloquear.",
         "Quem está na 2.1.0 ou 2.2.0 baixa a 2.2.1 por aqui uma vez: o botão de atualização dessas versões falhava.",
+        "Próxima atualização do Desktop, a 2.3.0, planejada para 29/01/2027; o conteúdo dela ainda não está publicado.",
         "macOS não tem instalador nesta versão; a linha 3.0 atenderá pelo navegador, não antes de 2028."
       ]
     },

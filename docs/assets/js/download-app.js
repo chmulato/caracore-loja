@@ -28,22 +28,30 @@ document.addEventListener('DOMContentLoaded', () => {
   let searchQuery = '';
 
   /* Grupos do catálogo, na ordem do catálogo canônico da matriz:
-     Núcleo · Produtos verticais · Educação · Infraestrutura · Em breve.
+     Núcleo (quatro produtos principais) · Caixa em versão anterior e piloto ·
+     Produtos verticais · Educação · Infraestrutura · Em breve.
      O rótulo da página é comercial; o id vem de catalog-data.js. */
   const catalogGroups = [
     {
       id: 'nucleo',
       eyebrow: 'Núcleo',
-      title: 'Os produtos que conduzem a operação',
-      description: 'PDV, CSO e Hub: caixa, frota e encomendas com o próprio acesso.',
-      cards: ['pdv-java', 'pdv-v4', 'pdv-rust', 'cso-frotas', 'hub']
+      title: 'Os quatro produtos que conduzem a operação',
+      description: 'PDV 4 (caixa), Hub (encomendas), CSO (frota) e Ink Agenda (agenda), cada um com o próprio acesso.',
+      cards: ['pdv-v4', 'hub', 'cso-frotas', 'ink']
+    },
+    {
+      id: 'caixa-anterior',
+      eyebrow: 'Caixa · versão anterior e piloto',
+      title: 'Linhas paralelas do PDV',
+      description: 'A 3.2.12-free é a versão anterior do caixa Java; o Rust é piloto. Nenhum dos dois substitui a v4.',
+      cards: ['pdv-java', 'pdv-rust']
     },
     {
       id: 'produtos-verticais',
       eyebrow: 'Produtos verticais',
       title: 'Ferramentas de nicho',
-      description: 'Agenda, estação de tratamento e bioinsumos.',
-      cards: ['ink', 'ete', 'bioreator40']
+      description: 'Estação de tratamento e bioinsumos, com loja própria.',
+      cards: ['ete', 'bioreator40']
     },
     {
       id: 'educacao',
