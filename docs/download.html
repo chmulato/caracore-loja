@@ -202,7 +202,7 @@
           <p>Release pública com download ou acesso ativo na loja do produto. O SHA-256 do arquivo fica no card, com a ressalva de homologação quando existe.</p>
           <ul>
             <li><a href="#pdv-v4">CaraCore PDV 4 v4.0.0</a> · lançada em 08/11/2026 · Windows x64</li>
-            <li><a href="#gaspar">Gaspar 1.7.1</a> · ferramenta do PDV 4 · Windows e Linux · app Android 1.3</li>
+            <li><a href="#gaspar">Gaspar</a> · ferramenta do PDV 4 · versão e instaladores na loja do Gaspar</li>
             <li><a href="#pdv-java">CaraCore PDV Java 3.2.12</a> · versão anterior, com os pacotes ainda disponíveis</li>
             <li><a href="#cso-frotas">CaraCore CSO Frotas</a> · acesso online, sem instalador</li>
             <li><a href="#ink">CaraCore Ink Agenda v2.2.1</a> · Windows e Linux</li>
@@ -520,7 +520,7 @@
             </div>
             <div class="product-titles">
               <h3>Gaspar</h3>
-              <span class="version-tag">1.7.1 · 12/11/2026 · Windows e Linux · Android 1.3</span>
+              <span class="version-tag">Ferramenta do PDV 4 · versão e instaladores na loja do Gaspar</span>
             </div>
           </div>
           <span class="status-badge status-disponivel">Disponível</span>
@@ -533,7 +533,7 @@
           <li>Aviso de venda confirmada por SMS no celular do dono</li>
           <li>Mascote discreto no canto da tela, com pausa em tela cheia e opção «Gaspar flutuante» para tirar da tela</li>
           <li>Windows 10/11 e Linux (Debian, Ubuntu e AppImage)</li>
-          <li>Celular Android com o app 1.3, instalado por cabo</li>
+          <li>Celular Android com o aplicativo de aviso, instalado por cabo</li>
           <li>Dados e configurações no computador; o SMS circula na rede local</li>
         </ul>
         <figure class="screen-schema">
@@ -546,80 +546,33 @@
           <figcaption>Esquema do papel da ferramenta. A vitrine está em <a href="https://gaspar.caracore.com.br" target="_blank" rel="noopener">gaspar.caracore.com.br</a>.</figcaption>
         </figure>
         <dl class="trust-metrics">
-          <div><dt>Versão</dt><dd>1.7.1</dd></div>
-          <div><dt>Atualização</dt><dd>12/11/2026</dd></div>
+          <div><dt>Versão</dt><dd>na loja do Gaspar</dd></div>
+          <div><dt>Atualização</dt><dd>aviso automático, instalação manual</dd></div>
           <div><dt>Status</dt><dd>Disponível</dd></div>
           <div><dt>Tecnologia</dt><dd>Python</dd></div>
-          <div><dt>Plataforma</dt><dd>Windows e Linux</dd></div>
+          <div><dt>Plataforma</dt><dd>Windows, Linux e Android</dd></div>
         </dl>
 
         <div class="specs-box">
           <div class="spec-line"><i class="fas fa-circle-info"></i> <span><strong>Ferramenta do PDV 4 com instalação separada:</strong> o PDV 4.0.0 publicado ainda não chama o Gaspar; a chamada entra na versão 4.1.0, com GA planejado para 24/03/2027.</span></div>
-          <div class="spec-line"><i class="fas fa-bell"></i> <span>Aviso de venda por SMS <strong>opcional</strong>: só envia com o aplicativo do celular (Android 1.3, instalado por cabo, fora da Play Store) pareado na mesma rede Wi-Fi.</span></div>
-          <div class="spec-line"><i class="fas fa-shield"></i> <span>Na 1.7.1 o número aparece mascarado na tela e o texto viaja cifrado de ponta a ponta com o app 1.3; a auditoria guarda só data, venda e estado, há limites de envio por destinatário e o botão «Apagar histórico» remove tudo.</span></div>
+          <div class="spec-line"><i class="fas fa-bell"></i> <span>Aviso de venda por SMS <strong>opcional</strong>: só envia com o aplicativo do celular (instalado por cabo, fora da Play Store) pareado na mesma rede Wi-Fi.</span></div>
+          <div class="spec-line"><i class="fas fa-shield"></i> <span>O número aparece mascarado na tela e o texto viaja cifrado de ponta a ponta com o aplicativo do celular; há limites de envio por destinatário e o botão «Apagar histórico» remove tudo.</span></div>
           <div class="spec-line"><i class="fas fa-triangle-exclamation"></i> <span>Instaladores sem assinatura digital: o SmartScreen do Windows pode avisar. Não desative SmartScreen, Defender ou antivírus.</span></div>
           <div class="spec-line"><i class="fas fa-arrows-rotate"></i> <span>O aviso de versão nova já funciona, mas a instalação automática ainda não é confiável: por enquanto, a atualização é feita à mão.</span></div>
-          <div class="spec-line"><i class="fas fa-shield-halved"></i> <span>Não interfere nas APIs de pagamento e nota do PDV (Mercado Pago e PlugNotas/Tecnospeed); a única saída de rede é o celular na rede local e o canal de atualização (gaspar.caracore.com.br) — esta versão não consulta mais nada na internet.</span></div>
-          <div class="spec-line"><i class="fas fa-desktop"></i> <span>Publicado em 12/11/2026: Gaspar 1.7.1 para Windows e Linux e app Android 1.3.</span></div>
+          <div class="spec-line"><i class="fas fa-shield-halved"></i> <span>Não interfere nas APIs de pagamento e nota do PDV (Mercado Pago e PlugNotas/Tecnospeed); a única saída de rede é o celular na rede local e o canal de atualização.</span></div>
+          <div class="spec-line"><i class="fas fa-desktop"></i> <span>Instaladores para Windows e Linux e aplicativo para o celular Android: a versão publicada e os arquivos ficam na loja do Gaspar, que é a fonte única dos instaladores. O SHA-256 de cada arquivo vem no <code>SHA256SUMS.txt</code> da versão.</span></div>
         </div>
 
         <div class="card-actions">
-          <a href="https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.1/GasparSetup-1.7.1.exe" class="btn-download-primary" title="Baixar o Gaspar 1.7.1 para Windows">
-            <i class="fab fa-windows"></i> Baixar Windows (.EXE)
+          <a href="https://gaspar.caracore.com.br/" class="btn-download-primary" target="_blank" rel="noopener" title="Abrir a loja do Gaspar">
+            <i class="fas fa-store"></i> Abrir a loja do Gaspar
           </a>
-          <div class="btn-alt-downloads">
-            <a href="https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.1/gaspar_1.7.1_amd64.deb" class="btn-sub-dl" title="Baixar o Gaspar 1.7.1 para Debian e Ubuntu">
-              <i class="fab fa-linux"></i> Debian e Ubuntu (.DEB)
-            </a>
-            <a href="https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.1/Gaspar-1.7.1-amd64.AppImage" class="btn-sub-dl" title="Baixar o Gaspar 1.7.1 AppImage">
-              <i class="fab fa-linux"></i> Outras distros (.AppImage)
-            </a>
-            <a href="https://github.com/chmulato/caracore-mascote/releases/download/android-v1.3/pdv-sms-enviar-1.3-release.apk" class="btn-sub-dl" title="Baixar o aplicativo do celular Android 1.3">
-              <i class="fas fa-download"></i> Celular Android (.APK 1.3)
-            </a>
-          </div>
-          <div class="checksum-box">
-            <div>
-              <span class="hash-label">SHA-256 (Windows EXE)</span>
-              <span class="hash-code">342bbdbc9959ff90d8e56833d8163c5d477f6a3a10c034545f8cc79dbf2d2f35</span>
-            </div>
-            <button class="btn-copy-hash" onclick="copyHash('342bbdbc9959ff90d8e56833d8163c5d477f6a3a10c034545f8cc79dbf2d2f35', this)" title="Copiar SHA-256 completo">
-              <i class="fas fa-copy"></i>
-            </button>
-          </div>
-          <div class="checksum-box">
-            <div>
-              <span class="hash-label">SHA-256 (Linux DEB)</span>
-              <span class="hash-code">ef4a2b4f96af39a37d84450f498a1848a88858a9018b100acc7a809a349be0ad</span>
-            </div>
-            <button class="btn-copy-hash" onclick="copyHash('ef4a2b4f96af39a37d84450f498a1848a88858a9018b100acc7a809a349be0ad', this)" title="Copiar SHA-256 completo">
-              <i class="fas fa-copy"></i>
-            </button>
-          </div>
-          <div class="checksum-box">
-            <div>
-              <span class="hash-label">SHA-256 (Linux AppImage)</span>
-              <span class="hash-code">c6f1bdd5edbd1b7e54f61ce476f803df326e482ae184f83555127f1796b4c53b</span>
-            </div>
-            <button class="btn-copy-hash" onclick="copyHash('c6f1bdd5edbd1b7e54f61ce476f803df326e482ae184f83555127f1796b4c53b', this)" title="Copiar SHA-256 completo">
-              <i class="fas fa-copy"></i>
-            </button>
-          </div>
-          <div class="checksum-box">
-            <div>
-              <span class="hash-label">SHA-256 (Android APK 1.3)</span>
-              <span class="hash-code">0610106c8469653d7ed77fc67e752d3284d0c519d9bd3ec184b9b34203212266</span>
-            </div>
-            <button class="btn-copy-hash" onclick="copyHash('0610106c8469653d7ed77fc67e752d3284d0c519d9bd3ec184b9b34203212266', this)" title="Copiar SHA-256 completo">
-              <i class="fas fa-copy"></i>
-            </button>
-          </div>
         </div>
 
         <div class="card-links-sub">
-          <a href="https://gaspar.caracore.com.br" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-store"></i> Loja do Gaspar</a>
           <a href="https://wiki.caracore.com.br/gaspar/instalacao.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-book"></i> Instalação e ajuda</a>
-          <a href="https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.1/SHA256SUMS.txt" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-file-shield"></i> SHA256SUMS.txt</a>
+          <a href="https://wiki.caracore.com.br/gaspar/index.html" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-circle-question"></i> Dúvidas sobre o Gaspar</a>
+          <a href="https://github.com/chmulato/caracore-mascote/releases" class="card-link-item" target="_blank" rel="noopener"><i class="fas fa-file-shield"></i> SHA256SUMS por versão</a>
         </div>
       </article>
 
