@@ -22,6 +22,7 @@
     'download.caracore.com.br',
     'pdv.caracore.com.br',
     'pdv-rust.caracore.com.br',
+    'gaspar.caracore.com.br',
     'hub.caracore.com.br',
     'ink.caracore.com.br',
     'cso.caracore.com.br',

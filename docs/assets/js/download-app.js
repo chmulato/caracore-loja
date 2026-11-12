@@ -28,8 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let searchQuery = '';
 
   /* Grupos do catálogo, na ordem do catálogo canônico da matriz:
-     Núcleo (quatro produtos principais) · Caixa em versão anterior e piloto ·
-     Produtos verticais · Educação · Infraestrutura · Em breve.
+     Núcleo (quatro produtos principais) · Ferramenta do PDV 4 ·
+     Caixa em versão anterior e piloto · Produtos verticais · Educação ·
+     Infraestrutura · Em breve.
      O rótulo da página é comercial; o id vem de catalog-data.js. */
   const catalogGroups = [
     {
@@ -38,6 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Os quatro produtos que conduzem a operação',
       description: 'PDV 4 (caixa), Hub (encomendas), CSO (frota) e Ink Agenda (agenda), cada um com o próprio acesso.',
       cards: ['pdv-v4', 'hub', 'cso-frotas', 'ink']
+    },
+    {
+      id: 'ferramenta-pdv',
+      eyebrow: 'Ferramenta do PDV 4',
+      title: 'O Gaspar acompanha o caixa',
+      description: 'Mascote no desktop e aviso de venda por SMS no celular, com instalação separada do PDV 4 e acesso próprio.',
+      cards: ['gaspar']
     },
     {
       id: 'caixa-anterior',

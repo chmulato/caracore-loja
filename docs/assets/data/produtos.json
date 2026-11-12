@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "atualizado": "2026-11-09",
+  "atualizado": "2026-11-12",
   "moeda": "BRL",
   "produtos": [
     {
@@ -87,6 +87,73 @@
         "Venda finalizada não pode ser cancelada nem editada; numa loja migrada da 3.2.12 não existe estorno de venda paga.",
         "A atualização é avisada no dashboard e baixada pelo próprio app; a aplicação do pacote é manual.",
         "Java 25 vem dentro do ZIP; Windows 10/11 x64 com Microsoft Edge."
+      ]
+    },
+    {
+      "ancora": "gaspar",
+      "produto": "Gaspar — ferramenta do PDV 4",
+      "versao": "1.7.0",
+      "rotuloVersao": "1.7.0 · 11/11/2026 · Windows e Linux · app Android 1.2",
+      "estagio": "disponivel",
+      "categoria": "satelite",
+      "plataformas": ["windows", "linux"],
+      "loja": "https://gaspar.caracore.com.br",
+      "wiki": "https://wiki.caracore.com.br/gaspar/index.html",
+      "downloads": [
+        {
+          "rotulo": "Windows x64 (.EXE)",
+          "plataforma": "windows",
+          "principal": true,
+          "url": "https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.0/GasparSetup-1.7.0.exe",
+          "sha256": "956ef852fdb999a656cdf41cbdfc504c71fd1a69bcf8bfb7c9254b61372a63f1"
+        },
+        {
+          "rotulo": "Debian, Ubuntu e derivados (.DEB)",
+          "plataforma": "linux",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.0/gaspar_1.7.0_amd64.deb",
+          "sha256": "4c0fa316b26a83ce5c65030c3bc03538588b9989aa067d5a2c5b4545a81472c7"
+        },
+        {
+          "rotulo": "Outras distribuições Linux (.AppImage)",
+          "plataforma": "linux",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-mascote/releases/download/gaspar-v1.7.0/Gaspar-1.7.0-amd64.AppImage",
+          "sha256": "f5d00797c1db02336123accb61b35667cb272c80a1c38f50afbe6af2f35bb242"
+        },
+        {
+          "rotulo": "Celular Android (.APK 1.2)",
+          "plataforma": "android",
+          "principal": false,
+          "url": "https://github.com/chmulato/caracore-mascote/releases/download/android-v1.2/pdv-sms-enviar-1.2-release.apk",
+          "sha256": "cea5b97383998295d6a2cd99308c04210610e9d8884365f95a64d2b0d811bb1e"
+        }
+      ],
+      "sha256": [
+        {
+          "rotulo": "SHA-256 (Windows EXE)",
+          "valor": "956ef852fdb999a656cdf41cbdfc504c71fd1a69bcf8bfb7c9254b61372a63f1"
+        },
+        {
+          "rotulo": "SHA-256 (Linux DEB)",
+          "valor": "4c0fa316b26a83ce5c65030c3bc03538588b9989aa067d5a2c5b4545a81472c7"
+        },
+        {
+          "rotulo": "SHA-256 (Linux AppImage)",
+          "valor": "f5d00797c1db02336123accb61b35667cb272c80a1c38f50afbe6af2f35bb242"
+        },
+        {
+          "rotulo": "SHA-256 (Android APK 1.2)",
+          "valor": "cea5b97383998295d6a2cd99308c04210610e9d8884365f95a64d2b0d811bb1e"
+        }
+      ],
+      "avisos": [
+        "Ferramenta do PDV 4 com instalação separada: o PDV 4.0.0 publicado ainda não chama o Gaspar; a chamada entra na versão 4.1.0, com GA planejado para 24/03/2027.",
+        "O aviso de venda por SMS é opcional: só envia com o aplicativo do celular (Android 1.2, instalado por cabo, fora da Play Store) pareado na mesma rede Wi-Fi.",
+        "Na 1.7.0 o número aparece mascarado na tela, mas o número completo e o texto ficam gravados no histórico local; envelope ponta a ponta, auditoria só de metadados, limites por destinatário e «Apagar histórico» chegam na próxima versão, ainda não publicada.",
+        "Sem assinatura digital nos instaladores: o SmartScreen do Windows pode avisar. Não desative SmartScreen, Defender ou antivírus.",
+        "A atualização automática ainda não está ligada: esta 1.7.0 é instalada à mão.",
+        "Não interfere nas APIs de pagamento e nota do PDV (Mercado Pago e PlugNotas/Tecnospeed); a única saída de rede desta versão é o celular na rede local — a 1.7.0 não consulta a internet."
       ]
     },
     {
