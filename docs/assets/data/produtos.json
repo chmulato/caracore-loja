@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "atualizado": "2026-11-12",
+  "atualizado": "2026-11-14",
   "moeda": "BRL",
   "produtos": [
     {
@@ -140,7 +140,7 @@
     },
     {
       "ancora": "cso-frotas",
-      "produto": "CaraCore CSO Frotas",
+      "produto": "CaraCore CSO Frotas — auditoria operacional",
       "versao": "Frotas em produção",
       "rotuloVersao": "Acesso online · Web SaaS",
       "estagio": "disponivel",
@@ -150,10 +150,17 @@
       "wiki": "https://wiki.caracore.com.br/projeto-cso.html",
       "downloads": [
         {
-          "rotulo": "Começar grátis",
+          "rotulo": "Blindar minha frota para 2027",
           "plataforma": "web",
           "principal": true,
           "url": "https://cso.caracore.com.br/cadastro",
+          "sha256": null
+        },
+        {
+          "rotulo": "Ver auditoria e requisitos",
+          "plataforma": "web",
+          "principal": false,
+          "url": "https://cso.caracore.com.br/#auditoria-2027",
           "sha256": null
         },
         {
@@ -167,7 +174,8 @@
       "sha256": [],
       "avisos": [
         "Acesso online pelo navegador: não há instalador.",
-        "Gestão operacional de frota, não é rastreador GPS."
+        "Camada de auditoria operacional: placa única e histórico por veículo dão lastro à apuração de CBS/IBS.",
+        "Não emite nota fiscal, não substitui ERP nem contabilidade e não é rastreador GPS."
       ]
     },
     {
