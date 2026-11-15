@@ -96,7 +96,7 @@
       "estagio": "disponivel",
       "categoria": "satelite",
       "plataformas": ["windows", "linux", "android"],
-      "loja": "https://gaspar.caracore.com.br/",
+      "loja": "https://download.caracore.com.br/download.html#gaspar",
       "wiki": "https://wiki.caracore.com.br/gaspar/index.html",
       "avisos": [
         "Ferramenta do PDV 4 com instalação separada: o PDV 4.0.0 publicado ainda não chama o Gaspar; a chamada entra na versão 4.1.0, com GA planejado para 24/03/2027.",
