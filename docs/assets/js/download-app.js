@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       id: 'ferramenta-pdv',
       eyebrow: 'Ferramenta do PDV 4',
       title: 'O Gaspar acompanha o caixa',
-      description: 'Mascote no desktop e aviso de venda por SMS no celular, com instalação separada do PDV 4 e acesso próprio.',
+      description: 'O recado do caixa sai no celular da loja, no chip e no plano que você já tem, com instalação separada do PDV 4 e acesso próprio.',
       cards: ['gaspar']
     },
     {

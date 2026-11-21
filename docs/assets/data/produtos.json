@@ -99,13 +99,13 @@
       "loja": "https://download.caracore.com.br/download.html#gaspar",
       "wiki": "https://wiki.caracore.com.br/gaspar/index.html",
       "avisos": [
-        "Ferramenta do PDV 4 com instalação separada: o PDV 4.0.0 publicado ainda não chama o Gaspar; a chamada entra na versão 4.1.0, com GA planejado para 24/03/2027.",
-        "O aviso de venda por SMS é opcional: só envia com o aplicativo do celular, instalado por cabo, fora da Play Store, pareado na mesma rede Wi-Fi.",
-        "O número aparece mascarado na tela e o texto viaja cifrado de ponta a ponta com o aplicativo do celular; há limites de envio por destinatário e o botão «Apagar histórico» remove tudo.",
+        "Ferramenta do PDV 4 com instalação separada: o PDV 4.0.0 publicado ainda não chama o Gaspar. A chamada é uma possibilidade futura, sem compromisso de inclusão na v4.1.0 e sem data definida.",
+        "O recado no celular é opcional e chamado por você no painel do Gaspar: só envia com o aplicativo do celular, instalado por cabo, fora da Play Store, pareado na mesma rede Wi-Fi.",
+        "O número aparece mascarado na tela e o recado viaja cifrado até o aplicativo do celular. Já vem de fábrica com teto de 20 envios por minuto e 300 por dia, e o botão «Apagar histórico» remove tudo.",
         "Sem assinatura digital nos instaladores: o SmartScreen do Windows pode avisar. Não desative SmartScreen, Defender ou antivírus.",
         "O aviso de versão nova já funciona, mas a instalação automática ainda não é confiável: por enquanto, a atualização é feita à mão.",
-        "Não interfere nas APIs de pagamento e nota do PDV (Mercado Pago e PlugNotas/Tecnospeed); a única saída de rede é o celular na rede local e o canal de atualização.",
-        "Versão publicada e instaladores ficam na loja do Gaspar; o SHA-256 de cada arquivo vem no SHA256SUMS.txt da versão."
+        "Não interfere no pagamento nem na nota fiscal do PDV (Mercado Pago e PlugNotas/Tecnospeed); a única saída de rede é o celular na rede local e o canal de atualização.",
+        "Versão publicada e instaladores ficam na loja do Gaspar; cada versão publica o SHA256SUMS.txt, para conferir se o arquivo chegou inteiro."
       ]
     },
     {
